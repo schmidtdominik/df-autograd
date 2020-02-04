@@ -34,4 +34,22 @@ in_point = {x: 6, y: 3, z: 5}
 for v, k in f2.gradient().items():
     print(f'\tf2 {v}-component of gradient: {k}')
     print('\tevaluated at in_point: ', k.forward(in_point))
-print('numerical gradient:', f2.numerical_diff_grad(in_point))
+print('numerical gradient:', f2.numerical_diff_grad(in_point), '\n')
+
+
+print('Higher order derivatives:')
+# To compute higher order derivatives simply differentiate the resulting gradient
+f = Exp(x*y)
+dfdx = f.gradient()[x]
+dfdy = f.gradient()[y]
+dfdxx = dfdx.gradient()[x]
+dfdxy = dfdx.gradient()[y]
+dfdyx = dfdy.gradient()[x]
+dfdyy = dfdy.gradient()[y]
+
+print(dfdx)
+print(dfdy)
+print(dfdxx)
+print(dfdxy)
+print(dfdyx)
+print(dfdyy)
