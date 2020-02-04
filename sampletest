@@ -1,0 +1,4048 @@
+/usr/bin/python3.7 /home/dominik/Workspace/df-autograd/test.py
+
+f: c
+	c-component of gradient: 1
+	.. evaluated at `vars`:  1
+	.. numerical grad:  1.000000000139778
+
+f: ((1 / ((f * ((1 - d) - (e ^ 1.024e-07))) * a)) / ((-2 - (exp (c * d) * ((b + (a * -9)) - (e / 7)))) / 3))
+	f-component of gradient: ((((((1 - d) - (e ^ 1.024e-07)) * a) * (-1 * (((f * ((1 - d) - (e ^ 1.024e-07))) * a) ^ -2))) * 1) * (((-2 - (exp (c * d) * ((b + (a * -9)) - (e / 7)))) / 3) ^ -1))
+	.. evaluated at `vars`:  0.00036388435521473737
+	.. numerical grad:  0.00036388435493972526
+	d-component of gradient: ((((((-1 * f) * a) * (-1 * (((f * ((1 - d) - (e ^ 1.024e-07))) * a) ^ -2))) * 1) * (((-2 - (exp (c * d) * ((b + (a * -9)) - (e / 7)))) / 3) ^ -1)) + (((-0.3333333333333333 * ((c * exp (c * d)) * ((b + (a * -9)) - (e / 7)))) * (-1 * (((-2 - (exp (c * d) * ((b + (a * -9)) - (e / 7)))) / 3) ^ -2))) * (1 / ((f * ((1 - d) - (e ^ 1.024e-07))) * a))))
+	.. evaluated at `vars`:  0.0003404402053980897
+	.. numerical grad:  0.000340440205106457
+	e-component of gradient: (((((((-1.024e-07 * (e ^ -0.9999998976)) * f) * a) * (-1 * (((f * ((1 - d) - (e ^ 1.024e-07))) * a) ^ -2))) * 1) * (((-2 - (exp (c * d) * ((b + (a * -9)) - (e / 7)))) / 3) ^ -1)) + (((0.047619047619047616 * exp (c * d)) * (-1 * (((-2 - (exp (c * d) * ((b + (a * -9)) - (e / 7)))) / 3) ^ -2))) * (1 / ((f * ((1 - d) - (e ^ 1.024e-07))) * a))))
+	.. evaluated at `vars`:  5.400409600005008e-12
+	.. numerical grad:  5.204170427930421e-12
+	a-component of gradient: (((((f * ((1 - d) - (e ^ 1.024e-07))) * (-1 * (((f * ((1 - d) - (e ^ 1.024e-07))) * a) ^ -2))) * 1) * (((-2 - (exp (c * d) * ((b + (a * -9)) - (e / 7)))) / 3) ^ -1)) + (((3.0 * exp (c * d)) * (-1 * (((-2 - (exp (c * d) * ((b + (a * -9)) - (e / 7)))) / 3) ^ -2))) * (1 / ((f * ((1 - d) - (e ^ 1.024e-07))) * a))))
+	.. evaluated at `vars`:  -0.0013274380674291758
+	.. numerical grad:  -0.001327438067886405
+	c-component of gradient: (((-0.3333333333333333 * ((d * exp (c * d)) * ((b + (a * -9)) - (e / 7)))) * (-1 * (((-2 - (exp (c * d) * ((b + (a * -9)) - (e / 7)))) / 3) ^ -2))) * (1 / ((f * ((1 - d) - (e ^ 1.024e-07))) * a)))
+	.. evaluated at `vars`:  -4.388269479270317e-27
+	.. numerical grad:  0.0
+	b-component of gradient: (((-0.3333333333333333 * exp (c * d)) * (-1 * (((-2 - (exp (c * d) * ((b + (a * -9)) - (e / 7)))) / 3) ^ -2))) * (1 / ((f * ((1 - d) - (e ^ 1.024e-07))) * a)))
+	.. evaluated at `vars`:  -1.0733243360835706e-29
+	.. numerical grad:  0.0
+
+f: 4
+→ no gradient to compute
+
+f: ((-5 / -9) * -7)
+→ no gradient to compute
+
+f: (5 - (e + (((f / (f / (d / 4))) / (e + ((1 - ln a) * (5 * f)))) / ln 7)))
+	e-component of gradient: ((1 + (((-1 * ((e + ((1 - ln a) * (5 * f))) ^ -2)) * (f / (f / (d / 4)))) * (ln 7 ^ -1))) * -1)
+	.. evaluated at `vars`:  -0.9998910370353886
+	.. numerical grad:  -0.9998910370789815
+	f-component of gradient: (((((((f / (d / 4)) ^ -1) + ((((d / 4) ^ -1) * (-1 * ((f / (d / 4)) ^ -2))) * f)) * ((e + ((1 - ln a) * (5 * f))) ^ -1)) + (((5 * (1 - ln a)) * (-1 * ((e + ((1 - ln a) * (5 * f))) ^ -2))) * (f / (f / (d / 4))))) * (ln 7 ^ -1)) * -1)
+	.. evaluated at `vars`:  -0.0004893246078357097
+	.. numerical grad:  -0.0004893245808545998
+	d-component of gradient: (((((((-0.25 * ((d / 4) ^ -2)) * f) * (-1 * ((f / (d / 4)) ^ -2))) * f) * ((e + ((1 - ln a) * (5 * f))) ^ -1)) * (ln 7 ^ -1)) * -1)
+	.. evaluated at `vars`:  0.004889739400165601
+	.. numerical grad:  0.004889739724234232
+	a-component of gradient: (((((((1 / a) * -1) * (5 * f)) * (-1 * ((e + ((1 - ln a) * (5 * f))) ^ -2))) * (f / (f / (d / 4)))) * (ln 7 ^ -1)) * -1)
+	.. evaluated at `vars`:  -0.0004752981754694579
+	.. numerical grad:  -0.00047529846725069547
+
+f: a
+	a-component of gradient: 1
+	.. evaluated at `vars`:  1
+	.. numerical grad:  0.9999999992515995
+
+f: b
+	b-component of gradient: 1
+	.. evaluated at `vars`:  1
+	.. numerical grad:  0.9999999992515995
+
+f: 2
+→ no gradient to compute
+
+f: exp (f - b)
+	f-component of gradient: exp (f - b)
+	.. evaluated at `vars`:  1410168.9183575038
+	.. numerical grad:  1410168.9185481519
+	b-component of gradient: (-1 * exp (f - b))
+	.. evaluated at `vars`:  -1410168.9183575038
+	.. numerical grad:  -1410168.9172675833
+
+f: (c - exp (1 + (ln 7 - (ln 1 - 6))))
+	c-component of gradient: 1
+	.. evaluated at `vars`:  1
+	.. numerical grad:  0.999999883788405
+
+f: -1
+→ no gradient to compute
+
+f: (8 ^ (f / c))
+	f-component of gradient: ((c ^ -1) * ((8 ^ (f / c)) * ln 8))
+	.. evaluated at `vars`:  -0.03201808980168521
+	.. numerical grad:  -0.032018089776708614
+	c-component of gradient: (((-1 * (c ^ -2)) * f) * ((8 ^ (f / c)) * ln 8))
+	.. evaluated at `vars`:  -0.026113114422073168
+	.. numerical grad:  -0.026113114393044867
+
+f: (exp g / -10)
+	g-component of gradient: (exp g * -0.1)
+	.. evaluated at `vars`:  -5712.261201793397
+	.. numerical grad:  -5712.261197004409
+
+f: ln f
+	f-component of gradient: (1 / f)
+	.. evaluated at `vars`:  0.09905224087319174
+	.. numerical grad:  0.09905224085393627
+
+f: e
+	e-component of gradient: 1
+	.. evaluated at `vars`:  1
+	.. numerical grad:  1.000000000139778
+
+f: (exp d / b)
+	d-component of gradient: (exp d * (b ^ -1))
+	.. evaluated at `vars`:  103.65880066251171
+	.. numerical grad:  103.65880068263778
+	b-component of gradient: ((-1 * (b ^ -2)) * exp d)
+	.. evaluated at `vars`:  -14.441805754953917
+	.. numerical grad:  -14.441805760156967
+
+f: b
+	b-component of gradient: 1
+	.. evaluated at `vars`:  1
+	.. numerical grad:  1.000000000139778
+
+f: ln (exp b ^ 9)
+	b-component of gradient: ((exp b * (9 * (exp b ^ 8))) * (1 / (exp b ^ 9)))
+	.. evaluated at `vars`:  9.000000000000002
+	.. numerical grad:  8.999999991488039
+
+f: a
+	a-component of gradient: 1
+	.. evaluated at `vars`:  1
+	.. numerical grad:  0.9999999992515995
+
+f: c
+	c-component of gradient: 1
+	.. evaluated at `vars`:  1
+	.. numerical grad:  1.000000000139778
+
+f: exp 7
+→ no gradient to compute
+
+f: (ln (2 / exp exp -8) ^ a)
+	a-component of gradient: ((ln (2 / exp exp -8) ^ a) * ln ln (2 / exp exp -8))
+	.. evaluated at `vars`:  -0.05599827116128306
+	.. numerical grad:  -0.05599827117286349
+
+f: (a / a)
+	a-component of gradient: ((a ^ -1) + ((-1 * (a ^ -2)) * a))
+	.. evaluated at `vars`:  0.0
+	.. numerical grad:  0.0
+
+f: -3
+→ no gradient to compute
+
+f: (1 - 3)
+→ no gradient to compute
+
+f: (((c + (d ^ -4)) / c) ^ b)
+	c-component of gradient: (((c ^ -1) + ((-1 * (c ^ -2)) * (c + (d ^ -4)))) * (b * (((c + (d ^ -4)) / c) ^ (b - 1))))
+	.. evaluated at `vars`:  -1.945964226746911e-05
+	.. numerical grad:  -1.9459212019512506e-05
+	d-component of gradient: (((-4 * (d ^ -5)) * (c ^ -1)) * (b * (((c + (d ^ -4)) / c) ^ (b - 1))))
+	.. evaluated at `vars`:  6.38136310559705e-05
+	.. numerical grad:  6.381400963206829e-05
+	b-component of gradient: ((((c + (d ^ -4)) / c) ^ b) * ln ((c + (d ^ -4)) / c))
+	.. evaluated at `vars`:  -1.3339274010868214e-05
+	.. numerical grad:  -1.3339274129720025e-05
+
+f: a
+	a-component of gradient: 1
+	.. evaluated at `vars`:  1
+	.. numerical grad:  1.000000000139778
+
+f: e
+	e-component of gradient: 1
+	.. evaluated at `vars`:  1
+	.. numerical grad:  0.9999999992515995
+
+f: ((3 + (d - (a + ((e * a) ^ 0)))) + exp exp ((10 * (e - b)) / d))
+	d-component of gradient: (1 + ((((-1 * (d ^ -2)) * (10 * (e - b))) * exp ((10 * (e - b)) / d)) * exp exp ((10 * (e - b)) / d)))
+	.. evaluated at `vars`:  0.9526583552167762
+	.. numerical grad:  0.9526583539809508
+	a-component of gradient: ((1 + (e * (0 * ((e * a) ^ -1)))) * -1)
+	.. evaluated at `vars`:  -1.0
+	.. numerical grad:  -0.9999999992515995
+	e-component of gradient: (((a * (0 * ((e * a) ^ -1))) * -1) + (((10 * (d ^ -1)) * exp ((10 * (e - b)) / d)) * exp exp ((10 * (e - b)) / d)))
+	.. evaluated at `vars`:  -0.7399828516435681
+	.. numerical grad:  -0.739982850994636
+	b-component of gradient: (((-10 * (d ^ -1)) * exp ((10 * (e - b)) / d)) * exp exp ((10 * (e - b)) / d))
+	.. evaluated at `vars`:  0.7399828516435681
+	.. numerical grad:  0.739982850994636
+
+f: d
+	d-component of gradient: 1
+	.. evaluated at `vars`:  1
+	.. numerical grad:  1.000000000139778
+
+f: ln ln ln (-10 * 5)
+→ no gradient to compute
+
+f: -3
+→ no gradient to compute
+
+f: b
+	b-component of gradient: 1
+	.. evaluated at `vars`:  1
+	.. numerical grad:  0.9999999992515995
+
+f: -9
+→ no gradient to compute
+
+f: (((ln (exp (c * c) / 8) / (2 - ln (exp c - (d / -4)))) - ((3 + (a - -9)) + (ln g - b))) - (d ^ ln ((exp ln g * -1) ^ -10)))
+	c-component of gradient: ((((((c + c) * exp (c * c)) * 0.125) * (1 / (exp (c * c) / 8))) * ((2 - ln (exp c - (d / -4))) ^ -1)) + ((((exp c * (1 / (exp c - (d / -4)))) * -1) * (-1 * ((2 - ln (exp c - (d / -4))) ^ -2))) * ln (exp (c * c) / 8)))
+	.. evaluated at `vars`:  15006.87238992392
+	.. numerical grad:  (15006.8724873762+0j)
+	d-component of gradient: ((((-0.25 * (1 / (exp c - (d / -4)))) * (-1 * ((2 - ln (exp c - (d / -4))) ^ -2))) * ln (exp (c * c) / 8)) + ((ln ((exp ln g * -1) ^ -10) * (d ^ (ln ((exp ln g * -1) ^ -10) - 1))) * -1))
+	.. evaluated at `vars`:  (372.2025660340555-1.4014773597651162e-14j)
+	.. numerical grad:  (372.2025669787854-1.4014773587297175e-14j)
+	a-component of gradient: -1
+	.. evaluated at `vars`:  -1
+	.. numerical grad:  (-0.9999999974752427+0j)
+	g-component of gradient: (((1 / g) * -1) + (((((((1 / g) * exp ln g) * -1) * (-10 * ((exp ln g * -1) ^ -11))) * (1 / ((exp ln g * -1) ^ -10))) * ((d ^ ln ((exp ln g * -1) ^ -10)) * ln d)) * -1))
+→ math domain error
+
+f: -2
+→ no gradient to compute
+
+f: exp e
+	e-component of gradient: exp e
+	.. evaluated at `vars`:  4.8016787657409255e-05
+	.. numerical grad:  4.8016787621745285e-05
+
+f: ((d ^ b) * ((d + a) + ((-8 ^ (ln (b - -9) + g)) - -7)))
+	d-component of gradient: (((b * (d ^ (b - 1))) * ((d + a) + ((-8 ^ (ln (b - -9) + g)) - -7))) + (d ^ b))
+	.. evaluated at `vars`:  (38389759507829.664-133921158435791.1j)
+	.. numerical grad:  (38389759476562.5-133921158328125j)
+	[Warning]: abs(val-num_g[v]) == 112114.33134035577 > 1e-2
+	b-component of gradient: ((((d ^ b) * ln d) * ((d + a) + ((-8 ^ (ln (b - -9) + g)) - -7))) + (((1 / (b - -9)) * ((-8 ^ (ln (b - -9) + g)) * ln -8)) * (d ^ b)))
+→ math domain error
+
+f: (2 - (f + (-9 / ln 3)))
+	f-component of gradient: -1
+	.. evaluated at `vars`:  -1
+	.. numerical grad:  -0.9999999992515995
+
+f: 1
+→ no gradient to compute
+
+f: -3
+→ no gradient to compute
+
+f: -6
+→ no gradient to compute
+
+f: -9
+→ no gradient to compute
+
+f: (b * b)
+	b-component of gradient: (b + b)
+	.. evaluated at `vars`:  -13.719027481928281
+	.. numerical grad:  -13.719027482039792
+
+f: exp (((ln b * 7) + (((a + ln (b + d)) - a) / g)) * (8 * b))
+	b-component of gradient: ((((((1 / b) * 7) + ((1 / (b + d)) * (g ^ -1))) * (8 * b)) + (8 * ((ln b * 7) + (((a + ln (b + d)) - a) / g)))) * exp (((ln b * 7) + (((a + ln (b + d)) - a) / g)) * (8 * b)))
+	.. evaluated at `vars`:  -0.0036854415779571763
+	.. numerical grad:  -0.0036854415832529987
+	a-component of gradient: (((0 * (g ^ -1)) * (8 * b)) * exp (((ln b * 7) + (((a + ln (b + d)) - a) / g)) * (8 * b)))
+	.. evaluated at `vars`:  0.0
+	.. numerical grad:  0.0
+	d-component of gradient: ((((1 / (b + d)) * (g ^ -1)) * (8 * b)) * exp (((ln b * 7) + (((a + ln (b + d)) - a) / g)) * (8 * b)))
+	.. evaluated at `vars`:  1.962846566565111e-06
+	.. numerical grad:  1.962846551961661e-06
+	g-component of gradient: ((((-1 * (g ^ -2)) * ((a + ln (b + d)) - a)) * (8 * b)) * exp (((ln b * 7) + (((a + ln (b + d)) - a) / g)) * (8 * b)))
+	.. evaluated at `vars`:  -2.3502638930312e-05
+	.. numerical grad:  -2.35026389219491e-05
+
+f: ((-1 * c) ^ 3)
+	c-component of gradient: (-3 * ((-1 * c) ^ 2))
+	.. evaluated at `vars`:  -486.28230583867423
+	.. numerical grad:  -486.2823054736509
+
+f: exp 7
+→ no gradient to compute
+
+f: (c * b)
+	c-component of gradient: b
+	.. evaluated at `vars`:  -5.729842984842419
+	.. numerical grad:  -5.729842975199517
+	b-component of gradient: c
+	.. evaluated at `vars`:  -11.993593854080961
+	.. numerical grad:  -11.99359385140042
+
+f: 8
+→ no gradient to compute
+
+f: -10
+→ no gradient to compute
+
+f: -8
+→ no gradient to compute
+
+f: exp (d - d)
+	d-component of gradient: (0 * exp (d - d))
+	.. evaluated at `vars`:  0.0
+	.. numerical grad:  0.0
+
+f: (6 ^ (-7 / (-1 / (-5 / f))))
+	f-component of gradient: ((((((5 * (f ^ -2)) * (-1 * ((-5 / f) ^ -2))) * -1) * (-1 * ((-1 / (-5 / f)) ^ -2))) * -7) * ((6 ^ (-7 / (-1 / (-5 / f)))) * ln 6))
+	.. evaluated at `vars`:  0.0006559475782827897
+	.. numerical grad:  0.0006559475779926473
+
+f: ln (-8 / (c - ln a))
+	c-component of gradient: ((8 * ((c - ln a) ^ -2)) * (1 / (-8 / (c - ln a))))
+	.. evaluated at `vars`:  0.07658713138717385
+	.. numerical grad:  0.07658713138680717
+	a-component of gradient: (((((1 / a) * -1) * (-1 * ((c - ln a) ^ -2))) * -8) * (1 / (-8 / (c - ln a))))
+	.. evaluated at `vars`:  -0.04466285256450506
+	.. numerical grad:  -0.044662852610732884
+
+f: exp e
+	e-component of gradient: exp e
+	.. evaluated at `vars`:  3.721921922090401e-06
+	.. numerical grad:  3.7219219193931354e-06
+
+f: b
+	b-component of gradient: 1
+	.. evaluated at `vars`:  1
+	.. numerical grad:  1.000000000139778
+
+f: ln ((0.004629629629629629 + (d - a)) * 1)
+	d-component of gradient: (1 / ((0.004629629629629629 + (d - a)) * 1))
+	.. evaluated at `vars`:  0.06829778046148555
+	.. numerical grad:  0.06829778054218139
+	a-component of gradient: (-1 * (1 / ((0.004629629629629629 + (d - a)) * 1)))
+	.. evaluated at `vars`:  -0.06829778046148555
+	.. numerical grad:  -0.06829778054218139
+
+f: (g + e)
+	g-component of gradient: 1
+	.. evaluated at `vars`:  1
+	.. numerical grad:  0.9999999992515995
+	e-component of gradient: 1
+	.. evaluated at `vars`:  1
+	.. numerical grad:  0.9999999992515995
+
+f: ((d * (d * ((b ^ (-9 + e)) / (ln 3 - 8)))) / -6)
+	d-component of gradient: (((d * ((b ^ (-9 + e)) / (ln 3 - 8))) + (((b ^ (-9 + e)) / (ln 3 - 8)) * d)) * -0.16666666666666666)
+	.. evaluated at `vars`:  -9.778586384826767e-23
+	.. numerical grad:  -9.778586384328019e-23
+	b-component of gradient: ((((((-9 + e) * (b ^ ((-9 + e) - 1))) * ((ln 3 - 8) ^ -1)) * d) * d) * -0.16666666666666666)
+	.. evaluated at `vars`:  -6.654120027347804e-23
+	.. numerical grad:  -6.654120021817307e-23
+	e-component of gradient: ((((((b ^ (-9 + e)) * ln b) * ((ln 3 - 8) ^ -1)) * d) * d) * -0.16666666666666666)
+	.. evaluated at `vars`:  1.2881536774535354e-22
+	.. numerical grad:  1.2881536742744105e-22
+
+f: d
+	d-component of gradient: 1
+	.. evaluated at `vars`:  1
+	.. numerical grad:  1.000000000139778
+
+f: ln exp e
+	e-component of gradient: (exp e * (1 / exp e))
+	.. evaluated at `vars`:  1.0
+	.. numerical grad:  0.9999999992515995
+
+f: d
+	d-component of gradient: 1
+	.. evaluated at `vars`:  1
+	.. numerical grad:  0.9999999999177334
+
+f: 10
+→ no gradient to compute
+
+f: (ln f / (exp (-8 - exp 0) / exp c))
+	f-component of gradient: ((1 / f) * ((exp (-8 - exp 0) / exp c) ^ -1))
+	.. evaluated at `vars`:  31.953270984160408
+	.. numerical grad:  31.953270990925375
+	c-component of gradient: ((((exp c * (-1 * (exp c ^ -2))) * exp (-8 - exp 0)) * (-1 * ((exp (-8 - exp 0) / exp c) ^ -2))) * ln f)
+	.. evaluated at `vars`:  360.9720656249719
+	.. numerical grad:  360.97206569252194
+
+f: c
+	c-component of gradient: 1
+	.. evaluated at `vars`:  1
+	.. numerical grad:  0.9999999992515995
+
+f: -10
+→ no gradient to compute
+
+f: (a ^ c)
+	a-component of gradient: (c * (a ^ (c - 1)))
+	.. evaluated at `vars`:  (-6.005089807218339-0.3229043584481816j)
+	.. numerical grad:  (-6.005089807192832-0.3229043584462854j)
+	c-component of gradient: ((a ^ c) * ln a)
+→ math domain error
+
+f: (-9 / exp (0 ^ -4))
+→ no gradient to compute
+
+f: -1
+→ no gradient to compute
+
+f: ln 6
+→ no gradient to compute
+
+f: d
+	d-component of gradient: 1
+	.. evaluated at `vars`:  1
+	.. numerical grad:  1.000000000139778
+
+f: exp (-6 / -5)
+→ no gradient to compute
+
+f: (((((8 * ((-8 * f) / 1)) + g) * (c / (((f * e) / -8) ^ f))) / f) + -8)
+	f-component of gradient: ((((-64.0 * (c / (((f * e) / -8) ^ f))) + ((((((e * -0.125) * (f * (((f * e) / -8) ^ (f - 1)))) + ((((f * e) / -8) ^ f) * ln ((f * e) / -8))) * (-1 * ((((f * e) / -8) ^ f) ^ -2))) * c) * ((8 * ((-8 * f) / 1)) + g))) * (f ^ -1)) + ((-1 * (f ^ -2)) * (((8 * ((-8 * f) / 1)) + g) * (c / (((f * e) / -8) ^ f)))))
+→ math domain error
+
+f: exp b
+	b-component of gradient: exp b
+	.. evaluated at `vars`:  3.7932373673005815
+	.. numerical grad:  3.793237367100133
+
+f: exp 8
+→ no gradient to compute
+
+f: d
+	d-component of gradient: 1
+	.. evaluated at `vars`:  1
+	.. numerical grad:  1.000000000139778
+
+f: e
+	e-component of gradient: 1
+	.. evaluated at `vars`:  1
+	.. numerical grad:  1.000000000139778
+
+f: c
+	c-component of gradient: 1
+	.. evaluated at `vars`:  1
+	.. numerical grad:  1.000000000139778
+
+f: (2 - a)
+	a-component of gradient: -1
+	.. evaluated at `vars`:  -1
+	.. numerical grad:  -1.000000000139778
+
+f: 9
+→ no gradient to compute
+
+f: c
+	c-component of gradient: 1
+	.. evaluated at `vars`:  1
+	.. numerical grad:  1.000000000139778
+
+f: (b ^ f)
+	b-component of gradient: (f * (b ^ (f - 1)))
+	.. evaluated at `vars`:  -8.630174834139003e-09
+	.. numerical grad:  -8.630174835148957e-09
+	f-component of gradient: ((b ^ f) * ln b)
+	.. evaluated at `vars`:  8.504895983015119e-09
+	.. numerical grad:  8.504895976808187e-09
+
+f: (b + ln ln exp e)
+	b-component of gradient: 1
+	.. evaluated at `vars`:  1
+	.. numerical grad:  0.9999999992515995
+	e-component of gradient: ((exp e * (1 / exp e)) * (1 / ln exp e))
+	.. evaluated at `vars`:  0.11144193328632554
+	.. numerical grad:  0.11144193390322243
+
+f: (((((c * -7) * ln (exp 3 ^ g)) + (d + exp ((g / 10) - (d * (d - (-4 * (-6 - e))))))) + 4) + (ln (9 * d) ^ -8))
+	c-component of gradient: (-7 * ln (exp 3 ^ g))
+	.. evaluated at `vars`:  -162.7606179475501
+	.. numerical grad:  -162.76061785447382
+	g-component of gradient: (((((exp 3 ^ g) * ln exp 3) * (1 / (exp 3 ^ g))) * (c * -7)) + (0.1 * exp ((g / 10) - (d * (d - (-4 * (-6 - e)))))))
+	.. evaluated at `vars`:  -203.90274330044105
+	.. numerical grad:  -203.9027432374496
+	d-component of gradient: ((1 + ((((d - (-4 * (-6 - e))) + d) * -1) * exp ((g / 10) - (d * (d - (-4 * (-6 - e))))))) + ((9 * (1 / (9 * d))) * (-8 * (ln (9 * d) ^ -9))))
+	.. evaluated at `vars`:  0.9999994892573595
+	.. numerical grad:  0.9999994290410541
+	e-component of gradient: ((4 * d) * exp ((g / 10) - (d * (d - (-4 * (-6 - e))))))
+	.. evaluated at `vars`:  9.202735566946487e-13
+	.. numerical grad:  0.0
+
+f: exp b
+	b-component of gradient: exp b
+	.. evaluated at `vars`:  252706.81138162245
+	.. numerical grad:  252706.8111958215
+
+f: b
+	b-component of gradient: 1
+	.. evaluated at `vars`:  1
+	.. numerical grad:  0.9999999992515995
+
+f: (((d + (-8 * exp 1)) * 8) * 10)
+	d-component of gradient: 80
+	.. evaluated at `vars`:  80
+	.. numerical grad:  79.99999991170625
+
+f: 4
+→ no gradient to compute
+
+f: (3 ^ ln ln a)
+	a-component of gradient: (((1 / a) * (1 / ln a)) * ((3 ^ ln ln a) * ln 3))
+	.. evaluated at `vars`:  0.10199765459214732
+	.. numerical grad:  0.10199765454466103
+
+f: -10
+→ no gradient to compute
+
+f: f
+	f-component of gradient: 1
+	.. evaluated at `vars`:  1
+	.. numerical grad:  0.9999999992515995
+
+f: (8 * g)
+	g-component of gradient: 8
+	.. evaluated at `vars`:  8
+	.. numerical grad:  8.000000001118224
+
+f: a
+	a-component of gradient: 1
+	.. evaluated at `vars`:  1
+	.. numerical grad:  1.000000000139778
+
+f: ((((a ^ ln (10 ^ (6 - b))) + ln exp b) * (4 * (3 ^ (((f * (e * -6)) / 9) * 1)))) * (e * exp -6))
+	a-component of gradient: (((ln (10 ^ (6 - b)) * (a ^ (ln (10 ^ (6 - b)) - 1))) * (4 * (3 ^ (((f * (e * -6)) / 9) * 1)))) * (e * exp -6))
+	.. evaluated at `vars`:  (-2.0797467655053406e-25+4.4253461385915005e-26j)
+	.. numerical grad:  4.425346135182178e-26j
+	b-component of gradient: ((((((-1 * ((10 ^ (6 - b)) * ln 10)) * (1 / (10 ^ (6 - b)))) * ((a ^ ln (10 ^ (6 - b))) * ln a)) + (exp b * (1 / exp b))) * (4 * (3 ^ (((f * (e * -6)) / 9) * 1)))) * (e * exp -6))
+→ math domain error
+
+f: (exp -3 * exp 4)
+→ no gradient to compute
+
+f: b
+	b-component of gradient: 1
+	.. evaluated at `vars`:  1
+	.. numerical grad:  1.000000000139778
+
+f: (f / d)
+	f-component of gradient: (d ^ -1)
+	.. evaluated at `vars`:  0.29713527448815924
+	.. numerical grad:  0.2971352741631961
+	d-component of gradient: ((-1 * (d ^ -2)) * f)
+	.. evaluated at `vars`:  0.7164545639536972
+	.. numerical grad:  0.7164545641202835
+
+f: d
+	d-component of gradient: 1
+	.. evaluated at `vars`:  1
+	.. numerical grad:  0.9999999992515995
+
+f: (exp b / (d ^ b))
+	b-component of gradient: ((exp b * ((d ^ b) ^ -1)) + ((((d ^ b) * ln d) * (-1 * ((d ^ b) ^ -2))) * exp b))
+	.. evaluated at `vars`:  0.09745173352095463
+	.. numerical grad:  0.09745173350922398
+	d-component of gradient: (((b * (d ^ (b - 1))) * (-1 * ((d ^ b) ^ -2))) * exp b)
+	.. evaluated at `vars`:  0.20000626193775423
+	.. numerical grad:  0.20000626194810467
+
+f: ln (b - d)
+	b-component of gradient: (1 / (b - d))
+	.. evaluated at `vars`:  0.1489049715466748
+	.. numerical grad:  0.14890497157526994
+	d-component of gradient: (-1 * (1 / (b - d)))
+	.. evaluated at `vars`:  -0.1489049715466748
+	.. numerical grad:  -0.14890497146424764
+
+f: ln exp (2 - -7)
+→ no gradient to compute
+
+f: -6
+→ no gradient to compute
+
+f: -8
+→ no gradient to compute
+
+f: ((-2 ^ 1) ^ a)
+	a-component of gradient: ((-2 ^ a) * ln -2)
+→ math domain error
+
+f: b
+	b-component of gradient: 1
+	.. evaluated at `vars`:  1
+	.. numerical grad:  0.9999999992515995
+
+f: exp exp e
+	e-component of gradient: (exp e * exp exp e)
+	.. evaluated at `vars`:  0.027457417839651495
+	.. numerical grad:  0.027457417783871563
+
+f: 6
+→ no gradient to compute
+
+f: ((3 ^ (f ^ (8 * (4 - d)))) - exp (exp -9 + exp b))
+	f-component of gradient: (((8 * (4 - d)) * (f ^ ((8 * (4 - d)) - 1))) * ((3 ^ (f ^ (8 * (4 - d)))) * ln 3))
+	.. evaluated at `vars`:  (1.2126150569661909e-30-2.729997211903468e-31j)
+	.. numerical grad:  -2.72999721236483e-31j
+	d-component of gradient: ((-8 * ((f ^ (8 * (4 - d))) * ln f)) * ((3 ^ (f ^ (8 * (4 - d)))) * ln 3))
+→ math domain error
+
+f: exp -9
+→ no gradient to compute
+
+f: 8
+→ no gradient to compute
+
+f: (((c / ((g / (e + 2)) * (((exp f + -7) * c) * 5))) * (((e - 9) + f) / -1)) - -7)
+	c-component of gradient: (((((g / (e + 2)) * (((exp f + -7) * c) * 5)) ^ -1) + (((((exp f + -7) * 5) * (g / (e + 2))) * (-1 * (((g / (e + 2)) * (((exp f + -7) * c) * 5)) ^ -2))) * c)) * (((e - 9) + f) / -1))
+	.. evaluated at `vars`:  0.0
+	.. numerical grad:  0.0
+	g-component of gradient: ((((((e + 2) ^ -1) * (((exp f + -7) * c) * 5)) * (-1 * (((g / (e + 2)) * (((exp f + -7) * c) * 5)) ^ -2))) * c) * (((e - 9) + f) / -1))
+	.. evaluated at `vars`:  0.05859660714009759
+	.. numerical grad:  0.05859660712204118
+	e-component of gradient: (((((((-1 * ((e + 2) ^ -2)) * g) * (((exp f + -7) * c) * 5)) * (-1 * (((g / (e + 2)) * (((exp f + -7) * c) * 5)) ^ -2))) * c) * (((e - 9) + f) / -1)) + (-1.0 * (c / ((g / (e + 2)) * (((exp f + -7) * c) * 5)))))
+	.. evaluated at `vars`:  0.014244073083691227
+	.. numerical grad:  0.014244073032187998
+	f-component of gradient: (((((((exp f * c) * 5) * (g / (e + 2))) * (-1 * (((g / (e + 2)) * (((exp f + -7) * c) * 5)) ^ -2))) * c) * (((e - 9) + f) / -1)) + (-1.0 * (c / ((g / (e + 2)) * (((exp f + -7) * c) * 5)))))
+	.. evaluated at `vars`:  0.06778531124095592
+	.. numerical grad:  0.06778531114193243
+
+f: (e - ((ln ln exp (b + e) - c) ^ -2))
+	e-component of gradient: (1 + ((((exp (b + e) * (1 / exp (b + e))) * (1 / ln exp (b + e))) * (-2 * ((ln ln exp (b + e) - c) ^ -3))) * -1))
+	.. evaluated at `vars`:  1.02314170545237
+	.. numerical grad:  1.0231417055805991
+	b-component of gradient: ((((exp (b + e) * (1 / exp (b + e))) * (1 / ln exp (b + e))) * (-2 * ((ln ln exp (b + e) - c) ^ -3))) * -1)
+	.. evaluated at `vars`:  0.02314170545237001
+	.. numerical grad:  0.02314170544082117
+	c-component of gradient: (-2 * ((ln ln exp (b + e) - c) ^ -3))
+	.. evaluated at `vars`:  -0.08001938178015232
+	.. numerical grad:  -0.08001938178736623
+
+f: (4 / -3)
+→ no gradient to compute
+
+f: b
+	b-component of gradient: 1
+	.. evaluated at `vars`:  1
+	.. numerical grad:  1.000000000139778
+
+f: exp g
+	g-component of gradient: exp g
+	.. evaluated at `vars`:  10.398104514498202
+	.. numerical grad:  10.398104516085027
+
+f: exp g
+	g-component of gradient: exp g
+	.. evaluated at `vars`:  0.19301947940749026
+	.. numerical grad:  0.19301947938588082
+
+f: (-7 - ((d / ((e + ln (8 + d)) / (7 + (f / b)))) * ((e * -8) - f)))
+	d-component of gradient: ((((((e + ln (8 + d)) / (7 + (f / b))) ^ -1) + ((((1 / (8 + d)) * ((7 + (f / b)) ^ -1)) * (-1 * (((e + ln (8 + d)) / (7 + (f / b))) ^ -2))) * d)) * ((e * -8) - f)) * -1)
+	.. evaluated at `vars`:  108.99489471908008
+	.. numerical grad:  108.99489475946211
+	e-component of gradient: (((((((7 + (f / b)) ^ -1) * (-1 * (((e + ln (8 + d)) / (7 + (f / b))) ^ -2))) * d) * ((e * -8) - f)) + (-8 * (d / ((e + ln (8 + d)) / (7 + (f / b)))))) * -1)
+	.. evaluated at `vars`:  -14.199108911581519
+	.. numerical grad:  -14.19910890376741
+	f-component of gradient: ((((((((b ^ -1) * (-1 * ((7 + (f / b)) ^ -2))) * (e + ln (8 + d))) * (-1 * (((e + ln (8 + d)) / (7 + (f / b))) ^ -2))) * d) * ((e * -8) - f)) + (-1 * (d / ((e + ln (8 + d)) / (7 + (f / b)))))) * -1)
+	.. evaluated at `vars`:  13.097256803944397
+	.. numerical grad:  13.097256839955662
+	b-component of gradient: ((((((((-1 * (b ^ -2)) * f) * (-1 * ((7 + (f / b)) ^ -2))) * (e + ln (8 + d))) * (-1 * (((e + ln (8 + d)) / (7 + (f / b))) ^ -2))) * d) * ((e * -8) - f)) * -1)
+	.. evaluated at `vars`:  -29.063465458950432
+	.. numerical grad:  -29.063465461831584
+
+f: 9
+→ no gradient to compute
+
+f: (a / -8)
+	a-component of gradient: -0.125
+	.. evaluated at `vars`:  -0.125
+	.. numerical grad:  -0.12499999990644994
+
+f: (10 + (g ^ g))
+	g-component of gradient: ((g * (g ^ (g - 1))) + ((g ^ g) * ln g))
+	.. evaluated at `vars`:  -0.30326541116204486
+	.. numerical grad:  -0.30326541100578197
+
+f: g
+	g-component of gradient: 1
+	.. evaluated at `vars`:  1
+	.. numerical grad:  0.9999999992515995
+
+f: ((exp g + (((c / 10) ^ (3 * (-10 + e))) + 9)) - c)
+	g-component of gradient: exp g
+	.. evaluated at `vars`:  8786.277507737881
+	.. numerical grad:  0.0
+	[Warning]: abs(val-num_g[v]) == 8786.277507737881 > 1e-2
+	c-component of gradient: ((0.1 * ((3 * (-10 + e)) * ((c / 10) ^ ((3 * (-10 + e)) - 1)))) + -1)
+	.. evaluated at `vars`:  -1.1202921945790625e+74
+	.. numerical grad:  -1.1202921953796031e+74
+	[Warning]: abs(val-num_g[v]) == 8.005406286279025e+64 > 1e-2
+	e-component of gradient: (3 * (((c / 10) ^ (3 * (-10 + e))) * ln (c / 10)))
+	.. evaluated at `vars`:  -1.0819054477186283e+73
+	.. numerical grad:  -1.0819054475546039e+73
+	[Warning]: abs(val-num_g[v]) == 1.640244346066952e+63 > 1e-2
+
+f: (exp -5 / (a / (a ^ -36)))
+	a-component of gradient: (((((a ^ -36) ^ -1) + (((-36 * (a ^ -37)) * (-1 * ((a ^ -36) ^ -2))) * a)) * (-1 * ((a / (a ^ -36)) ^ -2))) * exp -5)
+	.. evaluated at `vars`:  -5.789304244084987e-43
+	.. numerical grad:  -5.78930423974742e-43
+
+f: ((9 + b) / d)
+	b-component of gradient: (d ^ -1)
+	.. evaluated at `vars`:  0.13786546018176313
+	.. numerical grad:  0.13786546021465895
+	d-component of gradient: ((-1 * (d ^ -2)) * (9 + b))
+	.. evaluated at `vars`:  -0.12267562952198452
+	.. numerical grad:  -0.12267562954360045
+
+f: (ln 3 / d)
+	d-component of gradient: ((-1 * (d ^ -2)) * ln 3)
+	.. evaluated at `vars`:  -0.006117531186199513
+	.. numerical grad:  -0.006117531183014169
+
+f: -8
+→ no gradient to compute
+
+f: 2
+→ no gradient to compute
+
+f: (7 + 1)
+→ no gradient to compute
+
+f: -9
+→ no gradient to compute
+
+f: ln -2
+→ no gradient to compute
+
+f: ln (((-9 * (-9 / exp (d + -1))) - -36) - -5)
+	d-component of gradient: ((81 * (exp (d + -1) * (-1 * (exp (d + -1) ^ -2)))) * (1 / (((-9 * (-9 / exp (d + -1))) - -36) - -5)))
+	.. evaluated at `vars`:  -0.0017510827347779695
+	.. numerical grad:  -0.0017510826122446588
+
+f: exp (d - 13)
+	d-component of gradient: exp (d - 13)
+	.. evaluated at `vars`:  0.00019125167204923883
+	.. numerical grad:  0.0001912516720784397
+
+f: -6
+→ no gradient to compute
+
+f: -1
+→ no gradient to compute
+
+f: e
+	e-component of gradient: 1
+	.. evaluated at `vars`:  1
+	.. numerical grad:  0.9999999992515995
+
+f: exp ((a * -8) / b)
+	a-component of gradient: ((-8 * (b ^ -1)) * exp ((a * -8) / b))
+	.. evaluated at `vars`:  -25.406762912411537
+	.. numerical grad:  -25.406762919288894
+	b-component of gradient: (((-1 * (b ^ -2)) * (a * -8)) * exp ((a * -8) / b))
+	.. evaluated at `vars`:  -10.567685923396674
+	.. numerical grad:  -10.567685921003545
+
+f: exp (exp exp f * (a * a))
+	f-component of gradient: (((exp f * exp exp f) * (a * a)) * exp (exp exp f * (a * a)))
+	.. evaluated at `vars`:  1.4078294454250944e+120
+	.. numerical grad:  1.4078294460063077e+120
+	[Warning]: abs(val-num_g[v]) == 5.8121325889231794e+110 > 1e-2
+	a-component of gradient: (((a + a) * exp exp f) * exp (exp exp f * (a * a)))
+	.. evaluated at `vars`:  -9.138340658453812e+119
+	.. numerical grad:  -9.138340651987538e+119
+	[Warning]: abs(val-num_g[v]) == 6.466274230119423e+110 > 1e-2
+
+f: (d ^ ((c + d) * g))
+	d-component of gradient: ((((c + d) * g) * (d ^ (((c + d) * g) - 1))) + (g * ((d ^ ((c + d) * g)) * ln d)))
+→ math domain error
+
+f: ln (f ^ ((exp exp -1 / f) ^ -4))
+	f-component of gradient: (((((exp exp -1 / f) ^ -4) * (f ^ (((exp exp -1 / f) ^ -4) - 1))) + ((((-1 * (f ^ -2)) * exp exp -1) * (-4 * ((exp exp -1 / f) ^ -5))) * ((f ^ ((exp exp -1 / f) ^ -4)) * ln f))) * (1 / (f ^ ((exp exp -1 / f) ^ -4))))
+	.. evaluated at `vars`:  1.1137432464114467
+	.. numerical grad:  1.1137432462671182
+
+f: (exp a ^ (3 + ln ((exp -3 ^ e) / (f ^ 4))))
+	a-component of gradient: (exp a * ((3 + ln ((exp -3 ^ e) / (f ^ 4))) * (exp a ^ ((3 + ln ((exp -3 ^ e) / (f ^ 4))) - 1))))
+	.. evaluated at `vars`:  1.1692479312195224e-26
+	.. numerical grad:  1.169247931370386e-26
+	e-component of gradient: (((((exp -3 ^ e) * ln exp -3) * ((f ^ 4) ^ -1)) * (1 / ((exp -3 ^ e) / (f ^ 4)))) * ((exp a ^ (3 + ln ((exp -3 ^ e) / (f ^ 4)))) * ln exp a))
+	.. evaluated at `vars`:  9.209111536537437e-27
+	.. numerical grad:  9.209111535319082e-27
+	f-component of gradient: (((((4 * (f ^ 3)) * (-1 * ((f ^ 4) ^ -2))) * (exp -3 ^ e)) * (1 / ((exp -3 ^ e) / (f ^ 4)))) * ((exp a ^ (3 + ln ((exp -3 ^ e) / (f ^ 4)))) * ln exp a))
+	.. evaluated at `vars`:  -4.9790619961023576e-27
+	.. numerical grad:  -4.979061996112853e-27
+
+f: exp (-6 + 3)
+→ no gradient to compute
+
+f: 6
+→ no gradient to compute
+
+f: (a - (9 + b))
+	a-component of gradient: 1
+	.. evaluated at `vars`:  1
+	.. numerical grad:  0.9999999992515995
+	b-component of gradient: -1
+	.. evaluated at `vars`:  -1
+	.. numerical grad:  -0.9999999992515995
+
+f: 3
+→ no gradient to compute
+
+f: d
+	d-component of gradient: 1
+	.. evaluated at `vars`:  1
+	.. numerical grad:  1.000000000139778
+
+f: ln ln -8
+→ no gradient to compute
+
+f: ((e / -1) / (e * exp (e ^ 3)))
+	e-component of gradient: ((-1.0 * ((e * exp (e ^ 3)) ^ -1)) + (((exp (e ^ 3) + (((3 * (e ^ 2)) * exp (e ^ 3)) * e)) * (-1 * ((e * exp (e ^ 3)) ^ -2))) * (e / -1)))
+	.. evaluated at `vars`:  3.3777774286173825e-73
+	.. numerical grad:  3.3777774337575964e-73
+
+f: c
+	c-component of gradient: 1
+	.. evaluated at `vars`:  1
+	.. numerical grad:  1.0000000000287557
+
+f: b
+	b-component of gradient: 1
+	.. evaluated at `vars`:  1
+	.. numerical grad:  0.9999999999177334
+
+f: c
+	c-component of gradient: 1
+	.. evaluated at `vars`:  1
+	.. numerical grad:  0.9999999992515995
+
+f: ((exp -1 - -7) ^ 5)
+→ no gradient to compute
+
+f: (-1 - a)
+	a-component of gradient: -1
+	.. evaluated at `vars`:  -1
+	.. numerical grad:  -0.9999999992515995
+
+f: a
+	a-component of gradient: 1
+	.. evaluated at `vars`:  1
+	.. numerical grad:  0.9999999992515995
+
+f: 10
+→ no gradient to compute
+
+f: ln ln c
+	c-component of gradient: ((1 / c) * (1 / ln c))
+	.. evaluated at `vars`:  0.11636864360751083
+	.. numerical grad:  0.11636864361008747
+
+f: d
+	d-component of gradient: 1
+	.. evaluated at `vars`:  1
+	.. numerical grad:  0.9999999992515995
+
+f: (ln b * f)
+	b-component of gradient: ((1 / b) * f)
+	.. evaluated at `vars`:  1.8686652646726476
+	.. numerical grad:  1.8686652651922486
+	f-component of gradient: ln b
+	.. evaluated at `vars`:  1.9900466648627573
+	.. numerical grad:  1.9900466625699664
+
+f: g
+	g-component of gradient: 1
+	.. evaluated at `vars`:  1
+	.. numerical grad:  1.000000000139778
+
+f: g
+	g-component of gradient: 1
+	.. evaluated at `vars`:  1
+	.. numerical grad:  0.9999999999177334
+
+f: (d * d)
+	d-component of gradient: (d + d)
+	.. evaluated at `vars`:  6.3302364736591565
+	.. numerical grad:  6.330236474560991
+
+f: a
+	a-component of gradient: 1
+	.. evaluated at `vars`:  1
+	.. numerical grad:  0.9999999992515995
+
+f: exp (exp (((((b / f) / -5) - b) ^ b) - a) + 6)
+	b-component of gradient: (((((((f ^ -1) * -0.2) + -1) * (b * ((((b / f) / -5) - b) ^ (b - 1)))) + (((((b / f) / -5) - b) ^ b) * ln (((b / f) / -5) - b))) * exp (((((b / f) / -5) - b) ^ b) - a)) * exp (exp (((((b / f) / -5) - b) ^ b) - a) + 6))
+	.. evaluated at `vars`:  149549932330.2971
+	.. numerical grad:  0.0
+	[Warning]: abs(val-num_g[v]) == 149549932330.2971 > 1e-2
+	f-component of gradient: ((((((-1 * (f ^ -2)) * b) * -0.2) * (b * ((((b / f) / -5) - b) ^ (b - 1)))) * exp (((((b / f) / -5) - b) ^ b) - a)) * exp (exp (((((b / f) / -5) - b) ^ b) - a) + 6))
+	.. evaluated at `vars`:  8323739113.410806
+	.. numerical grad:  0.0
+	[Warning]: abs(val-num_g[v]) == 8323739113.410806 > 1e-2
+	a-component of gradient: ((-1 * exp (((((b / f) / -5) - b) ^ b) - a)) * exp (exp (((((b / f) / -5) - b) ^ b) - a) + 6))
+	.. evaluated at `vars`:  -4.710998624454418e+23
+	.. numerical grad:  -4.710998626564833e+23
+	[Warning]: abs(val-num_g[v]) == 211041539588096.0 > 1e-2
+
+f: 3
+→ no gradient to compute
+
+f: (-9 - (ln ln a / exp e))
+	a-component of gradient: ((((1 / a) * (1 / ln a)) * (exp e ^ -1)) * -1)
+	.. evaluated at `vars`:  -0.8161984621809412
+	.. numerical grad:  -0.816198461706108
+	e-component of gradient: (((exp e * (-1 * (exp e ^ -2))) * ln ln a) * -1)
+	.. evaluated at `vars`:  2.4402454933378968
+	.. numerical grad:  2.440245492785209
+
+f: ((g / a) / ln (4 ^ a))
+	g-component of gradient: ((a ^ -1) * (ln (4 ^ a) ^ -1))
+	.. evaluated at `vars`:  0.1960947724838726
+	.. numerical grad:  0.19609477253101915
+	a-component of gradient: ((((-1 * (a ^ -2)) * g) * (ln (4 ^ a) ^ -1)) + (((((4 ^ a) * ln 4) * (1 / (4 ^ a))) * (-1 * (ln (4 ^ a) ^ -2))) * (g / a)))
+	.. evaluated at `vars`:  -0.8007219267541945
+	.. numerical grad:  -0.8007219265970811
+
+f: ((e ^ (ln ln exp 10 ^ ln exp -9)) ^ ((c * exp exp -2) * 0))
+	e-component of gradient: (((ln ln exp 10 ^ ln exp -9) * (e ^ ((ln ln exp 10 ^ ln exp -9) - 1))) * (((c * exp exp -2) * 0) * ((e ^ (ln ln exp 10 ^ ln exp -9)) ^ (((c * exp exp -2) * 0) - 1))))
+	.. evaluated at `vars`:  -0j
+	.. numerical grad:  0j
+	c-component of gradient: ((exp exp -2 * 0) * (((e ^ (ln ln exp 10 ^ ln exp -9)) ^ ((c * exp exp -2) * 0)) * ln (e ^ (ln ln exp 10 ^ ln exp -9))))
+→ can't convert complex to float
+
+f: (5 - -7)
+→ no gradient to compute
+
+f: c
+	c-component of gradient: 1
+	.. evaluated at `vars`:  1
+	.. numerical grad:  1.000000000139778
+
+f: exp c
+	c-component of gradient: exp c
+	.. evaluated at `vars`:  7.169145900769982e-06
+	.. numerical grad:  7.1691458955610524e-06
+
+f: 0
+→ no gradient to compute
+
+f: g
+	g-component of gradient: 1
+	.. evaluated at `vars`:  1
+	.. numerical grad:  0.9999999992515995
+
+f: (a - b)
+	a-component of gradient: 1
+	.. evaluated at `vars`:  1
+	.. numerical grad:  1.0000000010279564
+	b-component of gradient: -1
+	.. evaluated at `vars`:  -1
+	.. numerical grad:  -0.9999999974752427
+
+f: ((exp -10 ^ f) - 0)
+	f-component of gradient: ((exp -10 ^ f) * ln exp -10)
+	.. evaluated at `vars`:  -2.425572699001566e-14
+	.. numerical grad:  -2.4255726993868918e-14
+
+f: (-5 * ln exp b)
+	b-component of gradient: ((exp b * (1 / exp b)) * -5)
+	.. evaluated at `vars`:  -5.0
+	.. numerical grad:  -4.999999994481641
+
+f: (b + (5 + 7))
+	b-component of gradient: 1
+	.. evaluated at `vars`:  1
+	.. numerical grad:  0.9999999992515995
+
+f: (-5 - (e * exp c))
+	e-component of gradient: (exp c * -1)
+	.. evaluated at `vars`:  -0.046667504904960605
+	.. numerical grad:  -0.04666750497150929
+	c-component of gradient: ((exp c * e) * -1)
+	.. evaluated at `vars`:  0.2446942953501424
+	.. numerical grad:  0.2446942954925646
+
+f: exp 6
+→ no gradient to compute
+
+f: -8
+→ no gradient to compute
+
+f: -5
+→ no gradient to compute
+
+f: ((((ln (a / g) ^ ln 2) / ((f ^ (5.0 - f)) + 6)) * (f + (8 * ((8 / (exp ln g - e)) + ((b * a) - ((e - b) ^ -1)))))) + c)
+	a-component of gradient: ((((((g ^ -1) * (1 / (a / g))) * (ln 2 * (ln (a / g) ^ (ln 2 - 1)))) * (((f ^ (5.0 - f)) + 6) ^ -1)) * (f + (8 * ((8 / (exp ln g - e)) + ((b * a) - ((e - b) ^ -1)))))) + ((b * 8) * ((ln (a / g) ^ ln 2) / ((f ^ (5.0 - f)) + 6))))
+	.. evaluated at `vars`:  (0.01378429510945934-0.006405883422727408j)
+	.. numerical grad:  (0.013784295482821562-0.0064058834244040685j)
+	g-component of gradient: (((((((-1 * (g ^ -2)) * a) * (1 / (a / g))) * (ln 2 * (ln (a / g) ^ (ln 2 - 1)))) * (((f ^ (5.0 - f)) + 6) ^ -1)) * (f + (8 * ((8 / (exp ln g - e)) + ((b * a) - ((e - b) ^ -1)))))) + ((64 * (((1 / g) * exp ln g) * (-1 * ((exp ln g - e) ^ -2)))) * ((ln (a / g) ^ ln 2) / ((f ^ (5.0 - f)) + 6))))
+	.. evaluated at `vars`:  (-0.016006614745366986+0.007438647187767024j)
+	.. numerical grad:  (-0.016006614700359023+0.00743864718780185j)
+	f-component of gradient: (((((((5.0 - f) * (f ^ ((5.0 - f) - 1))) + (-1 * ((f ^ (5.0 - f)) * ln f))) * (-1 * (((f ^ (5.0 - f)) + 6) ^ -2))) * (ln (a / g) ^ ln 2)) * (f + (8 * ((8 / (exp ln g - e)) + ((b * a) - ((e - b) ^ -1)))))) + ((ln (a / g) ^ ln 2) / ((f ^ (5.0 - f)) + 6)))
+→ math domain error
+
+f: (((c * a) * (-8 / exp (e * -10))) ^ a)
+	c-component of gradient: ((a * (-8 / exp (e * -10))) * (a * (((c * a) * (-8 / exp (e * -10))) ^ (a - 1))))
+	.. evaluated at `vars`:  (-1.6297529227739054e+81-3.318061248151538e+80j)
+	.. numerical grad:  (-1.62975292278184e+81-3.3180612481353995e+80j)
+	[Warning]: abs(val-num_g[v]) == 8.097110466270928e+69 > 1e-2
+	a-component of gradient: (((c * (-8 / exp (e * -10))) * (a * (((c * a) * (-8 / exp (e * -10))) ^ (a - 1)))) + ((((c * a) * (-8 / exp (e * -10))) ^ a) * ln ((c * a) * (-8 / exp (e * -10)))))
+→ math domain error
+
+f: -9
+→ no gradient to compute
+
+f: ((f * 0) + -1)
+	f-component of gradient: 0
+	.. evaluated at `vars`:  0
+	.. numerical grad:  0.0
+
+f: b
+	b-component of gradient: 1
+	.. evaluated at `vars`:  1
+	.. numerical grad:  1.000000000139778
+
+f: g
+	g-component of gradient: 1
+	.. evaluated at `vars`:  1
+	.. numerical grad:  0.9999999992515995
+
+f: (b ^ exp -8)
+	b-component of gradient: (exp -8 * (b ^ (exp -8 - 1)))
+	.. evaluated at `vars`:  (-7.831418592045352e-05-8.253432732575166e-08j)
+	.. numerical grad:  (-7.831413295633638e-05-8.253434827937278e-08j)
+
+f: (-2 + ln exp (b * -6))
+	b-component of gradient: ((-6 * exp (b * -6)) * (1 / exp (b * -6)))
+	.. evaluated at `vars`:  -5.999999999999999
+	.. numerical grad:  -5.999999991956884
+
+f: -1
+→ no gradient to compute
+
+f: exp ln (ln a - (b ^ 7))
+	a-component of gradient: (((1 / a) * (1 / (ln a - (b ^ 7)))) * exp ln (ln a - (b ^ 7)))
+	.. evaluated at `vars`:  0.13322416265787246
+	.. numerical grad:  0.13224780559539795
+	b-component of gradient: (((-7 * (b ^ 6)) * (1 / (ln a - (b ^ 7)))) * exp ln (ln a - (b ^ 7)))
+	.. evaluated at `vars`:  -7381965.661075691
+	.. numerical grad:  -7381965.644657612
+	[Warning]: abs(val-num_g[v]) == 0.016418078914284706 > 1e-2
+
+f: exp ((g * e) + (-8 * (((exp 0 / -3) + a) / a)))
+	g-component of gradient: (e * exp ((g * e) + (-8 * (((exp 0 / -3) + a) / a))))
+	.. evaluated at `vars`:  1.7525414722691145e-26
+	.. numerical grad:  1.75254147066687e-26
+	e-component of gradient: (g * exp ((g * e) + (-8 * (((exp 0 / -3) + a) / a))))
+	.. evaluated at `vars`:  -5.544938739231881e-26
+	.. numerical grad:  -5.544938741085101e-26
+	a-component of gradient: ((((a ^ -1) + ((-1 * (a ^ -2)) * ((exp 0 / -3) + a))) * -8) * exp ((g * e) + (-8 * (((exp 0 / -3) + a) / a))))
+	.. evaluated at `vars`:  -7.388957453637326e-28
+	.. numerical grad:  -7.38895736322108e-28
+
+f: 9
+→ no gradient to compute
+
+f: f
+	f-component of gradient: 1
+	.. evaluated at `vars`:  1
+	.. numerical grad:  0.9999999992515995
+
+f: exp 6
+→ no gradient to compute
+
+f: 1
+→ no gradient to compute
+
+f: (1 ^ g)
+	g-component of gradient: ((1 ^ g) * ln 1)
+	.. evaluated at `vars`:  0.0
+	.. numerical grad:  0.0
+
+f: 8
+→ no gradient to compute
+
+f: (f * c)
+	f-component of gradient: c
+	.. evaluated at `vars`:  -11.470130687528512
+	.. numerical grad:  -11.470130687030178
+	c-component of gradient: f
+	.. evaluated at `vars`:  12.393399636469958
+	.. numerical grad:  12.393399629218038
+
+f: 6
+→ no gradient to compute
+
+f: (ln 1 * (ln exp ((c / (-8 / e)) + -10) ^ (g / (-7 ^ (((-5 * a) - 8) + (-2 * e))))))
+	c-component of gradient: ((((((-8 / e) ^ -1) * exp ((c / (-8 / e)) + -10)) * (1 / exp ((c / (-8 / e)) + -10))) * ((g / (-7 ^ (((-5 * a) - 8) + (-2 * e)))) * (ln exp ((c / (-8 / e)) + -10) ^ ((g / (-7 ^ (((-5 * a) - 8) + (-2 * e)))) - 1)))) * ln 1)
+	.. evaluated at `vars`:  (nan+nanj)
+	.. numerical grad:  (nan+nanj)
+	e-component of gradient: ((((((((8 * (e ^ -2)) * (-1 * ((-8 / e) ^ -2))) * c) * exp ((c / (-8 / e)) + -10)) * (1 / exp ((c / (-8 / e)) + -10))) * ((g / (-7 ^ (((-5 * a) - 8) + (-2 * e)))) * (ln exp ((c / (-8 / e)) + -10) ^ ((g / (-7 ^ (((-5 * a) - 8) + (-2 * e)))) - 1)))) + ((((-2 * ((-7 ^ (((-5 * a) - 8) + (-2 * e))) * ln -7)) * (-1 * ((-7 ^ (((-5 * a) - 8) + (-2 * e))) ^ -2))) * g) * ((ln exp ((c / (-8 / e)) + -10) ^ (g / (-7 ^ (((-5 * a) - 8) + (-2 * e))))) * ln ln exp ((c / (-8 / e)) + -10)))) * ln 1)
+→ math domain error
+
+f: (b ^ exp e)
+	b-component of gradient: (exp e * (b ^ (exp e - 1)))
+	.. evaluated at `vars`:  14.96994615734247
+	.. numerical grad:  14.96994615024505
+	e-component of gradient: (exp e * ((b ^ exp e) * ln b))
+	.. evaluated at `vars`:  281.5087184633206
+	.. numerical grad:  281.5087184586673
+
+f: d
+	d-component of gradient: 1
+	.. evaluated at `vars`:  1
+	.. numerical grad:  1.000000000139778
+
+f: (a - b)
+	a-component of gradient: 1
+	.. evaluated at `vars`:  1
+	.. numerical grad:  1.000000000139778
+	b-component of gradient: -1
+	.. evaluated at `vars`:  -1
+	.. numerical grad:  -0.9999999992515995
+
+f: ((exp a * g) - -9)
+	a-component of gradient: (exp a * g)
+	.. evaluated at `vars`:  -102622.67916790997
+	.. numerical grad:  -102622.6790927467
+	g-component of gradient: exp a
+	.. evaluated at `vars`:  6971.245998825481
+	.. numerical grad:  6971.2459880975075
+
+f: exp (f / (((((ln 1.52587890625e-05 * -3) / (5 - exp d)) + 7) / (5 / (b - (b * (c / b))))) * (((exp 5 + -6) + c) / g)))
+	f-component of gradient: (((((((ln 1.52587890625e-05 * -3) / (5 - exp d)) + 7) / (5 / (b - (b * (c / b))))) * (((exp 5 + -6) + c) / g)) ^ -1) * exp (f / (((((ln 1.52587890625e-05 * -3) / (5 - exp d)) + 7) / (5 / (b - (b * (c / b))))) * (((exp 5 + -6) + c) / g))))
+	.. evaluated at `vars`:  0.0005421493891525672
+	.. numerical grad:  0.0005421494364554746
+	d-component of gradient: ((((((((exp d * -1) * (-1 * ((5 - exp d) ^ -2))) * (ln 1.52587890625e-05 * -3)) * ((5 / (b - (b * (c / b)))) ^ -1)) * (((exp 5 + -6) + c) / g)) * (-1 * ((((((ln 1.52587890625e-05 * -3) / (5 - exp d)) + 7) / (5 / (b - (b * (c / b))))) * (((exp 5 + -6) + c) / g)) ^ -2))) * f) * exp (f / (((((ln 1.52587890625e-05 * -3) / (5 - exp d)) + 7) / (5 / (b - (b * (c / b))))) * (((exp 5 + -6) + c) / g))))
+	.. evaluated at `vars`:  -0.00012838333331920937
+	.. numerical grad:  -0.00012838341501009154
+	b-component of gradient: (((((((((1 + (((c / b) + (((-1 * (b ^ -2)) * c) * b)) * -1)) * (-1 * ((b - (b * (c / b))) ^ -2))) * 5) * (-1 * ((5 / (b - (b * (c / b)))) ^ -2))) * (((ln 1.52587890625e-05 * -3) / (5 - exp d)) + 7)) * (((exp 5 + -6) + c) / g)) * (-1 * ((((((ln 1.52587890625e-05 * -3) / (5 - exp d)) + 7) / (5 / (b - (b * (c / b))))) * (((exp 5 + -6) + c) / g)) ^ -2))) * f) * exp (f / (((((ln 1.52587890625e-05 * -3) / (5 - exp d)) + 7) / (5 / (b - (b * (c / b))))) * (((exp 5 + -6) + c) / g))))
+	.. evaluated at `vars`:  -0.00039415128704659404
+	.. numerical grad:  -0.0003941512671801206
+	c-component of gradient: ((((((((((((b ^ -1) * b) * -1) * (-1 * ((b - (b * (c / b))) ^ -2))) * 5) * (-1 * ((5 / (b - (b * (c / b)))) ^ -2))) * (((ln 1.52587890625e-05 * -3) / (5 - exp d)) + 7)) * (((exp 5 + -6) + c) / g)) + ((g ^ -1) * ((((ln 1.52587890625e-05 * -3) / (5 - exp d)) + 7) / (5 / (b - (b * (c / b))))))) * (-1 * ((((((ln 1.52587890625e-05 * -3) / (5 - exp d)) + 7) / (5 / (b - (b * (c / b))))) * (((exp 5 + -6) + c) / g)) ^ -2))) * f) * exp (f / (((((ln 1.52587890625e-05 * -3) / (5 - exp d)) + 7) / (5 / (b - (b * (c / b))))) * (((exp 5 + -6) + c) / g))))
+	.. evaluated at `vars`:  0.00034711330174443854
+	.. numerical grad:  0.000347113338072802
+	g-component of gradient: ((((((-1 * (g ^ -2)) * ((exp 5 + -6) + c)) * ((((ln 1.52587890625e-05 * -3) / (5 - exp d)) + 7) / (5 / (b - (b * (c / b)))))) * (-1 * ((((((ln 1.52587890625e-05 * -3) / (5 - exp d)) + 7) / (5 / (b - (b * (c / b))))) * (((exp 5 + -6) + c) / g)) ^ -2))) * f) * exp (f / (((((ln 1.52587890625e-05 * -3) / (5 - exp d)) + 7) / (5 / (b - (b * (c / b))))) * (((exp 5 + -6) + c) / g))))
+	.. evaluated at `vars`:  0.003919759539456776
+	.. numerical grad:  0.003919759516968213
+
+f: -1
+→ no gradient to compute
+
+f: 0
+→ no gradient to compute
+
+f: 6
+→ no gradient to compute
+
+f: a
+	a-component of gradient: 1
+	.. evaluated at `vars`:  1
+	.. numerical grad:  0.9999999999177334
+
+f: ln (-8 / (((10 + ln 3) - (g + a)) + ((exp (5 ^ b) / 5) * -8)))
+	g-component of gradient: ((-8 * ((((10 + ln 3) - (g + a)) + ((exp (5 ^ b) / 5) * -8)) ^ -2)) * (1 / (-8 / (((10 + ln 3) - (g + a)) + ((exp (5 ^ b) / 5) * -8)))))
+	.. evaluated at `vars`:  -0.138285875307525
+	.. numerical grad:  -0.13828587519526536
+	a-component of gradient: ((-8 * ((((10 + ln 3) - (g + a)) + ((exp (5 ^ b) / 5) * -8)) ^ -2)) * (1 / (-8 / (((10 + ln 3) - (g + a)) + ((exp (5 ^ b) / 5) * -8)))))
+	.. evaluated at `vars`:  -0.138285875307525
+	.. numerical grad:  -0.13828587519526536
+	b-component of gradient: ((((-1.6 * (((5 ^ b) * ln 5) * exp (5 ^ b))) * (-1 * ((((10 + ln 3) - (g + a)) + ((exp (5 ^ b) / 5) * -8)) ^ -2))) * -8) * (1 / (-8 / (((10 + ln 3) - (g + a)) + ((exp (5 ^ b) / 5) * -8)))))
+	.. evaluated at `vars`:  -4.118217032275855e-06
+	.. numerical grad:  -4.118205776393324e-06
+
+f: d
+	d-component of gradient: 1
+	.. evaluated at `vars`:  1
+	.. numerical grad:  0.9999999992515995
+
+f: b
+	b-component of gradient: 1
+	.. evaluated at `vars`:  1
+	.. numerical grad:  0.9999999992515995
+
+f: exp ln (f ^ c)
+	f-component of gradient: (((c * (f ^ (c - 1))) * (1 / (f ^ c))) * exp ln (f ^ c))
+	.. evaluated at `vars`:  804530.1167766621
+	.. numerical grad:  804530.1166712306
+	c-component of gradient: ((((f ^ c) * ln f) * (1 / (f ^ c))) * exp ln (f ^ c))
+	.. evaluated at `vars`:  427187.5660771186
+	.. numerical grad:  427187.56588874385
+
+f: (exp (1 ^ c) + -9)
+	c-component of gradient: (((1 ^ c) * ln 1) * exp (1 ^ c))
+	.. evaluated at `vars`:  0.0
+	.. numerical grad:  0.0
+
+f: (b * ln 7)
+	b-component of gradient: ln 7
+	.. evaluated at `vars`:  1.9459101490553132
+	.. numerical grad:  1.9459101494589959
+
+f: (((-5 - g) + f) - ((3 - (exp exp 0 ^ f)) ^ ln (1 / (g + 5))))
+	g-component of gradient: (-1 + ((((-1 * ((g + 5) ^ -2)) * (1 / (1 / (g + 5)))) * (((3 - (exp exp 0 ^ f)) ^ ln (1 / (g + 5))) * ln (3 - (exp exp 0 ^ f)))) * -1))
+→ math domain error
+
+f: e
+	e-component of gradient: 1
+	.. evaluated at `vars`:  1
+	.. numerical grad:  0.9999999999177334
+
+f: ((9 ^ -9) ^ (6 + (((5 * ln (ln (d - -10) / (f * (-6 + c)))) + f) - (e ^ g))))
+	d-component of gradient: (((((1 / (d - -10)) * ((f * (-6 + c)) ^ -1)) * (1 / (ln (d - -10) / (f * (-6 + c))))) * 5) * ((2.581174791713197e-09 ^ (6 + (((5 * ln (ln (d - -10) / (f * (-6 + c)))) + f) - (e ^ g)))) * ln 2.581174791713197e-09))
+	.. evaluated at `vars`:  -2.3613949690078452e+222
+	.. numerical grad:  -2.3613949731973698e+222
+	[Warning]: abs(val-num_g[v]) == 4.1895245557930733e+213 > 1e-2
+	f-component of gradient: (((((((-6 + c) * (-1 * ((f * (-6 + c)) ^ -2))) * ln (d - -10)) * (1 / (ln (d - -10) / (f * (-6 + c))))) * 5) + 1) * ((2.581174791713197e-09 ^ (6 + (((5 * ln (ln (d - -10) / (f * (-6 + c)))) + f) - (e ^ g)))) * ln 2.581174791713197e-09))
+	.. evaluated at `vars`:  -1.2290875315052953e+223
+	.. numerical grad:  -1.2290875313170225e+223
+	[Warning]: abs(val-num_g[v]) == 1.882727978339942e+213 > 1e-2
+	c-component of gradient: (((((f * (-1 * ((f * (-6 + c)) ^ -2))) * ln (d - -10)) * (1 / (ln (d - -10) / (f * (-6 + c))))) * 5) * ((2.581174791713197e-09 ^ (6 + (((5 * ln (ln (d - -10) / (f * (-6 + c)))) + f) - (e ^ g)))) * ln 2.581174791713197e-09))
+	.. evaluated at `vars`:  -9.470476867756568e+222
+	.. numerical grad:  -9.470476861497077e+222
+	[Warning]: abs(val-num_g[v]) == 6.259491091134902e+213 > 1e-2
+	e-component of gradient: (((g * (e ^ (g - 1))) * -1) * ((2.581174791713197e-09 ^ (6 + (((5 * ln (ln (d - -10) / (f * (-6 + c)))) + f) - (e ^ g)))) * ln 2.581174791713197e-09))
+	.. evaluated at `vars`:  -4.3005677097707644e+210
+	.. numerical grad:  0.0
+	[Warning]: abs(val-num_g[v]) == 4.3005677097707644e+210 > 1e-2
+	g-component of gradient: ((((e ^ g) * ln e) * -1) * ((2.581174791713197e-09 ^ (6 + (((5 * ln (ln (d - -10) / (f * (-6 + c)))) + f) - (e ^ g)))) * ln 2.581174791713197e-09))
+	.. evaluated at `vars`:  9.570616098798221e+210
+	.. numerical grad:  0.0
+	[Warning]: abs(val-num_g[v]) == 9.570616098798221e+210 > 1e-2
+
+f: e
+	e-component of gradient: 1
+	.. evaluated at `vars`:  1
+	.. numerical grad:  1.000000000139778
+
+f: b
+	b-component of gradient: 1
+	.. evaluated at `vars`:  1
+	.. numerical grad:  1.000000000139778
+
+f: (-1 * (-7 / ((1 - (a + d)) ^ (exp b + -2))))
+	a-component of gradient: (7 * ((-1 * ((exp b + -2) * ((1 - (a + d)) ^ ((exp b + -2) - 1)))) * (-1 * (((1 - (a + d)) ^ (exp b + -2)) ^ -2))))
+	.. evaluated at `vars`:  (173.02335618945995-0.000832517520086438j)
+	.. numerical grad:  (173.02335606927954-0.0008325175201995272j)
+	d-component of gradient: (7 * ((-1 * ((exp b + -2) * ((1 - (a + d)) ^ ((exp b + -2) - 1)))) * (-1 * (((1 - (a + d)) ^ (exp b + -2)) ^ -2))))
+	.. evaluated at `vars`:  (173.02335618945995-0.000832517520086438j)
+	.. numerical grad:  (173.02335618296638-0.000832517520633208j)
+	b-component of gradient: (7 * ((exp b * (((1 - (a + d)) ^ (exp b + -2)) * ln (1 - (a + d)))) * (-1 * (((1 - (a + d)) ^ (exp b + -2)) ^ -2))))
+→ math domain error
+
+f: d
+	d-component of gradient: 1
+	.. evaluated at `vars`:  1
+	.. numerical grad:  1.000000000139778
+
+f: ((((((e - f) - 5) / ((4 * e) - (8 * g))) + 10) + b) - (a ^ exp exp (a / exp b)))
+	e-component of gradient: ((((4 * e) - (8 * g)) ^ -1) + ((-4 * (((4 * e) - (8 * g)) ^ -2)) * ((e - f) - 5)))
+	.. evaluated at `vars`:  0.014449349660744893
+	.. numerical grad:  (0.014449341279032524+0j)
+	f-component of gradient: (-1 * (((4 * e) - (8 * g)) ^ -1))
+	.. evaluated at `vars`:  -0.01074604547078311
+	.. numerical grad:  (-0.010746049383669742+0j)
+	g-component of gradient: ((8 * (((4 * e) - (8 * g)) ^ -2)) * ((e - f) - 5))
+	.. evaluated at `vars`:  -0.007406608379923566
+	.. numerical grad:  (-0.007406612212434993+0j)
+	b-component of gradient: (1 + ((((((exp b * (-1 * (exp b ^ -2))) * a) * exp (a / exp b)) * exp exp (a / exp b)) * ((a ^ exp exp (a / exp b)) * ln a)) * -1))
+→ math domain error
+
+f: 0
+→ no gradient to compute
+
+f: 9
+→ no gradient to compute
+
+f: c
+	c-component of gradient: 1
+	.. evaluated at `vars`:  1
+	.. numerical grad:  0.9999999992515995
+
+f: ln (5 - (a ^ -4))
+	a-component of gradient: ((4 * (a ^ -5)) * (1 / (5 - (a ^ -4))))
+	.. evaluated at `vars`:  -3.8046342729768985e-06
+	.. numerical grad:  -3.804623283087949e-06
+
+f: exp (8 ^ ln -4)
+→ no gradient to compute
+
+f: ((e - 7) ^ (d - ((3 - ((g / -3) + (c + b))) + -1)))
+	e-component of gradient: ((d - ((3 - ((g / -3) + (c + b))) + -1)) * ((e - 7) ^ ((d - ((3 - ((g / -3) + (c + b))) + -1)) - 1)))
+	.. evaluated at `vars`:  -21606.144872740333
+	.. numerical grad:  -21606.144879854128
+	d-component of gradient: (((e - 7) ^ (d - ((3 - ((g / -3) + (c + b))) + -1))) * ln (e - 7))
+	.. evaluated at `vars`:  -184.3061347580799
+	.. numerical grad:  -184.30613459941014
+	g-component of gradient: (-0.3333333333333333 * (((e - 7) ^ (d - ((3 - ((g / -3) + (c + b))) + -1))) * ln (e - 7)))
+	.. evaluated at `vars`:  61.4353782526933
+	.. numerical grad:  61.435378427177056
+	c-component of gradient: (((e - 7) ^ (d - ((3 - ((g / -3) + (c + b))) + -1))) * ln (e - 7))
+	.. evaluated at `vars`:  -184.3061347580799
+	.. numerical grad:  -184.30613494047066
+	b-component of gradient: (((e - 7) ^ (d - ((3 - ((g / -3) + (c + b))) + -1))) * ln (e - 7))
+	.. evaluated at `vars`:  -184.3061347580799
+	.. numerical grad:  -184.30613431519305
+
+f: (ln 1 * ((exp e ^ (6 - c)) / (c ^ a)))
+	e-component of gradient: (((exp e * ((6 - c) * (exp e ^ ((6 - c) - 1)))) * ((c ^ a) ^ -1)) * ln 1)
+	.. evaluated at `vars`:  0j
+	.. numerical grad:  0j
+	c-component of gradient: ((((-1 * ((exp e ^ (6 - c)) * ln exp e)) * ((c ^ a) ^ -1)) + (((a * (c ^ (a - 1))) * (-1 * ((c ^ a) ^ -2))) * (exp e ^ (6 - c)))) * ln 1)
+	.. evaluated at `vars`:  0j
+	.. numerical grad:  0j
+	a-component of gradient: (((((c ^ a) * ln c) * (-1 * ((c ^ a) ^ -2))) * (exp e ^ (6 - c))) * ln 1)
+→ math domain error
+
+f: ((e + exp ln 7) * (((c ^ (-6 / (8 - b))) ^ (ln e - a)) - (2 + ((a * exp (exp 4 * (a * g))) / -8))))
+	e-component of gradient: ((((c ^ (-6 / (8 - b))) ^ (ln e - a)) - (2 + ((a * exp (exp 4 * (a * g))) / -8))) + (((1 / e) * (((c ^ (-6 / (8 - b))) ^ (ln e - a)) * ln (c ^ (-6 / (8 - b))))) * (e + exp ln 7)))
+→ can't convert complex to float
+
+f: ln ln ln 2
+→ no gradient to compute
+
+f: e
+	e-component of gradient: 1
+	.. evaluated at `vars`:  1
+	.. numerical grad:  1.000000000001
+
+f: 0
+→ no gradient to compute
+
+f: (6 * ((((2 ^ (-4 + e)) + ((7 - (c * 10)) / 10)) ^ (-8 ^ (b - (exp e * 5.0)))) - ((g + ((d + a) - ((b * 1) ^ 7))) + ln f)))
+	e-component of gradient: (((((2 ^ (-4 + e)) * ln 2) * ((-8 ^ (b - (exp e * 5.0))) * (((2 ^ (-4 + e)) + ((7 - (c * 10)) / 10)) ^ ((-8 ^ (b - (exp e * 5.0))) - 1)))) + (((-5.0 * exp e) * ((-8 ^ (b - (exp e * 5.0))) * ln -8)) * ((((2 ^ (-4 + e)) + ((7 - (c * 10)) / 10)) ^ (-8 ^ (b - (exp e * 5.0)))) * ln ((2 ^ (-4 + e)) + ((7 - (c * 10)) / 10))))) * 6)
+→ math domain error
+
+f: (e - b)
+	e-component of gradient: 1
+	.. evaluated at `vars`:  1
+	.. numerical grad:  1.000000000139778
+	b-component of gradient: -1
+	.. evaluated at `vars`:  -1
+	.. numerical grad:  -1.000000000139778
+
+f: (-5 ^ -1)
+→ no gradient to compute
+
+f: (((-6 + e) / -6) / (-35 / ((d + g) + c)))
+	e-component of gradient: (-0.16666666666666666 * ((-35 / ((d + g) + c)) ^ -1))
+	.. evaluated at `vars`:  -0.027440989068914567
+	.. numerical grad:  -0.02744098907825343
+	d-component of gradient: (((35 * (((d + g) + c) ^ -2)) * (-1 * ((-35 / ((d + g) + c)) ^ -2))) * ((-6 + e) / -6))
+	.. evaluated at `vars`:  -0.042796082654272316
+	.. numerical grad:  -0.04279608262214296
+	g-component of gradient: (((35 * (((d + g) + c) ^ -2)) * (-1 * ((-35 / ((d + g) + c)) ^ -2))) * ((-6 + e) / -6))
+	.. evaluated at `vars`:  -0.042796082654272316
+	.. numerical grad:  -0.04279608262214296
+	c-component of gradient: (((35 * (((d + g) + c) ^ -2)) * (-1 * ((-35 / ((d + g) + c)) ^ -2))) * ((-6 + e) / -6))
+	.. evaluated at `vars`:  -0.042796082654272316
+	.. numerical grad:  -0.042796082663776325
+
+f: 3
+→ no gradient to compute
+
+f: exp -8
+→ no gradient to compute
+
+f: d
+	d-component of gradient: 1
+	.. evaluated at `vars`:  1
+	.. numerical grad:  0.9999999999177334
+
+f: exp -1
+→ no gradient to compute
+
+f: g
+	g-component of gradient: 1
+	.. evaluated at `vars`:  1
+	.. numerical grad:  1.000000000139778
+
+f: 1
+→ no gradient to compute
+
+f: exp ln (f / (f + 5))
+	f-component of gradient: (((((f + 5) ^ -1) + ((-1 * ((f + 5) ^ -2)) * f)) * (1 / (f / (f + 5)))) * exp ln (f / (f + 5)))
+	.. evaluated at `vars`:  0.022294165215465254
+	.. numerical grad:  0.022294165236136365
+
+f: exp f
+	f-component of gradient: exp f
+	.. evaluated at `vars`:  4.393072833819078e-07
+	.. numerical grad:  4.3930728304346764e-07
+
+f: (exp (c / (e / d)) - 3)
+	c-component of gradient: (((e / d) ^ -1) * exp (c / (e / d)))
+	.. evaluated at `vars`:  5.136574173675701
+	.. numerical grad:  5.1365741686737465
+	e-component of gradient: ((((d ^ -1) * (-1 * ((e / d) ^ -2))) * c) * exp (c / (e / d)))
+	.. evaluated at `vars`:  -4.212287050631272
+	.. numerical grad:  -4.212287050719965
+	d-component of gradient: (((((-1 * (d ^ -2)) * e) * (-1 * ((e / d) ^ -2))) * c) * exp (c / (e / d)))
+	.. evaluated at `vars`:  15.035092570085746
+	.. numerical grad:  15.035092575388376
+
+f: -9
+→ no gradient to compute
+
+f: (exp d / (((exp -8 ^ 4) / f) ^ ln a))
+	d-component of gradient: (exp d * ((((exp -8 ^ 4) / f) ^ ln a) ^ -1))
+	.. evaluated at `vars`:  (-3.2003913644078757e+34-6.901570569844287e+34j)
+	.. numerical grad:  (-3.2003913620145338e+34-6.901570564414306e+34j)
+	[Warning]: abs(val-num_g[v]) == 5.934035489877293e+25 > 1e-2
+	f-component of gradient: (((((-1 * (f ^ -2)) * (exp -8 ^ 4)) * (ln a * (((exp -8 ^ 4) / f) ^ (ln a - 1)))) * (-1 * ((((exp -8 ^ 4) / f) ^ ln a) ^ -2))) * exp d)
+	.. evaluated at `vars`:  (1.077121838204048e+34+2.322788538101502e+34j)
+	.. numerical grad:  (1.0771218381926029e+34+2.3227885383467723e+34j)
+	[Warning]: abs(val-num_g[v]) == 2.4553710025042547e+24 > 1e-2
+	a-component of gradient: ((((1 / a) * ((((exp -8 ^ 4) / f) ^ ln a) * ln ((exp -8 ^ 4) / f))) * (-1 * ((((exp -8 ^ 4) / f) ^ ln a) ^ -2))) * exp d)
+→ math domain error
+
+f: 8
+→ no gradient to compute
+
+f: -1
+→ no gradient to compute
+
+f: 1
+→ no gradient to compute
+
+f: exp exp (b * 100000000)
+	b-component of gradient: ((100000000 * exp (b * 100000000)) * exp exp (b * 100000000))
+	.. evaluated at `vars`:  0.0
+	.. numerical grad:  0.0
+
+f: a
+	a-component of gradient: 1
+	.. evaluated at `vars`:  1
+	.. numerical grad:  1.000000000139778
+
+f: ln ln (exp exp -6 * 7)
+→ no gradient to compute
+
+f: d
+	d-component of gradient: 1
+	.. evaluated at `vars`:  1
+	.. numerical grad:  1.000000000139778
+
+f: (exp f + -8)
+	f-component of gradient: exp f
+	.. evaluated at `vars`:  23510.667108771242
+	.. numerical grad:  23510.66709161387
+
+f: (((10 / (((b - -4) - 9) + 2)) ^ ln (exp exp 4 / (g * 5))) + exp b)
+	b-component of gradient: (((-10 * ((((b - -4) - 9) + 2) ^ -2)) * (ln (exp exp 4 / (g * 5)) * ((10 / (((b - -4) - 9) + 2)) ^ (ln (exp exp 4 / (g * 5)) - 1)))) + exp b)
+	.. evaluated at `vars`:  (3.7767849790981214e+29+4.240933290918411e+30j)
+	.. numerical grad:  (3.776784978179676e+29+4.240933289890672e+30j)
+	[Warning]: abs(val-num_g[v]) == 1.0318345956696688e+21 > 1e-2
+	g-component of gradient: ((((-5 * ((g * 5) ^ -2)) * exp exp 4) * (1 / (exp exp 4 / (g * 5)))) * (((10 / (((b - -4) - 9) + 2)) ^ ln (exp exp 4 / (g * 5))) * ln (10 / (((b - -4) - 9) + 2))))
+→ math domain error
+
+f: 9
+→ no gradient to compute
+
+f: (10 * ((((exp 0 * f) + g) / ((f + e) - 7)) + ((d * ln f) + ln (2 + d))))
+	f-component of gradient: ((((exp 0 * (((f + e) - 7) ^ -1)) + ((-1 * (((f + e) - 7) ^ -2)) * ((exp 0 * f) + g))) + ((1 / f) * d)) * 10)
+	.. evaluated at `vars`:  6.884236653259769
+	.. numerical grad:  6.884236640303243
+	g-component of gradient: ((((f + e) - 7) ^ -1) * 10)
+	.. evaluated at `vars`:  1.0680956910457455
+	.. numerical grad:  1.0680956847863854
+	e-component of gradient: (((-1 * (((f + e) - 7) ^ -2)) * ((exp 0 * f) + g)) * 10)
+	.. evaluated at `vars`:  -0.8180486445844264
+	.. numerical grad:  -0.8180486616993221
+	d-component of gradient: ((ln f + (1 / (2 + d))) * 10)
+	.. evaluated at `vars`:  25.759755746767127
+	.. numerical grad:  25.75975575780376
+
+f: ((2 ^ -1) / (d * (2 / (8 / (c - -7)))))
+	d-component of gradient: (((2 / (8 / (c - -7))) * (-1 * ((d * (2 / (8 / (c - -7)))) ^ -2))) * 0.5)
+	.. evaluated at `vars`:  -0.007466056860711719
+	.. numerical grad:  -0.007466056863025816
+	c-component of gradient: ((((((-8 * ((c - -7) ^ -2)) * (-1 * ((8 / (c - -7)) ^ -2))) * 2) * d) * (-1 * ((d * (2 / (8 / (c - -7)))) ^ -2))) * 0.5)
+	.. evaluated at `vars`:  0.007279333812981137
+	.. numerical grad:  0.007279333809340205
+
+f: (2 * f)
+	f-component of gradient: 2
+	.. evaluated at `vars`:  2
+	.. numerical grad:  2.000000000279556
+
+f: (((c + 5) ^ e) + ((-5 - -10) * d))
+	c-component of gradient: (e * ((c + 5) ^ (e - 1)))
+	.. evaluated at `vars`:  -1.1913885417105167e-07
+	.. numerical grad:  -1.1901590823981678e-07
+	e-component of gradient: (((c + 5) ^ e) * ln (c + 5))
+	.. evaluated at `vars`:  7.26438904966745e-07
+	.. numerical grad:  7.265299473147024e-07
+	d-component of gradient: 5
+	.. evaluated at `vars`:  5
+	.. numerical grad:  4.999999999810711
+
+f: f
+	f-component of gradient: 1
+	.. evaluated at `vars`:  1
+	.. numerical grad:  1.000000000139778
+
+f: 0
+→ no gradient to compute
+
+f: (8 ^ (4 - exp (-3 / exp d)))
+	d-component of gradient: (((((exp d * (-1 * (exp d ^ -2))) * -3) * exp (-3 / exp d)) * -1) * ((8 ^ (4 - exp (-3 / exp d))) * ln 8))
+	.. evaluated at `vars`:  -0.005521450071094561
+	.. numerical grad:  -0.005521542334463447
+
+f: 9
+→ no gradient to compute
+
+f: (g ^ g)
+	g-component of gradient: ((g * (g ^ (g - 1))) + ((g ^ g) * ln g))
+→ math domain error
+
+f: exp -8
+→ no gradient to compute
+
+f: exp (d * a)
+	d-component of gradient: (a * exp (d * a))
+	.. evaluated at `vars`:  3.636973795678953e+17
+	.. numerical grad:  3.63697379256e+17
+	[Warning]: abs(val-num_g[v]) == 311895296.0 > 1e-2
+	a-component of gradient: (d * exp (d * a))
+	.. evaluated at `vars`:  9.783902649116067e+17
+	.. numerical grad:  9.78390264864e+17
+	[Warning]: abs(val-num_g[v]) == 47606656.0 > 1e-2
+
+f: ln e
+	e-component of gradient: (1 / e)
+	.. evaluated at `vars`:  0.37501764034777096
+	.. numerical grad:  0.375017640386055
+
+f: b
+	b-component of gradient: 1
+	.. evaluated at `vars`:  1
+	.. numerical grad:  1.000000000139778
+
+f: 2
+→ no gradient to compute
+
+f: ((d / (ln 9 / g)) + ((d + ((c - g) / c)) / (c - exp a)))
+	d-component of gradient: (((ln 9 / g) ^ -1) + ((c - exp a) ^ -1))
+	.. evaluated at `vars`:  -3.796668331453118
+	.. numerical grad:  -3.7966683317236516
+	g-component of gradient: (((((-1 * (g ^ -2)) * ln 9) * (-1 * ((ln 9 / g) ^ -2))) * d) + ((-1 * (c ^ -1)) * ((c - exp a) ^ -1)))
+	.. evaluated at `vars`:  -1.9131445333912873
+	.. numerical grad:  -1.913144531684452
+	c-component of gradient: ((((c ^ -1) + ((-1 * (c ^ -2)) * (c - g))) * ((c - exp a) ^ -1)) + ((-1 * ((c - exp a) ^ -2)) * (d + ((c - g) / c))))
+	.. evaluated at `vars`:  0.035814814282828136
+	.. numerical grad:  0.0358148142254322
+	a-component of gradient: (((exp a * -1) * (-1 * ((c - exp a) ^ -2))) * (d + ((c - g) / c)))
+	.. evaluated at `vars`:  -0.0005591140509555831
+	.. numerical grad:  -0.000559113644271747
+
+f: (-6 * g)
+	g-component of gradient: -6
+	.. evaluated at `vars`:  -6
+	.. numerical grad:  -5.999999999950489
+
+f: g
+	g-component of gradient: 1
+	.. evaluated at `vars`:  1
+	.. numerical grad:  1.000000000139778
+
+f: d
+	d-component of gradient: 1
+	.. evaluated at `vars`:  1
+	.. numerical grad:  0.9999999992515995
+
+f: (9 ^ d)
+	d-component of gradient: ((9 ^ d) * ln 9)
+	.. evaluated at `vars`:  191144217.74058563
+	.. numerical grad:  191144217.6029086
+	[Warning]: abs(val-num_g[v]) == 0.13767701387405396 > 1e-2
+
+f: d
+	d-component of gradient: 1
+	.. evaluated at `vars`:  1
+	.. numerical grad:  1.000000000139778
+
+f: ln a
+	a-component of gradient: (1 / a)
+	.. evaluated at `vars`:  0.08141322913188924
+	.. numerical grad:  0.08141322904720028
+
+f: (0 ^ ln ((4 / ((f - a) + (ln (e + d) / 9))) * 9))
+	f-component of gradient: (((-36 * (((f - a) + (ln (e + d) / 9)) ^ -2)) * (1 / ((4 / ((f - a) + (ln (e + d) / 9))) * 9))) * ((0 ^ ln ((4 / ((f - a) + (ln (e + d) / 9))) * 9)) * ln 0))
+→ math domain error
+
+f: ((7 - (exp -7 + ((f ^ c) + g))) + (-1 - c))
+	f-component of gradient: ((c * (f ^ (c - 1))) * -1)
+	.. evaluated at `vars`:  1.0571173858849314e-06
+	.. numerical grad:  1.056932319443149e-06
+	c-component of gradient: ((((f ^ c) * ln f) * -1) + -1)
+	.. evaluated at `vars`:  -1.0000004350179452
+	.. numerical grad:  -1.0000004344590252
+	g-component of gradient: -1
+	.. evaluated at `vars`:  -1
+	.. numerical grad:  -0.9999999992515995
+
+f: ln b
+	b-component of gradient: (1 / b)
+	.. evaluated at `vars`:  0.22871221395783453
+	.. numerical grad:  0.22871221394549224
+
+f: exp -7
+→ no gradient to compute
+
+f: ln e
+	e-component of gradient: (1 / e)
+	.. evaluated at `vars`:  1.402546354511251
+	.. numerical grad:  1.4025463545563888
+
+f: exp ((-56 * ln (-4 / (9 / e))) - -1)
+	e-component of gradient: ((-56 * ((((-9 * (e ^ -2)) * (-1 * ((9 / e) ^ -2))) * -4) * (1 / (-4 / (9 / e))))) * exp ((-56 * ln (-4 / (9 / e))) - -1))
+	.. evaluated at `vars`:  731.5567882005746
+	.. numerical grad:  731.5567884198515
+
+f: (g + g)
+	g-component of gradient: (1 + 1)
+	.. evaluated at `vars`:  2
+	.. numerical grad:  2.000000000279556
+
+f: 3
+→ no gradient to compute
+
+f: 2
+→ no gradient to compute
+
+f: exp e
+	e-component of gradient: exp e
+	.. evaluated at `vars`:  119160.80859809493
+	.. numerical grad:  119160.80850642174
+
+f: (-2 - ln a)
+	a-component of gradient: ((1 / a) * -1)
+	.. evaluated at `vars`:  -1.0126229785916667
+	.. numerical grad:  -1.0126229785800689
+
+f: (((((e + (1 - e)) - (-6 ^ c)) + e) - a) * f)
+	e-component of gradient: (1 * f)
+	.. evaluated at `vars`:  2.133649617674045
+	.. numerical grad:  (2.1336496089929824+0j)
+	c-component of gradient: ((((-6 ^ c) * ln -6) * -1) * f)
+→ math domain error
+
+f: exp (d + f)
+	d-component of gradient: exp (d + f)
+	.. evaluated at `vars`:  183401.88254533312
+	.. numerical grad:  183401.88257570844
+	f-component of gradient: exp (d + f)
+	.. evaluated at `vars`:  183401.88254533312
+	.. numerical grad:  183401.88241563737
+
+f: -3
+→ no gradient to compute
+
+f: (c ^ (-9 + (((4.0 * (exp -1 + 10)) ^ e) + 1)))
+	c-component of gradient: ((-9 + (((4.0 * (exp -1 + 10)) ^ e) + 1)) * (c ^ ((-9 + (((4.0 * (exp -1 + 10)) ^ e) + 1)) - 1)))
+	.. evaluated at `vars`:  (2.4244715384741592e-05+1.1576893765331822e-06j)
+	.. numerical grad:  (2.4244715388210673e-05+1.1576893766783306e-06j)
+	e-component of gradient: ((((4.0 * (exp -1 + 10)) ^ e) * ln (4.0 * (exp -1 + 10))) * ((c ^ (-9 + (((4.0 * (exp -1 + 10)) ^ e) + 1))) * ln c))
+→ math domain error
+
+f: 10
+→ no gradient to compute
+
+f: exp a
+	a-component of gradient: exp a
+	.. evaluated at `vars`:  11231.875248833687
+	.. numerical grad:  11231.875239900546
+
+f: exp ln (e + exp ((((-3 - c) + f) * -1) ^ d))
+	e-component of gradient: ((1 / (e + exp ((((-3 - c) + f) * -1) ^ d))) * exp ln (e + exp ((((-3 - c) + f) * -1) ^ d)))
+	.. evaluated at `vars`:  1.0
+	.. numerical grad:  0.0
+	[Warning]: abs(val-num_g[v]) == 1.0 > 1e-2
+	c-component of gradient: ((((d * ((((-3 - c) + f) * -1) ^ (d - 1))) * exp ((((-3 - c) + f) * -1) ^ d)) * (1 / (e + exp ((((-3 - c) + f) * -1) ^ d)))) * exp ln (e + exp ((((-3 - c) + f) * -1) ^ d)))
+	.. evaluated at `vars`:  -7.14781577905525e+20
+	.. numerical grad:  -7.14781605837824e+20
+	[Warning]: abs(val-num_g[v]) == 27932299100160.0 > 1e-2
+	f-component of gradient: ((((-1 * (d * ((((-3 - c) + f) * -1) ^ (d - 1)))) * exp ((((-3 - c) + f) * -1) ^ d)) * (1 / (e + exp ((((-3 - c) + f) * -1) ^ d)))) * exp ln (e + exp ((((-3 - c) + f) * -1) ^ d)))
+	.. evaluated at `vars`:  7.14781577905525e+20
+	.. numerical grad:  7.14781605837824e+20
+	[Warning]: abs(val-num_g[v]) == 27932299100160.0 > 1e-2
+	d-component of gradient: ((((((((-3 - c) + f) * -1) ^ d) * ln (((-3 - c) + f) * -1)) * exp ((((-3 - c) + f) * -1) ^ d)) * (1 / (e + exp ((((-3 - c) + f) * -1) ^ d)))) * exp ln (e + exp ((((-3 - c) + f) * -1) ^ d)))
+	.. evaluated at `vars`:  -3.937438044252318e+19
+	.. numerical grad:  -3.9374380452224e+19
+	[Warning]: abs(val-num_g[v]) == 9700818944.0 > 1e-2
+
+f: 2
+→ no gradient to compute
+
+f: b
+	b-component of gradient: 1
+	.. evaluated at `vars`:  1
+	.. numerical grad:  0.9999999992515995
+
+f: f
+	f-component of gradient: 1
+	.. evaluated at `vars`:  1
+	.. numerical grad:  1.000000000139778
+
+f: (exp g - (b - d))
+	g-component of gradient: exp g
+	.. evaluated at `vars`:  34837.350566030895
+	.. numerical grad:  34837.35054032877
+	b-component of gradient: -1
+	.. evaluated at `vars`:  -1
+	.. numerical grad:  -1.0000003385357559
+	d-component of gradient: 1
+	.. evaluated at `vars`:  1
+	.. numerical grad:  1.0000003385357559
+
+f: (7 / ln (ln -1 + 10))
+→ no gradient to compute
+
+f: (d - ((8 * b) ^ d))
+	d-component of gradient: (1 + ((((8 * b) ^ d) * ln (8 * b)) * -1))
+→ math domain error
+
+f: b
+	b-component of gradient: 1
+	.. evaluated at `vars`:  1
+	.. numerical grad:  0.9999999992515995
+
+f: f
+	f-component of gradient: 1
+	.. evaluated at `vars`:  1
+	.. numerical grad:  0.9999999992515995
+
+f: exp (((e + exp f) - exp -2) ^ ((-1 * (exp ((c - c) / e) - -3)) / 1.2142656789020123e-06))
+	e-component of gradient: (((((-1 * (exp ((c - c) / e) - -3)) / 1.2142656789020123e-06) * (((e + exp f) - exp -2) ^ (((-1 * (exp ((c - c) / e) - -3)) / 1.2142656789020123e-06) - 1))) + ((-823543.0 * (((-1 * (e ^ -2)) * (c - c)) * exp ((c - c) / e))) * ((((e + exp f) - exp -2) ^ ((-1 * (exp ((c - c) / e) - -3)) / 1.2142656789020123e-06)) * ln ((e + exp f) - exp -2)))) * exp (((e + exp f) - exp -2) ^ ((-1 * (exp ((c - c) / e) - -3)) / 1.2142656789020123e-06)))
+→ math domain error
+
+f: ((8 * -6) - exp f)
+	f-component of gradient: (exp f * -1)
+	.. evaluated at `vars`:  -35.97098051701392
+	.. numerical grad:  -35.97098051955072
+
+f: (f ^ exp e)
+	f-component of gradient: (exp e * (f ^ (exp e - 1)))
+	.. evaluated at `vars`:  (-5.462068794723511e-07-2.0966519081434593e-12j)
+	.. numerical grad:  (-5.46229728115577e-07-2.0968300609280205e-12j)
+	e-component of gradient: (exp e * ((f ^ exp e) * ln f))
+→ math domain error
+
+f: d
+	d-component of gradient: 1
+	.. evaluated at `vars`:  1
+	.. numerical grad:  0.9999999999177334
+
+f: exp ((b * g) ^ (d * (a ^ -1)))
+	b-component of gradient: ((g * ((d * (a ^ -1)) * ((b * g) ^ ((d * (a ^ -1)) - 1)))) * exp ((b * g) ^ (d * (a ^ -1))))
+	.. evaluated at `vars`:  -0.0035824775302926303
+	.. numerical grad:  -0.0035824775368453743
+	g-component of gradient: ((b * ((d * (a ^ -1)) * ((b * g) ^ ((d * (a ^ -1)) - 1)))) * exp ((b * g) ^ (d * (a ^ -1))))
+	.. evaluated at `vars`:  -0.006649096372741502
+	.. numerical grad:  -0.006649096384592212
+	d-component of gradient: (((a ^ -1) * (((b * g) ^ (d * (a ^ -1))) * ln (b * g))) * exp ((b * g) ^ (d * (a ^ -1))))
+	.. evaluated at `vars`:  -0.03929461303761295
+	.. numerical grad:  -0.039294613118912025
+	a-component of gradient: ((((-1 * (a ^ -2)) * d) * (((b * g) ^ (d * (a ^ -1))) * ln (b * g))) * exp ((b * g) ^ (d * (a ^ -1))))
+	.. evaluated at `vars`:  -0.020897183200444536
+	.. numerical grad:  -0.020897183206081138
+
+f: ((-10 + c) - ((((ln 9 + -10) - ln 7) / (a - exp -5)) - (0 - ((a - b) / g))))
+	c-component of gradient: 1
+	.. evaluated at `vars`:  1
+	.. numerical grad:  0.9999999992515995
+	a-component of gradient: ((((-1 * ((a - exp -5) ^ -2)) * ((ln 9 + -10) - ln 7)) + (1 * (g ^ -1))) * -1)
+	.. evaluated at `vars`:  -0.025857265130712848
+	.. numerical grad:  -0.025857264995821083
+	b-component of gradient: (1 * (g ^ -1))
+	.. evaluated at `vars`:  -0.6738565608057577
+	.. numerical grad:  -0.6738565609953895
+	g-component of gradient: (-1 * ((-1 * (g ^ -2)) * (a - b)))
+	.. evaluated at `vars`:  1.5431293709263996
+	.. numerical grad:  1.5431293709511351
+
+f: b
+	b-component of gradient: 1
+	.. evaluated at `vars`:  1
+	.. numerical grad:  0.9999999992515995
+
+f: 0
+→ no gradient to compute
+
+f: exp -6
+→ no gradient to compute
+
+f: (exp f - 5)
+	f-component of gradient: exp f
+	.. evaluated at `vars`:  0.001726066651842441
+	.. numerical grad:  0.0017260668450091998
+
+f: g
+	g-component of gradient: 1
+	.. evaluated at `vars`:  1
+	.. numerical grad:  1.000000000139778
+
+f: (exp ln (-3 / -1) ^ (ln 2 * 1))
+→ no gradient to compute
+
+f: 4
+→ no gradient to compute
+
+f: (8 - exp (f + b))
+	f-component of gradient: (exp (f + b) * -1)
+	.. evaluated at `vars`:  -5.608300247375511e-05
+	.. numerical grad:  -5.608313813354471e-05
+	b-component of gradient: (exp (f + b) * -1)
+	.. evaluated at `vars`:  -5.608300247375511e-05
+	.. numerical grad:  -5.608313813354471e-05
+
+f: (d / 3)
+	d-component of gradient: 0.3333333333333333
+	.. evaluated at `vars`:  0.3333333333333333
+	.. numerical grad:  0.3333333329358368
+
+f: 2
+→ no gradient to compute
+
+f: (9 ^ ln 0)
+→ no gradient to compute
+
+f: (f * (a - (-9 - ((ln ln b + d) + (b - b)))))
+	f-component of gradient: (a - (-9 - ((ln ln b + d) + (b - b))))
+	.. evaluated at `vars`:  9.055861308419626
+	.. numerical grad:  9.05586130883762
+	a-component of gradient: f
+	.. evaluated at `vars`:  -5.013935029939925
+	.. numerical grad:  -5.013935027164962
+	b-component of gradient: ((1 * (((1 / b) * (1 / ln b)) + 0)) * f)
+	.. evaluated at `vars`:  -0.6070615322909241
+	.. numerical grad:  -0.6070615299336168
+	d-component of gradient: f
+	.. evaluated at `vars`:  -5.013935029939925
+	.. numerical grad:  -5.013935027164962
+
+f: b
+	b-component of gradient: 1
+	.. evaluated at `vars`:  1
+	.. numerical grad:  0.9999999992515995
+
+f: f
+	f-component of gradient: 1
+	.. evaluated at `vars`:  1
+	.. numerical grad:  1.000000000139778
+
+f: 10
+→ no gradient to compute
+
+f: exp (exp ((a ^ f) + d) * -4)
+	a-component of gradient: ((((f * (a ^ (f - 1))) * exp ((a ^ f) + d)) * -4) * exp (exp ((a ^ f) + d) * -4))
+	.. evaluated at `vars`:  -2.5057407721178356e-12
+	.. numerical grad:  -2.5057407743459564e-12
+	f-component of gradient: (((((a ^ f) * ln a) * exp ((a ^ f) + d)) * -4) * exp (exp ((a ^ f) + d) * -4))
+	.. evaluated at `vars`:  -1.9799189554524795e-13
+	.. numerical grad:  -1.979918956933499e-13
+	d-component of gradient: ((exp ((a ^ f) + d) * -4) * exp (exp ((a ^ f) + d) * -4))
+	.. evaluated at `vars`:  -1.027953951850637e-12
+	.. numerical grad:  -1.0279539519528415e-12
+
+f: ((g / -5) + (exp 9 - -10))
+	g-component of gradient: -0.2
+	.. evaluated at `vars`:  -0.2
+	.. numerical grad:  -0.19999970390927047
+
+f: (exp 2 - -4)
+→ no gradient to compute
+
+f: (d * (a + a))
+	d-component of gradient: (a + a)
+	.. evaluated at `vars`:  -24.130427960115092
+	.. numerical grad:  -24.130427974000668
+	a-component of gradient: (2 * d)
+	.. evaluated at `vars`:  -14.451028889943132
+	.. numerical grad:  -14.451028889084228
+
+f: ((((-5 + a) ^ 8) ^ g) - ln 7)
+	a-component of gradient: ((8 * ((-5 + a) ^ 7)) * (g * (((-5 + a) ^ 8) ^ (g - 1))))
+	.. evaluated at `vars`:  0.04084203151405354
+	.. numerical grad:  0.04084203153453814
+	g-component of gradient: ((((-5 + a) ^ 8) ^ g) * ln ((-5 + a) ^ 8))
+	.. evaluated at `vars`:  0.15242034039249738
+	.. numerical grad:  0.15242034034912422
+
+f: exp ((-3 / 4) - (4 * -9))
+→ no gradient to compute
+
+f: ((-2 ^ e) ^ (-8 * (((ln exp (b - e) + (b ^ f)) ^ ((6 / g) * e)) / ((6 ^ (2 ^ ((ln f / f) - b))) + e))))
+	e-component of gradient: ((((-2 ^ e) * ln -2) * ((-8 * (((ln exp (b - e) + (b ^ f)) ^ ((6 / g) * e)) / ((6 ^ (2 ^ ((ln f / f) - b))) + e))) * ((-2 ^ e) ^ ((-8 * (((ln exp (b - e) + (b ^ f)) ^ ((6 / g) * e)) / ((6 ^ (2 ^ ((ln f / f) - b))) + e))) - 1)))) + ((((((((-1 * exp (b - e)) * (1 / exp (b - e))) * (((6 / g) * e) * ((ln exp (b - e) + (b ^ f)) ^ (((6 / g) * e) - 1)))) + ((6 / g) * (((ln exp (b - e) + (b ^ f)) ^ ((6 / g) * e)) * ln (ln exp (b - e) + (b ^ f))))) * (((6 ^ (2 ^ ((ln f / f) - b))) + e) ^ -1)) + ((-1 * (((6 ^ (2 ^ ((ln f / f) - b))) + e) ^ -2)) * ((ln exp (b - e) + (b ^ f)) ^ ((6 / g) * e)))) * -8) * (((-2 ^ e) ^ (-8 * (((ln exp (b - e) + (b ^ f)) ^ ((6 / g) * e)) / ((6 ^ (2 ^ ((ln f / f) - b))) + e)))) * ln (-2 ^ e))))
+→ math domain error
+
+f: (ln b - (3 + (5 ^ 9)))
+	b-component of gradient: (1 / b)
+	.. evaluated at `vars`:  0.06671878129115247
+	.. numerical grad:  0.06670597940683365
+
+f: (4 * e)
+	e-component of gradient: 4
+	.. evaluated at `vars`:  4
+	.. numerical grad:  4.000000000559112
+
+f: ln ln ln -2
+→ no gradient to compute
+
+f: ln c
+	c-component of gradient: (1 / c)
+	.. evaluated at `vars`:  0.22482729244172178
+	.. numerical grad:  0.22482729244988064
+
+f: exp 6
+→ no gradient to compute
+
+f: (-5 * ((a + (-5 * (-9 * -9))) / -4))
+	a-component of gradient: 1.25
+	.. evaluated at `vars`:  1.25
+	.. numerical grad:  1.2500000252657628
+
+f: -6
+→ no gradient to compute
+
+f: (((ln 10 / (a - exp 2)) - ln ((d / g) ^ (0 * f))) + ((-1 / 6) + g))
+	a-component of gradient: ((-1 * ((a - exp 2) ^ -2)) * ln 10)
+	.. evaluated at `vars`:  -0.011694959990999234
+	.. numerical grad:  -0.011694959667352123
+	d-component of gradient: ((((g ^ -1) * ((0 * f) * ((d / g) ^ ((0 * f) - 1)))) * (1 / ((d / g) ^ (0 * f)))) * -1)
+	.. evaluated at `vars`:  -0.0
+	.. numerical grad:  0.0
+	g-component of gradient: ((((((-1 * (g ^ -2)) * d) * ((0 * f) * ((d / g) ^ ((0 * f) - 1)))) * (1 / ((d / g) ^ (0 * f)))) * -1) + 1)
+	.. evaluated at `vars`:  1.0
+	.. numerical grad:  0.9999999992515995
+	f-component of gradient: (((0 * (((d / g) ^ (0 * f)) * ln (d / g))) * (1 / ((d / g) ^ (0 * f)))) * -1)
+→ math domain error
+
+f: e
+	e-component of gradient: 1
+	.. evaluated at `vars`:  1
+	.. numerical grad:  0.9999999992515995
+
+f: -7
+→ no gradient to compute
+
+f: (exp g / (-10 + (0 - c)))
+	g-component of gradient: (exp g * ((-10 + (0 - c)) ^ -1))
+	.. evaluated at `vars`:  -20457.152274312197
+	.. numerical grad:  -20457.152259041322
+	c-component of gradient: ((1 * ((-10 + (0 - c)) ^ -2)) * exp g)
+	.. evaluated at `vars`:  2192.117653995563
+	.. numerical grad:  2192.1176521573216
+
+f: ((-8 * (((exp ln exp b ^ 2.0) - d) ^ g)) ^ (a / g))
+	b-component of gradient: ((((((exp b * (1 / exp b)) * exp ln exp b) * (2.0 * (exp ln exp b ^ 1.0))) * (g * (((exp ln exp b ^ 2.0) - d) ^ (g - 1)))) * -8) * ((a / g) * ((-8 * (((exp ln exp b ^ 2.0) - d) ^ g)) ^ ((a / g) - 1))))
+	.. evaluated at `vars`:  (1.7553100064112766e+21+6.455184970812825e+20j)
+	.. numerical grad:  (1.75531000512512e+21+6.45518496612352e+20j)
+	[Warning]: abs(val-num_g[v]) == 1368975746731.093 > 1e-2
+	d-component of gradient: ((8 * (g * (((exp ln exp b ^ 2.0) - d) ^ (g - 1)))) * ((a / g) * ((-8 * (((exp ln exp b ^ 2.0) - d) ^ g)) ^ ((a / g) - 1))))
+	.. evaluated at `vars`:  (-99689174.06348544-36660877.89717626j)
+	.. numerical grad:  0j
+	[Warning]: abs(val-num_g[v]) == 106216530.69862321 > 1e-2
+	g-component of gradient: (((((((exp ln exp b ^ 2.0) - d) ^ g) * ln ((exp ln exp b ^ 2.0) - d)) * -8) * ((a / g) * ((-8 * (((exp ln exp b ^ 2.0) - d) ^ g)) ^ ((a / g) - 1)))) + (((-1 * (g ^ -2)) * a) * (((-8 * (((exp ln exp b ^ 2.0) - d) ^ g)) ^ (a / g)) * ln (-8 * (((exp ln exp b ^ 2.0) - d) ^ g)))))
+→ math domain error
+
+f: exp (9 + g)
+	g-component of gradient: exp (9 + g)
+	.. evaluated at `vars`:  0.32554258554993504
+	.. numerical grad:  0.32554258530548275
+
+f: -4
+→ no gradient to compute
+
+f: (e ^ exp -7)
+	e-component of gradient: (exp -7 * (e ^ (exp -7 - 1)))
+	.. evaluated at `vars`:  (-9.17089473483987e-05-2.627249971530705e-07j)
+	.. numerical grad:  (-9.17089737484389e-05-2.627249546388599e-07j)
+
+f: (6 + (6 / ((((a - 5) - -6) * g) - ln exp f)))
+	a-component of gradient: ((g * (-1 * (((((a - 5) - -6) * g) - ln exp f) ^ -2))) * 6)
+	.. evaluated at `vars`:  0.01933700995363099
+	.. numerical grad:  0.019337009771192015
+	g-component of gradient: ((((a - 5) - -6) * (-1 * (((((a - 5) - -6) * g) - ln exp f) ^ -2))) * 6)
+	.. evaluated at `vars`:  0.026751362724635075
+	.. numerical grad:  0.026751362902643905
+	f-component of gradient: ((((exp f * (1 / exp f)) * -1) * (-1 * (((((a - 5) - -6) * g) - ln exp f) ^ -2))) * 6)
+	.. evaluated at `vars`:  0.0039793423458704385
+	.. numerical grad:  0.003979342189097679
+
+f: f
+	f-component of gradient: 1
+	.. evaluated at `vars`:  1
+	.. numerical grad:  0.9999999992515995
+
+f: 2
+→ no gradient to compute
+
+f: (e / c)
+	e-component of gradient: (c ^ -1)
+	.. evaluated at `vars`:  -0.08730931046899715
+	.. numerical grad:  -0.08730931044809154
+	c-component of gradient: ((-1 * (c ^ -2)) * e)
+	.. evaluated at `vars`:  0.08352963115490375
+	.. numerical grad:  0.08352963110080935
+
+f: a
+	a-component of gradient: 1
+	.. evaluated at `vars`:  1
+	.. numerical grad:  0.9999999992515995
+
+f: ((exp g ^ -2) ^ (f ^ (d / 10)))
+	g-component of gradient: ((exp g * (-2 * (exp g ^ -3))) * ((f ^ (d / 10)) * ((exp g ^ -2) ^ ((f ^ (d / 10)) - 1))))
+	.. evaluated at `vars`:  (-2.3995788976431514-27.387964447870832j)
+	.. numerical grad:  (-2.399578896472576-27.3879644256958j)
+	f-component of gradient: (((d / 10) * (f ^ ((d / 10) - 1))) * (((exp g ^ -2) ^ (f ^ (d / 10))) * ln (exp g ^ -2)))
+	.. evaluated at `vars`:  (-5.197061932181642-59.3174692325293j)
+	.. numerical grad:  (-5.1970619345809155-59.317469241815246j)
+	d-component of gradient: ((0.1 * ((f ^ (d / 10)) * ln f)) * (((exp g ^ -2) ^ (f ^ (d / 10))) * ln (exp g ^ -2)))
+→ math domain error
+
+f: g
+	g-component of gradient: 1
+	.. evaluated at `vars`:  1
+	.. numerical grad:  0.9999999999177334
+
+f: -4
+→ no gradient to compute
+
+f: 1
+→ no gradient to compute
+
+f: exp ((a * (a ^ 0)) - c)
+	a-component of gradient: (((a ^ 0) + ((0 * (a ^ -1)) * a)) * exp ((a * (a ^ 0)) - c))
+	.. evaluated at `vars`:  82943.90949459268
+	.. numerical grad:  82943.90957598807
+	c-component of gradient: (-1 * exp ((a * (a ^ 0)) - c))
+	.. evaluated at `vars`:  -82943.90949459268
+	.. numerical grad:  -82943.90957598807
+
+f: ln -3
+→ no gradient to compute
+
+f: d
+	d-component of gradient: 1
+	.. evaluated at `vars`:  1
+	.. numerical grad:  0.9999999992515995
+
+f: b
+	b-component of gradient: 1
+	.. evaluated at `vars`:  1
+	.. numerical grad:  0.9999999992515995
+
+f: d
+	d-component of gradient: 1
+	.. evaluated at `vars`:  1
+	.. numerical grad:  0.9999999992515995
+
+f: (7 ^ ((-6 - a) * ln (-1.0 - f)))
+	a-component of gradient: ((-1 * ln (-1.0 - f)) * ((7 ^ ((-6 - a) * ln (-1.0 - f))) * ln 7))
+	.. evaluated at `vars`:  -2.95829027978608e-34
+	.. numerical grad:  -2.9582902719080862e-34
+	f-component of gradient: (((-1 * (1 / (-1.0 - f))) * (-6 - a)) * ((7 ^ ((-6 - a) * ln (-1.0 - f))) * ln 7))
+	.. evaluated at `vars`:  3.5365031709731696e-34
+	.. numerical grad:  3.5365031670986666e-34
+
+f: 9
+→ no gradient to compute
+
+f: exp a
+	a-component of gradient: exp a
+	.. evaluated at `vars`:  1.0556076172954165
+	.. numerical grad:  1.0556076173173778
+
+f: (d + -5)
+	d-component of gradient: 1
+	.. evaluated at `vars`:  1
+	.. numerical grad:  0.9999999974752427
+
+f: ln ln exp (8 ^ -4)
+→ no gradient to compute
+
+f: (2 + (5 - -4))
+→ no gradient to compute
+
+f: exp f
+	f-component of gradient: exp f
+	.. evaluated at `vars`:  19.260018446380048
+	.. numerical grad:  19.260018449429595
+
+f: (((-4 + b) ^ -4) / (-7 ^ (2 - b)))
+	b-component of gradient: (((-4 * ((-4 + b) ^ -5)) * ((-7 ^ (2 - b)) ^ -1)) + (((-1 * ((-7 ^ (2 - b)) * ln -7)) * (-1 * ((-7 ^ (2 - b)) ^ -2))) * ((-4 + b) ^ -4)))
+→ math domain error
+
+f: (g - 8)
+	g-component of gradient: 1
+	.. evaluated at `vars`:  1
+	.. numerical grad:  0.9999999992515995
+
+f: 8
+→ no gradient to compute
+
+f: ((-8 ^ g) + a)
+	g-component of gradient: ((-8 ^ g) * ln -8)
+→ math domain error
+
+f: exp 1
+→ no gradient to compute
+
+f: f
+	f-component of gradient: 1
+	.. evaluated at `vars`:  1
+	.. numerical grad:  0.9999999992515995
+
+f: 4
+→ no gradient to compute
+
+f: -4
+→ no gradient to compute
+
+f: (exp b - (((1 ^ d) + -5) / exp g))
+	b-component of gradient: exp b
+	.. evaluated at `vars`:  218385.9276099368
+	.. numerical grad:  218385.92743733898
+	d-component of gradient: ((((1 ^ d) * ln 1) * (exp g ^ -1)) * -1)
+	.. evaluated at `vars`:  -0.0
+	.. numerical grad:  0.0
+	g-component of gradient: (((exp g * (-1 * (exp g ^ -2))) * ((1 ^ d) + -5)) * -1)
+	.. evaluated at `vars`:  -5.832943267362525e-05
+	.. numerical grad:  -5.820766091346741e-05
+
+f: ((4 - (((-10 + a) + (-2 * (1 / b))) * (exp (ln 4 - b) + -6))) - b)
+	a-component of gradient: ((exp (ln 4 - b) + -6) * -1)
+	.. evaluated at `vars`:  -2120.0757632524073
+	.. numerical grad:  -2120.075761922635
+	b-component of gradient: (((((2 * (b ^ -2)) * (exp (ln 4 - b) + -6)) + ((-1 * exp (ln 4 - b)) * ((-10 + a) + (-2 * (1 / b))))) * -1) + -1)
+	.. evaluated at `vars`:  6598.5858053307875
+	.. numerical grad:  6598.585806386836
+
+f: -8
+→ no gradient to compute
+
+f: c
+	c-component of gradient: 1
+	.. evaluated at `vars`:  1
+	.. numerical grad:  1.000000000139778
+
+f: e
+	e-component of gradient: 1
+	.. evaluated at `vars`:  1
+	.. numerical grad:  1.000000000139778
+
+f: 9
+→ no gradient to compute
+
+f: (0 * (a * (ln (f * (c * (b / -2))) / exp 2)))
+	a-component of gradient: ((ln (f * (c * (b / -2))) / exp 2) * 0)
+	.. evaluated at `vars`:  0.0
+	.. numerical grad:  0.0
+	f-component of gradient: (((((c * (b / -2)) * (1 / (f * (c * (b / -2))))) * (exp 2 ^ -1)) * a) * 0)
+	.. evaluated at `vars`:  -0.0
+	.. numerical grad:  0.0
+	c-component of gradient: ((((((b / -2) * f) * (1 / (f * (c * (b / -2))))) * (exp 2 ^ -1)) * a) * 0)
+	.. evaluated at `vars`:  0.0
+	.. numerical grad:  0.0
+	b-component of gradient: ((((((-0.5 * c) * f) * (1 / (f * (c * (b / -2))))) * (exp 2 ^ -1)) * a) * 0)
+	.. evaluated at `vars`:  0.0
+	.. numerical grad:  0.0
+
+f: e
+	e-component of gradient: 1
+	.. evaluated at `vars`:  1
+	.. numerical grad:  1.000000000139778
+
+f: (-1 / -10)
+→ no gradient to compute
+
+f: 8
+→ no gradient to compute
+
+f: 8
+→ no gradient to compute
+
+f: (3 + -6)
+→ no gradient to compute
+
+f: e
+	e-component of gradient: 1
+	.. evaluated at `vars`:  1
+	.. numerical grad:  0.9999999992515995
+
+f: e
+	e-component of gradient: 1
+	.. evaluated at `vars`:  1
+	.. numerical grad:  0.9999999992515995
+
+f: f
+	f-component of gradient: 1
+	.. evaluated at `vars`:  1
+	.. numerical grad:  0.9999999992515995
+
+f: -7
+→ no gradient to compute
+
+f: (8 + 5)
+→ no gradient to compute
+
+f: (((exp (e - d) - -2) - g) - -8)
+	e-component of gradient: exp (e - d)
+	.. evaluated at `vars`:  441.12998293644927
+	.. numerical grad:  441.1299825903825
+	d-component of gradient: (-1 * exp (e - d))
+	.. evaluated at `vars`:  -441.12998293644927
+	.. numerical grad:  -441.12998298828643
+	g-component of gradient: -1
+	.. evaluated at `vars`:  -1
+	.. numerical grad:  -0.9999999974752427
+
+f: (b / (e - (((c ^ (exp -9 + (exp b ^ 9))) - exp c) - b)))
+	b-component of gradient: (((e - (((c ^ (exp -9 + (exp b ^ 9))) - exp c) - b)) ^ -1) + ((((((exp b * (9 * (exp b ^ 8))) * ((c ^ (exp -9 + (exp b ^ 9))) * ln c)) + -1) * -1) * (-1 * ((e - (((c ^ (exp -9 + (exp b ^ 9))) - exp c) - b)) ^ -2))) * b))
+	.. evaluated at `vars`:  -0.07537422494475626
+	.. numerical grad:  -0.07537422494529114
+	e-component of gradient: ((-1 * ((e - (((c ^ (exp -9 + (exp b ^ 9))) - exp c) - b)) ^ -2)) * b)
+	.. evaluated at `vars`:  -0.0003640688109605407
+	.. numerical grad:  -0.0003640688106890111
+	c-component of gradient: ((((((exp -9 + (exp b ^ 9)) * (c ^ ((exp -9 + (exp b ^ 9)) - 1))) + (exp c * -1)) * -1) * (-1 * ((e - (((c ^ (exp -9 + (exp b ^ 9))) - exp c) - b)) ^ -2))) * b)
+	.. evaluated at `vars`:  -0.00031025588021091
+	.. numerical grad:  -0.0003102558804486677
+
+f: exp -3
+→ no gradient to compute
+
+f: (ln 3 - (2 ^ (exp -7 - 5)))
+→ no gradient to compute
+
+f: (0 / b)
+	b-component of gradient: (0 * (b ^ -2))
+	.. evaluated at `vars`:  0.0
+	.. numerical grad:  0.0
+
+f: ((-2 ^ -3) * exp (-1 - ((6 + (exp 9 * -3)) + 6)))
+→ no gradient to compute
+
+f: ln ln exp 7
+→ no gradient to compute
+
+f: 1
+→ no gradient to compute
+
+f: (6 - (b / ((9 + c) ^ (ln g * ((105.00000000000001 ^ e) - (-4 * (a / ln 4)))))))
+	b-component of gradient: ((((9 + c) ^ (ln g * ((105.00000000000001 ^ e) - (-4 * (a / ln 4))))) ^ -1) * -1)
+	.. evaluated at `vars`:  (-8.335952907850868e-13+1.277591527341619e-12j)
+	.. numerical grad:  1.2775915277067798e-12j
+	c-component of gradient: (((((ln g * ((105.00000000000001 ^ e) - (-4 * (a / ln 4)))) * ((9 + c) ^ ((ln g * ((105.00000000000001 ^ e) - (-4 * (a / ln 4)))) - 1))) * (-1 * (((9 + c) ^ (ln g * ((105.00000000000001 ^ e) - (-4 * (a / ln 4))))) ^ -2))) * b) * -1)
+	.. evaluated at `vars`:  (-6.293725490701682e-11+9.645940243690197e-11j)
+	.. numerical grad:  9.645940236728411e-11j
+	g-component of gradient: ((((((1 / g) * ((105.00000000000001 ^ e) - (-4 * (a / ln 4)))) * (((9 + c) ^ (ln g * ((105.00000000000001 ^ e) - (-4 * (a / ln 4))))) * ln (9 + c))) * (-1 * (((9 + c) ^ (ln g * ((105.00000000000001 ^ e) - (-4 * (a / ln 4))))) ^ -2))) * b) * -1)
+→ math domain error
+
+f: d
+	d-component of gradient: 1
+	.. evaluated at `vars`:  1
+	.. numerical grad:  0.9999999992515995
+
+f: 6
+→ no gradient to compute
+
+f: -2
+→ no gradient to compute
+
+f: 8
+→ no gradient to compute
+
+f: -1
+→ no gradient to compute
+
+f: (10 - 8)
+→ no gradient to compute
+
+f: a
+	a-component of gradient: 1
+	.. evaluated at `vars`:  1
+	.. numerical grad:  0.9999999992515995
+
+f: b
+	b-component of gradient: 1
+	.. evaluated at `vars`:  1
+	.. numerical grad:  1.0000000000287557
+
+f: (((10 ^ exp -4) / (9 + (8 * ((e ^ 2) / 6)))) ^ (10 * ln ln a))
+	e-component of gradient: ((((2.6666666666666665 * (e ^ 1)) * (-1 * ((9 + (8 * ((e ^ 2) / 6))) ^ -2))) * (10 ^ exp -4)) * ((10 * ln ln a) * (((10 ^ exp -4) / (9 + (8 * ((e ^ 2) / 6)))) ^ ((10 * ln ln a) - 1))))
+	.. evaluated at `vars`:  -3.526048628408754e-17
+	.. numerical grad:  -3.526048623723388e-17
+	a-component of gradient: ((((1 / a) * (1 / ln a)) * 10) * ((((10 ^ exp -4) / (9 + (8 * ((e ^ 2) / 6)))) ^ (10 * ln ln a)) * ln ((10 ^ exp -4) / (9 + (8 * ((e ^ 2) / 6))))))
+	.. evaluated at `vars`:  -6.018126253964094e-17
+	.. numerical grad:  -6.018126252206926e-17
+
+f: (2 / (((-10 / exp (d ^ (exp a + (c * exp (-4 + (b - 2)))))) * f) * (a + 6)))
+	d-component of gradient: (((((((((exp a + (c * exp (-4 + (b - 2)))) * (d ^ ((exp a + (c * exp (-4 + (b - 2)))) - 1))) * exp (d ^ (exp a + (c * exp (-4 + (b - 2)))))) * (-1 * (exp (d ^ (exp a + (c * exp (-4 + (b - 2))))) ^ -2))) * -10) * f) * (a + 6)) * (-1 * ((((-10 / exp (d ^ (exp a + (c * exp (-4 + (b - 2)))))) * f) * (a + 6)) ^ -2))) * 2)
+	.. evaluated at `vars`:  8.471412484513172e-75
+	.. numerical grad:  0.0
+	a-component of gradient: (((((((((exp a * ((d ^ (exp a + (c * exp (-4 + (b - 2))))) * ln d)) * exp (d ^ (exp a + (c * exp (-4 + (b - 2)))))) * (-1 * (exp (d ^ (exp a + (c * exp (-4 + (b - 2))))) ^ -2))) * -10) * f) * (a + 6)) + ((-10 / exp (d ^ (exp a + (c * exp (-4 + (b - 2)))))) * f)) * (-1 * ((((-10 / exp (d ^ (exp a + (c * exp (-4 + (b - 2)))))) * f) * (a + 6)) ^ -2))) * 2)
+	.. evaluated at `vars`:  0.001661569965692778
+	.. numerical grad:  0.0016615699666849837
+	c-component of gradient: ((((((((exp (-4 + (b - 2)) * ((d ^ (exp a + (c * exp (-4 + (b - 2))))) * ln d)) * exp (d ^ (exp a + (c * exp (-4 + (b - 2)))))) * (-1 * (exp (d ^ (exp a + (c * exp (-4 + (b - 2))))) ^ -2))) * -10) * f) * (a + 6)) * (-1 * ((((-10 / exp (d ^ (exp a + (c * exp (-4 + (b - 2)))))) * f) * (a + 6)) ^ -2))) * 2)
+	.. evaluated at `vars`:  -1.7058911658080696e-73
+	.. numerical grad:  0.0
+	b-component of gradient: (((((((((exp (-4 + (b - 2)) * c) * ((d ^ (exp a + (c * exp (-4 + (b - 2))))) * ln d)) * exp (d ^ (exp a + (c * exp (-4 + (b - 2)))))) * (-1 * (exp (d ^ (exp a + (c * exp (-4 + (b - 2))))) ^ -2))) * -10) * f) * (a + 6)) * (-1 * ((((-10 / exp (d ^ (exp a + (c * exp (-4 + (b - 2)))))) * f) * (a + 6)) ^ -2))) * 2)
+	.. evaluated at `vars`:  7.787797215201865e-73
+	.. numerical grad:  0.0
+	f-component of gradient: ((((-10 / exp (d ^ (exp a + (c * exp (-4 + (b - 2)))))) * (a + 6)) * (-1 * ((((-10 / exp (d ^ (exp a + (c * exp (-4 + (b - 2)))))) * f) * (a + 6)) ^ -2))) * 2)
+	.. evaluated at `vars`:  0.020767576643777798
+	.. numerical grad:  0.02076757664448703
+
+f: a
+	a-component of gradient: 1
+	.. evaluated at `vars`:  1
+	.. numerical grad:  1.000000000139778
+
+f: 10
+→ no gradient to compute
+
+f: 6
+→ no gradient to compute
+
+f: 1
+→ no gradient to compute
+
+f: ((10 - e) ^ ln e)
+	e-component of gradient: ((-1 * (ln e * ((10 - e) ^ (ln e - 1)))) + ((1 / e) * (((10 - e) ^ ln e) * ln (10 - e))))
+→ math domain error
+
+f: (exp exp (f + (ln 6 * a)) - (exp a / b))
+	f-component of gradient: (exp (f + (ln 6 * a)) * exp exp (f + (ln 6 * a)))
+	.. evaluated at `vars`:  1.2656098053754582e-07
+	.. numerical grad:  1.2656542480726785e-07
+	a-component of gradient: (((ln 6 * exp (f + (ln 6 * a))) * exp exp (f + (ln 6 * a))) + ((exp a * (b ^ -1)) * -1))
+	.. evaluated at `vars`:  -0.061276868967000644
+	.. numerical grad:  -0.061276868912329974
+	b-component of gradient: (((-1 * (b ^ -2)) * exp a) * -1)
+	.. evaluated at `vars`:  0.01225316753510032
+	.. numerical grad:  0.01225316753616923
+
+f: 0
+→ no gradient to compute
+
+f: d
+	d-component of gradient: 1
+	.. evaluated at `vars`:  1
+	.. numerical grad:  1.000000000139778
+
+f: g
+	g-component of gradient: 1
+	.. evaluated at `vars`:  1
+	.. numerical grad:  0.9999999992515995
+
+f: (exp a - (c ^ (exp (e ^ ln g) * (exp 3 * g))))
+	a-component of gradient: exp a
+	.. evaluated at `vars`:  3.9218289602749796
+	.. numerical grad:  (3.9218289598075273+0j)
+	c-component of gradient: (((exp (e ^ ln g) * (exp 3 * g)) * (c ^ ((exp (e ^ ln g) * (exp 3 * g)) - 1))) * -1)
+	.. evaluated at `vars`:  (-2.0920381110937256e-13+5.1271778857022174e-14j)
+	.. numerical grad:  5.127177897244381e-14j
+	e-component of gradient: (((((ln g * (e ^ (ln g - 1))) * exp (e ^ ln g)) * (exp 3 * g)) * ((c ^ (exp (e ^ ln g) * (exp 3 * g))) * ln c)) * -1)
+→ math domain error
+
+f: -10
+→ no gradient to compute
+
+f: -9
+→ no gradient to compute
+
+f: ((e ^ ((f + exp b) ^ -7)) + d)
+	e-component of gradient: (((f + exp b) ^ -7) * (e ^ (((f + exp b) ^ -7) - 1)))
+	.. evaluated at `vars`:  -6.1949588876689e-08
+	.. numerical grad:  -6.17284001691587e-08
+	f-component of gradient: ((-7 * ((f + exp b) ^ -8)) * ((e ^ ((f + exp b) ^ -7)) * ln e))
+	.. evaluated at `vars`:  -2.0944203210512376e-06
+	.. numerical grad:  -2.0947688028627454e-06
+	b-component of gradient: ((exp b * (-7 * ((f + exp b) ^ -8))) * ((e ^ ((f + exp b) ^ -7)) * ln e))
+	.. evaluated at `vars`:  -8.595950789749138e-12
+	.. numerical grad:  0.0
+	d-component of gradient: 1
+	.. evaluated at `vars`:  1
+	.. numerical grad:  1.000000000139778
+
+f: (9 - f)
+	f-component of gradient: -1
+	.. evaluated at `vars`:  -1
+	.. numerical grad:  -0.9999999992515995
+
+f: (-7 + (a - c))
+	a-component of gradient: 1
+	.. evaluated at `vars`:  1
+	.. numerical grad:  1.000000000139778
+	c-component of gradient: -1
+	.. evaluated at `vars`:  -1
+	.. numerical grad:  -1.000000000139778
+
+f: (-6 * exp c)
+	c-component of gradient: (exp c * -6)
+	.. evaluated at `vars`:  -228.27426485997876
+	.. numerical grad:  -228.2742649128977
+
+f: (-5 * ((-5 / (0 - a)) ^ -7))
+	a-component of gradient: (((-5 * ((0 - a) ^ -2)) * (-7 * ((-5 / (0 - a)) ^ -8))) * -5)
+	.. evaluated at `vars`:  -11.01458147932773
+	.. numerical grad:  -11.014581478896446
+
+f: ln (f * -5)
+	f-component of gradient: (-5 * (1 / (f * -5)))
+	.. evaluated at `vars`:  -0.1210330735906328
+	.. numerical grad:  -0.12103307356348125
+
+f: exp ln ln e
+	e-component of gradient: (((1 / e) * (1 / ln e)) * exp ln ln e)
+	.. evaluated at `vars`:  0.16040329965501443
+	.. numerical grad:  0.1604032996427307
+
+f: (10 * 2)
+→ no gradient to compute
+
+f: ln (((ln 8 ^ 5) / (10 * (ln (exp a / 2) - -5))) * (24 * ((c - ((-4 * g) / (4 / g))) / (((c - e) - (ln 5 / d)) / 10))))
+	a-component of gradient: (((((((exp a * 0.5) * (1 / (exp a / 2))) * 10) * (-1 * ((10 * (ln (exp a / 2) - -5)) ^ -2))) * (ln 8 ^ 5)) * (24 * ((c - ((-4 * g) / (4 / g))) / (((c - e) - (ln 5 / d)) / 10)))) * (1 / (((ln 8 ^ 5) / (10 * (ln (exp a / 2) - -5))) * (24 * ((c - ((-4 * g) / (4 / g))) / (((c - e) - (ln 5 / d)) / 10))))))
+	.. evaluated at `vars`:  -0.2824979213485833
+	.. numerical grad:  -0.2824979210558354
+	c-component of gradient: (((24 * (((((c - e) - (ln 5 / d)) / 10) ^ -1) + ((-0.1 * ((((c - e) - (ln 5 / d)) / 10) ^ -2)) * (c - ((-4 * g) / (4 / g)))))) * ((ln 8 ^ 5) / (10 * (ln (exp a / 2) - -5)))) * (1 / (((ln 8 ^ 5) / (10 * (ln (exp a / 2) - -5))) * (24 * ((c - ((-4 * g) / (4 / g))) / (((c - e) - (ln 5 / d)) / 10))))))
+	.. evaluated at `vars`:  -0.05793304456646228
+	.. numerical grad:  -0.057933045027880326
+	g-component of gradient: (((24 * ((((-4 * ((4 / g) ^ -1)) + (((-4 * (g ^ -2)) * (-1 * ((4 / g) ^ -2))) * (-4 * g))) * -1) * ((((c - e) - (ln 5 / d)) / 10) ^ -1))) * ((ln 8 ^ 5) / (10 * (ln (exp a / 2) - -5)))) * (1 / (((ln 8 ^ 5) / (10 * (ln (exp a / 2) - -5))) * (24 * ((c - ((-4 * g) / (4 / g))) / (((c - e) - (ln 5 / d)) / 10))))))
+	.. evaluated at `vars`:  0.14254327530292868
+	.. numerical grad:  0.14254327496132646
+	e-component of gradient: (((24 * ((0.1 * ((((c - e) - (ln 5 / d)) / 10) ^ -2)) * (c - ((-4 * g) / (4 / g))))) * ((ln 8 ^ 5) / (10 * (ln (exp a / 2) - -5)))) * (1 / (((ln 8 ^ 5) / (10 * (ln (exp a / 2) - -5))) * (24 * ((c - ((-4 * g) / (4 / g))) / (((c - e) - (ln 5 / d)) / 10))))))
+	.. evaluated at `vars`:  0.06304944809177228
+	.. numerical grad:  0.06304944832891124
+	d-component of gradient: (((24 * (((-0.1 * ((-1 * (d ^ -2)) * ln 5)) * (-1 * ((((c - e) - (ln 5 / d)) / 10) ^ -2))) * (c - ((-4 * g) / (4 / g))))) * ((ln 8 ^ 5) / (10 * (ln (exp a / 2) - -5)))) * (1 / (((ln 8 ^ 5) / (10 * (ln (exp a / 2) - -5))) * (24 * ((c - ((-4 * g) / (4 / g))) / (((c - e) - (ln 5 / d)) / 10))))))
+	.. evaluated at `vars`:  -0.11033820559682427
+	.. numerical grad:  -0.11033820612738054
+
+f: c
+	c-component of gradient: 1
+	.. evaluated at `vars`:  1
+	.. numerical grad:  1.000000000139778
+
+f: ln (exp d - exp exp c)
+	d-component of gradient: (exp d * (1 / (exp d - exp exp c)))
+	.. evaluated at `vars`:  1.0000070972116104
+	.. numerical grad:  1.0000070966853514
+	c-component of gradient: (((exp c * exp exp c) * -1) * (1 / (exp d - exp exp c)))
+	.. evaluated at `vars`:  -2.4735235071690735e-12
+	.. numerical grad:  0.0
+
+f: exp -1
+→ no gradient to compute
+
+f: ((-3 - (((ln 10 - -1) / c) + d)) + f)
+	c-component of gradient: (((-1 * (c ^ -2)) * (ln 10 - -1)) * -1)
+	.. evaluated at `vars`:  0.06837372126001347
+	.. numerical grad:  0.06837372179546719
+	d-component of gradient: -1
+	.. evaluated at `vars`:  -1
+	.. numerical grad:  -0.9999999992515995
+	f-component of gradient: 1
+	.. evaluated at `vars`:  1
+	.. numerical grad:  1.000000000139778
+
+f: exp a
+	a-component of gradient: exp a
+	.. evaluated at `vars`:  0.0001603097344803596
+	.. numerical grad:  0.00016030973435927996
+
+f: -4
+→ no gradient to compute
+
+f: (3 - c)
+	c-component of gradient: -1
+	.. evaluated at `vars`:  -1
+	.. numerical grad:  -0.9999999992515995
+
+f: -4
+→ no gradient to compute
+
+f: ln exp ((f ^ 7) + (6 * (5.9499018266198606e-05 ^ (1 - (b * (g + f))))))
+	f-component of gradient: ((((7 * (f ^ 6)) + (((b * -1) * ((5.9499018266198606e-05 ^ (1 - (b * (g + f)))) * ln 5.9499018266198606e-05)) * 6)) * exp ((f ^ 7) + (6 * (5.9499018266198606e-05 ^ (1 - (b * (g + f))))))) * (1 / exp ((f ^ 7) + (6 * (5.9499018266198606e-05 ^ (1 - (b * (g + f))))))))
+	.. evaluated at `vars`:  354.31226917051254
+	.. numerical grad:  354.3122691382905
+	b-component of gradient: ((((((g + f) * -1) * ((5.9499018266198606e-05 ^ (1 - (b * (g + f)))) * ln 5.9499018266198606e-05)) * 6) * exp ((f ^ 7) + (6 * (5.9499018266198606e-05 ^ (1 - (b * (g + f))))))) * (1 / exp ((f ^ 7) + (6 * (5.9499018266198606e-05 ^ (1 - (b * (g + f))))))))
+	.. evaluated at `vars`:  5.662260360898478e-21
+	.. numerical grad:  0.0
+	g-component of gradient: (((((b * -1) * ((5.9499018266198606e-05 ^ (1 - (b * (g + f)))) * ln 5.9499018266198606e-05)) * 6) * exp ((f ^ 7) + (6 * (5.9499018266198606e-05 ^ (1 - (b * (g + f))))))) * (1 / exp ((f ^ 7) + (6 * (5.9499018266198606e-05 ^ (1 - (b * (g + f))))))))
+	.. evaluated at `vars`:  -1.7449105876913165e-19
+	.. numerical grad:  0.0
+
+f: b
+	b-component of gradient: 1
+	.. evaluated at `vars`:  1
+	.. numerical grad:  0.9999999999177334
+
+f: ln 3
+→ no gradient to compute
+
+f: ln exp 7
+→ no gradient to compute
+
+f: ln b
+	b-component of gradient: (1 / b)
+	.. evaluated at `vars`:  0.11550356619739319
+	.. numerical grad:  0.11550356604494993
+
+f: -9
+→ no gradient to compute
+
+f: (8 / ln (exp ((c * exp f) - -9) * exp f))
+	c-component of gradient: (((((exp f * exp ((c * exp f) - -9)) * exp f) * (1 / (exp ((c * exp f) - -9) * exp f))) * (-1 * (ln (exp ((c * exp f) - -9) * exp f) ^ -2))) * 8)
+	.. evaluated at `vars`:  -0.00385352175198835
+	.. numerical grad:  -0.003853521834962237
+	f-component of gradient: (((((((exp f * c) * exp ((c * exp f) - -9)) * exp f) + (exp f * exp ((c * exp f) - -9))) * (1 / (exp ((c * exp f) - -9) * exp f))) * (-1 * (ln (exp ((c * exp f) - -9) * exp f) ^ -2))) * 8)
+	.. evaluated at `vars`:  -0.44395035121186327
+	.. numerical grad:  -0.443950351036726
+
+f: ((c - ((b / 10) ^ d)) + (d - (exp g ^ 8)))
+	c-component of gradient: 1
+	.. evaluated at `vars`:  1
+	.. numerical grad:  0.9999999992515995
+	b-component of gradient: (-0.1 * (d * ((b / 10) ^ (d - 1))))
+	.. evaluated at `vars`:  0.5219537850158814
+	.. numerical grad:  0.5219537850820188
+	d-component of gradient: (((((b / 10) ^ d) * ln (b / 10)) * -1) + 1)
+	.. evaluated at `vars`:  0.9976627672833827
+	.. numerical grad:  0.9976627683982997
+	g-component of gradient: ((exp g * (8 * (exp g ^ 7))) * -1)
+	.. evaluated at `vars`:  -3.6049978808770714e-47
+	.. numerical grad:  0.0
+
+f: c
+	c-component of gradient: 1
+	.. evaluated at `vars`:  1
+	.. numerical grad:  1.000000000139778
+
+f: exp -7
+→ no gradient to compute
+
+f: (9 * 0)
+→ no gradient to compute
+
+f: 0
+→ no gradient to compute
+
+f: -2
+→ no gradient to compute
+
+f: 2
+→ no gradient to compute
+
+f: (d ^ ln ((c - g) ^ 0))
+	d-component of gradient: (ln ((c - g) ^ 0) * (d ^ (ln ((c - g) ^ 0) - 1)))
+	.. evaluated at `vars`:  0.0
+	.. numerical grad:  0.0
+	c-component of gradient: (((0 * ((c - g) ^ -1)) * (1 / ((c - g) ^ 0))) * ((d ^ ln ((c - g) ^ 0)) * ln d))
+	.. evaluated at `vars`:  0.0
+	.. numerical grad:  0.0
+	g-component of gradient: (((0 * ((c - g) ^ -1)) * (1 / ((c - g) ^ 0))) * ((d ^ ln ((c - g) ^ 0)) * ln d))
+	.. evaluated at `vars`:  0.0
+	.. numerical grad:  0.0
+
+f: (0 * -1)
+→ no gradient to compute
+
+f: (e - g)
+	e-component of gradient: 1
+	.. evaluated at `vars`:  1
+	.. numerical grad:  0.9999999992515995
+	g-component of gradient: -1
+	.. evaluated at `vars`:  -1
+	.. numerical grad:  -0.9999999992515995
+
+f: a
+	a-component of gradient: 1
+	.. evaluated at `vars`:  1
+	.. numerical grad:  0.9999999992515995
+
+f: ((b ^ d) ^ 9)
+	b-component of gradient: ((d * (b ^ (d - 1))) * (9 * ((b ^ d) ^ 8)))
+	.. evaluated at `vars`:  -2.9883110197917334e-94
+	.. numerical grad:  -2.9883110177598626e-94
+	d-component of gradient: (((b ^ d) * ln b) * (9 * ((b ^ d) ^ 8)))
+	.. evaluated at `vars`:  7.019175296794709e-94
+	.. numerical grad:  7.019175292134251e-94
+
+f: (f - ((-1 / (-2 - ln (b / f))) ^ f))
+	f-component of gradient: (1 + (((((((((-1 * (f ^ -2)) * b) * (1 / (b / f))) * -1) * (-1 * ((-2 - ln (b / f)) ^ -2))) * -1) * (f * ((-1 / (-2 - ln (b / f))) ^ (f - 1)))) + (((-1 / (-2 - ln (b / f))) ^ f) * ln (-1 / (-2 - ln (b / f))))) * -1))
+	.. evaluated at `vars`:  -7.654786005079835
+	.. numerical grad:  -7.654786008171044
+	b-component of gradient: (((((((f ^ -1) * (1 / (b / f))) * -1) * (-1 * ((-2 - ln (b / f)) ^ -2))) * -1) * (f * ((-1 / (-2 - ln (b / f))) ^ (f - 1)))) * -1)
+	.. evaluated at `vars`:  24.324692099102972
+	.. numerical grad:  24.324692098343093
+
+f: (-9 / -2)
+→ no gradient to compute
+
+f: (-8 + f)
+	f-component of gradient: 1
+	.. evaluated at `vars`:  1
+	.. numerical grad:  1.000000000139778
+
+f: exp ln exp -7
+→ no gradient to compute
+
+f: -8
+→ no gradient to compute
+
+f: (exp (b - c) / (-7 + a))
+	b-component of gradient: (exp (b - c) * ((-7 + a) ^ -1))
+	.. evaluated at `vars`:  365299.76913807035
+	.. numerical grad:  365299.7688623145
+	c-component of gradient: ((-1 * exp (b - c)) * ((-7 + a) ^ -1))
+	.. evaluated at `vars`:  -365299.76913807035
+	.. numerical grad:  -365299.7688623145
+	a-component of gradient: ((-1 * ((-7 + a) ^ -2)) * exp (b - c))
+	.. evaluated at `vars`:  -71193.02413468475
+	.. numerical grad:  -71193.0240795482
+
+f: exp 0
+→ no gradient to compute
+
+f: 3
+→ no gradient to compute
+
+f: (((ln 3 * (-2 * 6)) * 7) + a)
+	a-component of gradient: 1
+	.. evaluated at `vars`:  1
+	.. numerical grad:  0.9999999974752427
+
+f: (9 - (ln 10 * f))
+	f-component of gradient: (ln 10 * -1)
+	.. evaluated at `vars`:  -2.302585092994046
+	.. numerical grad:  -2.3025850879321297
+
+f: d
+	d-component of gradient: 1
+	.. evaluated at `vars`:  1
+	.. numerical grad:  0.9999999999177334
+
+f: b
+	b-component of gradient: 1
+	.. evaluated at `vars`:  1
+	.. numerical grad:  0.9999999992515995
+
+f: (-3 + exp (f / 0.5))
+	f-component of gradient: (2.0 * exp (f / 0.5))
+	.. evaluated at `vars`:  0.003044057087564809
+	.. numerical grad:  0.003044057006462708
+
+f: -5
+→ no gradient to compute
+
+f: f
+	f-component of gradient: 1
+	.. evaluated at `vars`:  1
+	.. numerical grad:  0.9999999992515995
+
+f: (ln (-8 - -4) * 6)
+→ no gradient to compute
+
+f: -4
+→ no gradient to compute
+
+f: (((-10 * (f + (a ^ d))) + (a - 10)) * (((0 - exp 3) + (exp (g + 2) * (e ^ (exp f * (e - e))))) - a))
+	f-component of gradient: ((-10 * (((0 - exp 3) + (exp (g + 2) * (e ^ (exp f * (e - e))))) - a)) + ((((exp f * (e - e)) * ((e ^ (exp f * (e - e))) * ln e)) * exp (g + 2)) * ((-10 * (f + (a ^ d))) + (a - 10))))
+→ math domain error
+
+f: 8
+→ no gradient to compute
+
+f: ln d
+	d-component of gradient: (1 / d)
+	.. evaluated at `vars`:  0.08753338614060523
+	.. numerical grad:  0.08753338609501782
+
+f: (5 / (exp (a / 3.0) + 4))
+	a-component of gradient: (((0.3333333333333333 * exp (a / 3.0)) * (-1 * ((exp (a / 3.0) + 4) ^ -2))) * 5)
+	.. evaluated at `vars`:  -0.04783608566233813
+	.. numerical grad:  -0.04783608562042296
+
+f: b
+	b-component of gradient: 1
+	.. evaluated at `vars`:  1
+	.. numerical grad:  1.000000000139778
+
+f: ((10 / c) ^ exp -8)
+	c-component of gradient: ((-10 * (c ^ -2)) * (exp -8 * ((10 / c) ^ (exp -8 - 1))))
+	.. evaluated at `vars`:  -2.75006925574902e-05
+	.. numerical grad:  -2.7500668409174978e-05
+
+f: ((ln (((exp 4 - -8) * 2) - f) ^ ln a) + a)
+	f-component of gradient: ((-1 * (1 / (((exp 4 - -8) * 2) - f))) * (ln a * (ln (((exp 4 - -8) * 2) - f) ^ (ln a - 1))))
+	.. evaluated at `vars`:  -0.15041604285141272
+	.. numerical grad:  -0.15041604228827055
+	a-component of gradient: (((1 / a) * ((ln (((exp 4 - -8) * 2) - f) ^ ln a) * ln ln (((exp 4 - -8) * 2) - f))) + 1)
+	.. evaluated at `vars`:  6.785295278619498
+	.. numerical grad:  6.785295269651215
+
+f: e
+	e-component of gradient: 1
+	.. evaluated at `vars`:  1
+	.. numerical grad:  0.9999999992515995
+
+f: ((f ^ ((c - g) / -3)) / (((((-2.0 + b) / -6) * ((-9 - (e - 1)) * g)) * ln exp -8) * ((e + b) / ((6 * d) / ((((e - -8) - 3) - ((exp 5 / 7) / -7)) ^ 0)))))
+	f-component of gradient: ((((c - g) / -3) * (f ^ (((c - g) / -3) - 1))) * ((((((-2.0 + b) / -6) * ((-9 - (e - 1)) * g)) * ln exp -8) * ((e + b) / ((6 * d) / ((((e - -8) - 3) - ((exp 5 / 7) / -7)) ^ 0)))) ^ -1))
+	.. evaluated at `vars`:  (97.62431003821881+15.987273438113414j)
+	.. numerical grad:  (97.62431003990102+15.987273438322624j)
+	c-component of gradient: ((-0.3333333333333333 * ((f ^ ((c - g) / -3)) * ln f)) * ((((((-2.0 + b) / -6) * ((-9 - (e - 1)) * g)) * ln exp -8) * ((e + b) / ((6 * d) / ((((e - -8) - 3) - ((exp 5 / 7) / -7)) ^ 0)))) ^ -1))
+→ math domain error
+
+f: exp (d + (5 - c))
+	d-component of gradient: exp (d + (5 - c))
+	.. evaluated at `vars`:  0.16318784557215374
+	.. numerical grad:  0.16318784559765653
+	c-component of gradient: (-1 * exp (d + (5 - c)))
+	.. evaluated at `vars`:  -0.16318784557215374
+	.. numerical grad:  -0.16318784545887866
+
+f: g
+	g-component of gradient: 1
+	.. evaluated at `vars`:  1
+	.. numerical grad:  0.9999999999177334
+
+f: ((g / ln b) / b)
+	g-component of gradient: ((ln b ^ -1) * (b ^ -1))
+	.. evaluated at `vars`:  3.205362936681646
+	.. numerical grad:  3.205362938629719
+	b-component of gradient: (((((1 / b) * (-1 * (ln b ^ -2))) * g) * (b ^ -1)) + ((-1 * (b ^ -2)) * (g / ln b)))
+	.. evaluated at `vars`:  91.22286638974467
+	.. numerical grad:  91.22286638429955
+
+f: 5
+→ no gradient to compute
+
+f: ((((5 ^ c) / e) + ((e / ((-1 * (a / (-3 ^ f))) + c)) - g)) * exp 0)
+	c-component of gradient: (((((5 ^ c) * ln 5) * (e ^ -1)) + ((-1 * (((-1 * (a / (-3 ^ f))) + c) ^ -2)) * e)) * exp 0)
+	.. evaluated at `vars`:  (0.0032463063585156876-0.003256613648705859j)
+	.. numerical grad:  (0.003246306334858673-0.003256613645419293j)
+	e-component of gradient: ((((-1 * (e ^ -2)) * (5 ^ c)) + (((-1 * (a / (-3 ^ f))) + c) ^ -1)) * exp 0)
+	.. evaluated at `vars`:  (-0.03981765353360348-0.09588092986398607j)
+	.. numerical grad:  (-0.03981765317462305-0.09588092986234642j)
+	a-component of gradient: ((((((-3 ^ f) ^ -1) * -1) * (-1 * (((-1 * (a / (-3 ^ f))) + c) ^ -2))) * e) * exp 0)
+	.. evaluated at `vars`:  (-0.00638597827322555-0.0014726489372995954j)
+	.. numerical grad:  (-0.0063859788568265685-0.0014726489333538595j)
+	f-component of gradient: ((((((((-3 ^ f) * ln -3) * (-1 * ((-3 ^ f) ^ -2))) * a) * -1) * (-1 * (((-1 * (a / (-3 ^ f))) + c) ^ -2))) * e) * exp 0)
+→ math domain error
+
+f: 6
+→ no gradient to compute
+
+f: e
+	e-component of gradient: 1
+	.. evaluated at `vars`:  1
+	.. numerical grad:  0.9999999992515995
+
+f: -5
+→ no gradient to compute
+
+f: exp exp ln 9
+→ no gradient to compute
+
+f: 9
+→ no gradient to compute
+
+f: exp (exp -4 + ((exp 8 * (f ^ 6)) * f))
+	f-component of gradient: (((((6 * (f ^ 5)) * exp 8) * f) + (exp 8 * (f ^ 6))) * exp (exp -4 + ((exp 8 * (f ^ 6)) * f)))
+	.. evaluated at `vars`:  5.861629383523966e-162
+	.. numerical grad:  5.861641720124024e-162
+
+f: (3 - -3)
+→ no gradient to compute
+
+f: 9
+→ no gradient to compute
+
+f: ((-4 / (exp -2 ^ g)) / (-5 / ln (ln 5 / 4)))
+	g-component of gradient: (((((exp -2 ^ g) * ln exp -2) * (-1 * ((exp -2 ^ g) ^ -2))) * -4) * ((-5 / ln (ln 5 / 4)) ^ -1))
+	.. evaluated at `vars`:  -17104.753434451377
+	.. numerical grad:  -17104.753436797182
+
+f: a
+	a-component of gradient: 1
+	.. evaluated at `vars`:  1
+	.. numerical grad:  0.9999999999732445
+
+f: ln 5
+→ no gradient to compute
+
+f: (5 + (((exp g * ((-134217728 + f) ^ 2)) ^ ((((e + (-9 / c)) / c) - f) * d)) / d))
+	g-component of gradient: (((exp g * ((-134217728 + f) ^ 2)) * (((((e + (-9 / c)) / c) - f) * d) * ((exp g * ((-134217728 + f) ^ 2)) ^ (((((e + (-9 / c)) / c) - f) * d) - 1)))) * (d ^ -1))
+	.. evaluated at `vars`:  -1.2287496741609315e+203
+	.. numerical grad:  -1.2287496742307834e+203
+	[Warning]: abs(val-num_g[v]) == 6.985192935949069e+192 > 1e-2
+	f-component of gradient: (((((2 * ((-134217728 + f) ^ 1)) * exp g) * (((((e + (-9 / c)) / c) - f) * d) * ((exp g * ((-134217728 + f) ^ 2)) ^ (((((e + (-9 / c)) / c) - f) * d) - 1)))) + ((-1 * d) * (((exp g * ((-134217728 + f) ^ 2)) ^ ((((e + (-9 / c)) / c) - f) * d)) * ln (exp g * ((-134217728 + f) ^ 2))))) * (d ^ -1))
+	.. evaluated at `vars`:  -7.548753861320642e+203
+	.. numerical grad:  -7.548753867691919e+203
+	[Warning]: abs(val-num_g[v]) == 6.371276785435393e+194 > 1e-2
+	e-component of gradient: ((((c ^ -1) * d) * (((exp g * ((-134217728 + f) ^ 2)) ^ ((((e + (-9 / c)) / c) - f) * d)) * ln (exp g * ((-134217728 + f) ^ 2)))) * (d ^ -1))
+	.. evaluated at `vars`:  -5.447872456846934e+202
+	.. numerical grad:  -5.447872467339375e+202
+	[Warning]: abs(val-num_g[v]) == 1.049244123892248e+194 > 1e-2
+	c-component of gradient: ((((((9 * (c ^ -2)) * (c ^ -1)) + ((-1 * (c ^ -2)) * (e + (-9 / c)))) * d) * (((exp g * ((-134217728 + f) ^ 2)) ^ ((((e + (-9 / c)) / c) - f) * d)) * ln (exp g * ((-134217728 + f) ^ 2)))) * (d ^ -1))
+	.. evaluated at `vars`:  -4.158900780722052e+202
+	.. numerical grad:  -4.1589007831832065e+202
+	[Warning]: abs(val-num_g[v]) == 2.4611541017007162e+193 > 1e-2
+	d-component of gradient: ((((((e + (-9 / c)) / c) - f) * (((exp g * ((-134217728 + f) ^ 2)) ^ ((((e + (-9 / c)) / c) - f) * d)) * ln (exp g * ((-134217728 + f) ^ 2)))) * (d ^ -1)) + ((-1 * (d ^ -2)) * ((exp g * ((-134217728 + f) ^ 2)) ^ ((((e + (-9 / c)) / c) - f) * d))))
+	.. evaluated at `vars`:  2.2071754357226556e+204
+	.. numerical grad:  2.2071754545599977e+204
+	[Warning]: abs(val-num_g[v]) == 1.883734211075757e+196 > 1e-2
+
+f: 8
+→ no gradient to compute
+
+f: g
+	g-component of gradient: 1
+	.. evaluated at `vars`:  1
+	.. numerical grad:  0.9999999992515995
+
+f: -7
+→ no gradient to compute
+
+f: (-4 - (-10 + ((((g / -6) / ((g + (5 - d)) + ((c + 9) - -5))) ^ ((b ^ 8) * ln 5)) + 7)))
+	g-component of gradient: ((((-0.16666666666666666 * (((g + (5 - d)) + ((c + 9) - -5)) ^ -1)) + ((-1 * (((g + (5 - d)) + ((c + 9) - -5)) ^ -2)) * (g / -6))) * (((b ^ 8) * ln 5) * (((g / -6) / ((g + (5 - d)) + ((c + 9) - -5))) ^ (((b ^ 8) * ln 5) - 1)))) * -1)
+	.. evaluated at `vars`:  -0j
+	.. numerical grad:  0j
+	d-component of gradient: ((((1 * (((g + (5 - d)) + ((c + 9) - -5)) ^ -2)) * (g / -6)) * (((b ^ 8) * ln 5) * (((g / -6) / ((g + (5 - d)) + ((c + 9) - -5))) ^ (((b ^ 8) * ln 5) - 1)))) * -1)
+	.. evaluated at `vars`:  -0j
+	.. numerical grad:  0j
+	c-component of gradient: ((((-1 * (((g + (5 - d)) + ((c + 9) - -5)) ^ -2)) * (g / -6)) * (((b ^ 8) * ln 5) * (((g / -6) / ((g + (5 - d)) + ((c + 9) - -5))) ^ (((b ^ 8) * ln 5) - 1)))) * -1)
+	.. evaluated at `vars`:  (-0+0j)
+	.. numerical grad:  0j
+	b-component of gradient: ((((8 * (b ^ 7)) * ln 5) * ((((g / -6) / ((g + (5 - d)) + ((c + 9) - -5))) ^ ((b ^ 8) * ln 5)) * ln ((g / -6) / ((g + (5 - d)) + ((c + 9) - -5))))) * -1)
+→ math domain error
+
+f: (exp 6 + 4)
+→ no gradient to compute
+
+f: (((((f * (-5 * (7 ^ (-4 + (10 ^ g))))) ^ 2) + e) * (a + g)) / (-9 / g))
+	f-component of gradient: ((((-5 * (7 ^ (-4 + (10 ^ g)))) * (2 * ((f * (-5 * (7 ^ (-4 + (10 ^ g))))) ^ 1))) * (a + g)) * ((-9 / g) ^ -1))
+	.. evaluated at `vars`:  -0.00031368817256068266
+	.. numerical grad:  -0.00031368774244810993
+	g-component of gradient: ((((((((((10 ^ g) * ln 10) * ((7 ^ (-4 + (10 ^ g))) * ln 7)) * -5) * f) * (2 * ((f * (-5 * (7 ^ (-4 + (10 ^ g))))) ^ 1))) * (a + g)) + (((f * (-5 * (7 ^ (-4 + (10 ^ g))))) ^ 2) + e)) * ((-9 / g) ^ -1)) + (((9 * (g ^ -2)) * (-1 * ((-9 / g) ^ -2))) * ((((f * (-5 * (7 ^ (-4 + (10 ^ g))))) ^ 2) + e) * (a + g))))
+	.. evaluated at `vars`:  -7.5191466939622735
+	.. numerical grad:  -7.519146689283218
+	e-component of gradient: ((a + g) * ((-9 / g) ^ -1))
+	.. evaluated at `vars`:  -2.6724149427902737
+	.. numerical grad:  -2.672414942672674
+	a-component of gradient: ((((f * (-5 * (7 ^ (-4 + (10 ^ g))))) ^ 2) + e) * ((-9 / g) ^ -1))
+	.. evaluated at `vars`:  -5.712245135426673
+	.. numerical grad:  -5.712245136457739
+
+f: -10
+→ no gradient to compute
+
+f: -8
+→ no gradient to compute
+
+f: ((-8 + a) ^ 5)
+	a-component of gradient: (5 * ((-8 + a) ^ 4))
+	.. evaluated at `vars`:  1376973.221701734
+	.. numerical grad:  1376973.2229411602
+
+f: b
+	b-component of gradient: 1
+	.. evaluated at `vars`:  1
+	.. numerical grad:  0.9999999992515995
+
+f: b
+	b-component of gradient: 1
+	.. evaluated at `vars`:  1
+	.. numerical grad:  1.000000000139778
+
+f: d
+	d-component of gradient: 1
+	.. evaluated at `vars`:  1
+	.. numerical grad:  1.000000000001
+
+f: b
+	b-component of gradient: 1
+	.. evaluated at `vars`:  1
+	.. numerical grad:  0.9999999992515995
+
+f: -4
+→ no gradient to compute
+
+f: ((exp (-5 - 9.0) / (7 ^ g)) - (d ^ ((exp a * (((-4 + (d - f)) ^ g) + b)) * -3)))
+	g-component of gradient: (((((7 ^ g) * ln 7) * (-1 * ((7 ^ g) ^ -2))) * exp (-5 - 9.0)) + (((((((-4 + (d - f)) ^ g) * ln (-4 + (d - f))) * exp a) * -3) * ((d ^ ((exp a * (((-4 + (d - f)) ^ g) + b)) * -3)) * ln d)) * -1))
+→ math domain error
+
+f: g
+	g-component of gradient: 1
+	.. evaluated at `vars`:  1
+	.. numerical grad:  0.9999999992515995
+
+f: ((16 / 8) ^ (e - 5))
+	e-component of gradient: ((2.0 ^ (e - 5)) * ln 2.0)
+	.. evaluated at `vars`:  0.0008806051351107071
+	.. numerical grad:  0.0008806051352526489
+
+f: 4
+→ no gradient to compute
+
+f: (ln ln 10 + ln 10)
+→ no gradient to compute
+
+f: b
+	b-component of gradient: 1
+	.. evaluated at `vars`:  1
+	.. numerical grad:  0.9999999999177334
+
+f: d
+	d-component of gradient: 1
+	.. evaluated at `vars`:  1
+	.. numerical grad:  0.9999999992515995
+
+f: 2
+→ no gradient to compute
+
+f: exp exp (exp (d ^ -4) - (9 * e))
+	d-component of gradient: ((((-4 * (d ^ -5)) * exp (d ^ -4)) * exp (exp (d ^ -4) - (9 * e))) * exp exp (exp (d ^ -4) - (9 * e)))
+	.. evaluated at `vars`:  6.898468489055469e-35
+	.. numerical grad:  0.0
+	e-component of gradient: ((-9 * exp (exp (d ^ -4) - (9 * e))) * exp exp (exp (d ^ -4) - (9 * e)))
+	.. evaluated at `vars`:  -1.2086727938979723e-29
+	.. numerical grad:  0.0
+
+f: ((-9 / ((f + (exp 7 ^ (c - c))) ^ 5)) * (e * ((exp f ^ -3) / c)))
+	f-component of gradient: (((((5 * ((f + (exp 7 ^ (c - c))) ^ 4)) * (-1 * (((f + (exp 7 ^ (c - c))) ^ 5) ^ -2))) * -9) * (e * ((exp f ^ -3) / c))) + ((((exp f * (-3 * (exp f ^ -4))) * (c ^ -1)) * e) * (-9 / ((f + (exp 7 ^ (c - c))) ^ 5))))
+	.. evaluated at `vars`:  -21882481685.620693
+	.. numerical grad:  -21882481721.520424
+	[Warning]: abs(val-num_g[v]) == 35.89973068237305 > 1e-2
+	c-component of gradient: ((((((0 * ((exp 7 ^ (c - c)) * ln exp 7)) * (5 * ((f + (exp 7 ^ (c - c))) ^ 4))) * (-1 * (((f + (exp 7 ^ (c - c))) ^ 5) ^ -2))) * -9) * (e * ((exp f ^ -3) / c))) + ((((-1 * (c ^ -2)) * (exp f ^ -3)) * e) * (-9 / ((f + (exp 7 ^ (c - c))) ^ 5))))
+	.. evaluated at `vars`:  54287043.423473224
+	.. numerical grad:  54287043.422460556
+	e-component of gradient: (((exp f ^ -3) / c) * (-9 / ((f + (exp 7 ^ (c - c))) ^ 5)))
+	.. evaluated at `vars`:  20227844.013030116
+	.. numerical grad:  20227843.99986267
+	[Warning]: abs(val-num_g[v]) == 0.013167444616556168 > 1e-2
+
+f: exp e
+	e-component of gradient: exp e
+	.. evaluated at `vars`:  1763.716642287162
+	.. numerical grad:  1763.7166424719908
+
+f: (-10 - d)
+	d-component of gradient: -1
+	.. evaluated at `vars`:  -1
+	.. numerical grad:  -1.000000000139778
+
+f: (-3 ^ (-8 * ((c / (((-10 / a) / -7) * b)) - exp c)))
+	c-component of gradient: (((((((-10 / a) / -7) * b) ^ -1) + (exp c * -1)) * -8) * ((-3 ^ (-8 * ((c / (((-10 / a) / -7) * b)) - exp c))) * ln -3))
+→ math domain error
+
+f: ((8 * 145) * exp (8 - (exp e ^ -4)))
+	e-component of gradient: ((((exp e * (-4 * (exp e ^ -5))) * -1) * exp (8 - (exp e ^ -4))) * 1160)
+	.. evaluated at `vars`:  0.0
+	.. numerical grad:  0.0
+
+f: ((b * (d / -5)) + ((-4 ^ -7) + b))
+	b-component of gradient: ((d / -5) + 1)
+	.. evaluated at `vars`:  -0.9452767610647723
+	.. numerical grad:  -0.9452767610884649
+	d-component of gradient: (-0.2 * b)
+	.. evaluated at `vars`:  -0.17792420980111223
+	.. numerical grad:  -0.17792420958784305
+
+f: -2
+→ no gradient to compute
+
+f: exp d
+	d-component of gradient: exp d
+	.. evaluated at `vars`:  477.90247561907853
+	.. numerical grad:  477.9024756942363
+
+f: (10 * 8)
+→ no gradient to compute
+
+f: exp -6
+→ no gradient to compute
+
+f: ln (8 - ln (0.031746031746031744 ^ a))
+	a-component of gradient: (((((0.031746031746031744 ^ a) * ln 0.031746031746031744) * (1 / (0.031746031746031744 ^ a))) * -1) * (1 / (8 - ln (0.031746031746031744 ^ a))))
+	.. evaluated at `vars`:  0.08405550588249903
+	.. numerical grad:  0.08405550588896915
+
+f: ((d ^ 5) ^ ln b)
+	d-component of gradient: ((5 * (d ^ 4)) * (ln b * ((d ^ 5) ^ (ln b - 1))))
+	.. evaluated at `vars`:  0.16506894450428017
+	.. numerical grad:  0.16506894451664977
+	b-component of gradient: ((1 / b) * (((d ^ 5) ^ ln b) * ln (d ^ 5)))
+	.. evaluated at `vars`:  -0.001264586681352991
+	.. numerical grad:  -0.0012645866827656893
+
+f: (-2 - a)
+	a-component of gradient: -1
+	.. evaluated at `vars`:  -1
+	.. numerical grad:  -0.9999999992515995
+
+f: ((3 / ln exp g) * f)
+	g-component of gradient: ((((exp g * (1 / exp g)) * (-1 * (ln exp g ^ -2))) * 3) * f)
+	.. evaluated at `vars`:  0.1798937055990563
+	.. numerical grad:  0.1798937052654992
+	f-component of gradient: (3 / ln exp g)
+	.. evaluated at `vars`:  -0.24384953485630706
+	.. numerical grad:  -0.2438495347867331
+
+f: -5
+→ no gradient to compute
+
+f: b
+	b-component of gradient: 1
+	.. evaluated at `vars`:  1
+	.. numerical grad:  0.9999999992515995
+
+f: b
+	b-component of gradient: 1
+	.. evaluated at `vars`:  1
+	.. numerical grad:  1.000000000139778
+
+f: (5 ^ -4)
+→ no gradient to compute
+
+f: (d * d)
+	d-component of gradient: (d + d)
+	.. evaluated at `vars`:  27.558497787350376
+	.. numerical grad:  27.55849776292507
+
+f: f
+	f-component of gradient: 1
+	.. evaluated at `vars`:  1
+	.. numerical grad:  0.9999999999732445
+
+f: e
+	e-component of gradient: 1
+	.. evaluated at `vars`:  1
+	.. numerical grad:  0.9999999992515995
+
+f: exp exp f
+	f-component of gradient: (exp f * exp exp f)
+	.. evaluated at `vars`:  0.0010075582970716721
+	.. numerical grad:  0.0010075583700697166
+
+f: exp (-1 + b)
+	b-component of gradient: exp (-1 + b)
+	.. evaluated at `vars`:  44748.414172242425
+	.. numerical grad:  44748.414136847714
+
+f: (e + (a * (exp -7 + -4)))
+	e-component of gradient: 1
+	.. evaluated at `vars`:  1
+	.. numerical grad:  0.9999999992515995
+	a-component of gradient: (exp -7 + -4)
+	.. evaluated at `vars`:  -3.9990881180344453
+	.. numerical grad:  -3.999088118433747
+
+f: exp (a * (c - (exp (g + 0) / -5)))
+	a-component of gradient: ((c - (exp (g + 0) / -5)) * exp (a * (c - (exp (g + 0) / -5))))
+	.. evaluated at `vars`:  0.0
+	.. numerical grad:  0.0
+	c-component of gradient: (a * exp (a * (c - (exp (g + 0) / -5))))
+	.. evaluated at `vars`:  -0.0
+	.. numerical grad:  0.0
+	g-component of gradient: (((0.2 * exp (g + 0)) * a) * exp (a * (c - (exp (g + 0) / -5))))
+	.. evaluated at `vars`:  -0.0
+	.. numerical grad:  0.0
+
+f: (((b + (f + (-7 * ((f / (exp f / e)) - -5)))) + ln exp b) + -4)
+	b-component of gradient: (1 + (exp b * (1 / exp b)))
+	.. evaluated at `vars`:  2.0
+	.. numerical grad:  2.0000000020559128
+	f-component of gradient: (1 + ((((exp f / e) ^ -1) + (((exp f * (e ^ -1)) * (-1 * ((exp f / e) ^ -2))) * f)) * -7))
+	.. evaluated at `vars`:  -1.6141883166612354
+	.. numerical grad:  -1.6141883207865249
+	e-component of gradient: (((((-1 * (e ^ -2)) * exp f) * (-1 * ((exp f / e) ^ -2))) * f) * -7)
+	.. evaluated at `vars`:  -2.5084218377274468
+	.. numerical grad:  -2.508421840019537
+
+f: exp ln (ln 4 / exp e)
+	e-component of gradient: ((((exp e * (-1 * (exp e ^ -2))) * ln 4) * (1 / (ln 4 / exp e))) * exp ln (ln 4 / exp e))
+	.. evaluated at `vars`:  -0.00840428708716956
+	.. numerical grad:  -0.008404287088308038
+
+f: -10
+→ no gradient to compute
+
+f: (f * ((9 - d) - ((((-8 * (exp b * (-3 + a))) + b) ^ -4) / ln ((-10 / (b * c)) / exp (-8 * g)))))
+	f-component of gradient: ((9 - d) - ((((-8 * (exp b * (-3 + a))) + b) ^ -4) / ln ((-10 / (b * c)) / exp (-8 * g))))
+	.. evaluated at `vars`:  3.420156021157828
+	.. numerical grad:  3.4201560197288927
+	d-component of gradient: (-1 * f)
+	.. evaluated at `vars`:  11.508092027131447
+	.. numerical grad:  11.50809202954406
+	b-component of gradient: ((((((((exp b * (-3 + a)) * -8) + 1) * (-4 * (((-8 * (exp b * (-3 + a))) + b) ^ -5))) * (ln ((-10 / (b * c)) / exp (-8 * g)) ^ -1)) + ((((((c * (-1 * ((b * c) ^ -2))) * -10) * (exp (-8 * g) ^ -1)) * (1 / ((-10 / (b * c)) / exp (-8 * g)))) * (-1 * (ln ((-10 / (b * c)) / exp (-8 * g)) ^ -2))) * (((-8 * (exp b * (-3 + a))) + b) ^ -4))) * -1) * f)
+	.. evaluated at `vars`:  8.017248291452258e-20
+	.. numerical grad:  0.0
+	a-component of gradient: (((((exp b * -8) * (-4 * (((-8 * (exp b * (-3 + a))) + b) ^ -5))) * (ln ((-10 / (b * c)) / exp (-8 * g)) ^ -1)) * -1) * f)
+	.. evaluated at `vars`:  -5.221141649851343e-21
+	.. numerical grad:  0.0
+	c-component of gradient: ((((((((b * (-1 * ((b * c) ^ -2))) * -10) * (exp (-8 * g) ^ -1)) * (1 / ((-10 / (b * c)) / exp (-8 * g)))) * (-1 * (ln ((-10 / (b * c)) / exp (-8 * g)) ^ -2))) * (((-8 * (exp b * (-3 + a))) + b) ^ -4)) * -1) * f)
+	.. evaluated at `vars`:  -3.594851478020578e-23
+	.. numerical grad:  0.0
+	g-component of gradient: ((((((((-8 * exp (-8 * g)) * (-1 * (exp (-8 * g) ^ -2))) * (-10 / (b * c))) * (1 / ((-10 / (b * c)) / exp (-8 * g)))) * (-1 * (ln ((-10 / (b * c)) / exp (-8 * g)) ^ -2))) * (((-8 * (exp b * (-3 + a))) + b) ^ -4)) * -1) * f)
+	.. evaluated at `vars`:  -3.723097849588721e-21
+	.. numerical grad:  0.0
+
+f: -9
+→ no gradient to compute
+
+f: exp (-9 / 0)
+→ no gradient to compute
+
+f: c
+	c-component of gradient: 1
+	.. evaluated at `vars`:  1
+	.. numerical grad:  1.000000000139778
+
+f: d
+	d-component of gradient: 1
+	.. evaluated at `vars`:  1
+	.. numerical grad:  0.9999999999732445
+
+f: (e * c)
+	e-component of gradient: c
+	.. evaluated at `vars`:  -8.756381642128462
+	.. numerical grad:  -8.756381642882616
+	c-component of gradient: e
+	.. evaluated at `vars`:  6.502173346972842
+	.. numerical grad:  6.502173341971229
+
+f: a
+	a-component of gradient: 1
+	.. evaluated at `vars`:  1
+	.. numerical grad:  0.9999999999177334
+
+f: -9
+→ no gradient to compute
+
+f: ln 3
+→ no gradient to compute
+
+f: 0
+→ no gradient to compute
+
+f: (3 / (b ^ 2))
+	b-component of gradient: (((2 * (b ^ 1)) * (-1 * ((b ^ 2) ^ -2))) * 3)
+	.. evaluated at `vars`:  -0.0216489511539801
+	.. numerical grad:  -0.021648951159525254
+
+f: d
+	d-component of gradient: 1
+	.. evaluated at `vars`:  1
+	.. numerical grad:  0.9999999992515995
+
+f: exp (f - (ln d - 8))
+	f-component of gradient: exp (f - (ln d - 8))
+	.. evaluated at `vars`:  13169310.246848037
+	.. numerical grad:  13169310.237281024
+	d-component of gradient: (((1 / d) * -1) * exp (f - (ln d - 8)))
+	.. evaluated at `vars`:  -1160537.3870729604
+	.. numerical grad:  -1160537.3797938228
+
+f: exp (ln 8 ^ a)
+	a-component of gradient: (((ln 8 ^ a) * ln ln 8) * exp (ln 8 ^ a))
+	.. evaluated at `vars`:  3.2069089656528073e+128
+	.. numerical grad:  3.2069089903178283e+128
+	[Warning]: abs(val-num_g[v]) == 2.4665020983335287e+120 > 1e-2
+
+f: d
+	d-component of gradient: 1
+	.. evaluated at `vars`:  1
+	.. numerical grad:  0.9999999992515995
+
+f: 7
+→ no gradient to compute
+
+f: ln exp ln exp (f - -9)
+	f-component of gradient: (((exp (f - -9) * (1 / exp (f - -9))) * exp ln exp (f - -9)) * (1 / exp ln exp (f - -9)))
+	.. evaluated at `vars`:  1.0
+	.. numerical grad:  1.000000000139778
+
+f: (a + 6)
+	a-component of gradient: 1
+	.. evaluated at `vars`:  1
+	.. numerical grad:  1.000000000139778
+
+f: g
+	g-component of gradient: 1
+	.. evaluated at `vars`:  1
+	.. numerical grad:  1.000000000001
+
+f: 6
+→ no gradient to compute
+
+f: d
+	d-component of gradient: 1
+	.. evaluated at `vars`:  1
+	.. numerical grad:  1.000000000139778
+
+f: (d ^ ((ln (8 + ln 9) * f) + exp -8))
+	d-component of gradient: (((ln (8 + ln 9) * f) + exp -8) * (d ^ (((ln (8 + ln 9) * f) + exp -8) - 1)))
+	.. evaluated at `vars`:  (-3.041039422813682e-09-1.2548247114050592e-09j)
+	.. numerical grad:  (-3.0410394245889217e-09-1.2548247121360762e-09j)
+	f-component of gradient: (ln (8 + ln 9) * ((d ^ ((ln (8 + ln 9) * f) + exp -8)) * ln d))
+→ math domain error
+
+f: exp e
+	e-component of gradient: exp e
+	.. evaluated at `vars`:  0.002181402940963318
+	.. numerical grad:  0.002181402941310931
+
+f: exp a
+	a-component of gradient: exp a
+	.. evaluated at `vars`:  0.037516047449852936
+	.. numerical grad:  0.03751604745610981
+
+f: ln -4
+→ no gradient to compute
+
+f: ((exp d / (exp 2 - ln (b + 5))) + 2)
+	d-component of gradient: (exp d * ((exp 2 - ln (b + 5)) ^ -1))
+	.. evaluated at `vars`:  1.6306918188957742
+	.. numerical grad:  1.630691819132224
+	b-component of gradient: ((((1 / (b + 5)) * -1) * (-1 * ((exp 2 - ln (b + 5)) ^ -2))) * exp d)
+	.. evaluated at `vars`:  0.020784149932383943
+	.. numerical grad:  0.020784149734609514
+
+f: (d / -7)
+	d-component of gradient: -0.14285714285714285
+	.. evaluated at `vars`:  -0.14285714285714285
+	.. numerical grad:  -0.14285714289297147
+
+f: (((ln exp exp (a - 2) ^ (4 * c)) / exp (f / e)) ^ e)
+	a-component of gradient: (((((exp (a - 2) * exp exp (a - 2)) * (1 / exp exp (a - 2))) * ((4 * c) * (ln exp exp (a - 2) ^ ((4 * c) - 1)))) * (exp (f / e) ^ -1)) * (e * (((ln exp exp (a - 2) ^ (4 * c)) / exp (f / e)) ^ (e - 1))))
+	.. evaluated at `vars`:  0.0
+	.. numerical grad:  0.0
+	c-component of gradient: (((4 * ((ln exp exp (a - 2) ^ (4 * c)) * ln ln exp exp (a - 2))) * (exp (f / e) ^ -1)) * (e * (((ln exp exp (a - 2) ^ (4 * c)) / exp (f / e)) ^ (e - 1))))
+	.. evaluated at `vars`:  -0.0
+	.. numerical grad:  0.0
+	f-component of gradient: (((((e ^ -1) * exp (f / e)) * (-1 * (exp (f / e) ^ -2))) * (ln exp exp (a - 2) ^ (4 * c))) * (e * (((ln exp exp (a - 2) ^ (4 * c)) / exp (f / e)) ^ (e - 1))))
+	.. evaluated at `vars`:  -0.0
+	.. numerical grad:  0.0
+	e-component of gradient: (((((((-1 * (e ^ -2)) * f) * exp (f / e)) * (-1 * (exp (f / e) ^ -2))) * (ln exp exp (a - 2) ^ (4 * c))) * (e * (((ln exp exp (a - 2) ^ (4 * c)) / exp (f / e)) ^ (e - 1)))) + ((((ln exp exp (a - 2) ^ (4 * c)) / exp (f / e)) ^ e) * ln ((ln exp exp (a - 2) ^ (4 * c)) / exp (f / e))))
+	.. evaluated at `vars`:  -0.0
+	.. numerical grad:  0.0
+
+f: (((b - exp (-5 * -10)) + ln b) / -2)
+	b-component of gradient: ((1 + (1 / b)) * -0.5)
+	.. evaluated at `vars`:  -0.5377865689038016
+	.. numerical grad:  0.0
+	[Warning]: abs(val-num_g[v]) == 0.5377865689038016 > 1e-2
+
+f: -10
+→ no gradient to compute
+
+f: g
+	g-component of gradient: 1
+	.. evaluated at `vars`:  1
+	.. numerical grad:  0.9999999992515995
+
+f: f
+	f-component of gradient: 1
+	.. evaluated at `vars`:  1
+	.. numerical grad:  0.9999999992515995
+
+f: exp ((((exp 6 + 8) + exp exp ln ((-24 * d) + 3)) / -8) - ((-7 - (f * (d * -7))) * -5))
+	d-component of gradient: ((((((-24 * (1 / ((-24 * d) + 3))) * exp ln ((-24 * d) + 3)) * exp exp ln ((-24 * d) + 3)) * -0.125) + (35 * f)) * exp ((((exp 6 + 8) + exp exp ln ((-24 * d) + 3)) / -8) - ((-7 - (f * (d * -7))) * -5)))
+	.. evaluated at `vars`:  0.0
+	.. numerical grad:  0.0
+	f-component of gradient: ((35 * d) * exp ((((exp 6 + 8) + exp exp ln ((-24 * d) + 3)) / -8) - ((-7 - (f * (d * -7))) * -5)))
+	.. evaluated at `vars`:  -0.0
+	.. numerical grad:  0.0
+
+f: (8 + ((d * b) + (d * -1)))
+	d-component of gradient: (b + -1)
+	.. evaluated at `vars`:  -7.184186795777458
+	.. numerical grad:  -7.184186797459802
+	b-component of gradient: d
+	.. evaluated at `vars`:  4.107895161375129
+	.. numerical grad:  4.107895161808983
+
+f: c
+	c-component of gradient: 1
+	.. evaluated at `vars`:  1
+	.. numerical grad:  1.000000000139778
+
+f: ((-2 + (-7 - (d - (-8 / (b * e))))) - ((-4 - (8 + exp 2)) - 9))
+	d-component of gradient: -1
+	.. evaluated at `vars`:  -1
+	.. numerical grad:  -1.0000000010279564
+	b-component of gradient: (-8 * (e * (-1 * ((b * e) ^ -2))))
+	.. evaluated at `vars`:  -0.013352496728467937
+	.. numerical grad:  -0.013352494221408051
+	e-component of gradient: (-8 * (b * (-1 * ((b * e) ^ -2))))
+	.. evaluated at `vars`:  0.027308928416902297
+	.. numerical grad:  0.027308928451930115
+
+f: (b - g)
+	b-component of gradient: 1
+	.. evaluated at `vars`:  1
+	.. numerical grad:  0.9999999999177334
+	g-component of gradient: -1
+	.. evaluated at `vars`:  -1
+	.. numerical grad:  -0.9999999999177334
+
+f: ((f / (5 - exp ((7 ^ (d - (f / 5))) * 6))) * 3)
+	f-component of gradient: ((((5 - exp ((7 ^ (d - (f / 5))) * 6)) ^ -1) + (((((-1.2000000000000002 * ((7 ^ (d - (f / 5))) * ln 7)) * exp ((7 ^ (d - (f / 5))) * 6)) * -1) * (-1 * ((5 - exp ((7 ^ (d - (f / 5))) * 6)) ^ -2))) * f)) * 3)
+	.. evaluated at `vars`:  0.7500006772420131
+	.. numerical grad:  0.7500006766747447
+	d-component of gradient: ((((((((7 ^ (d - (f / 5))) * ln 7) * 6) * exp ((7 ^ (d - (f / 5))) * 6)) * -1) * (-1 * ((5 - exp ((7 ^ (d - (f / 5))) * 6)) ^ -2))) * f) * 3)
+	.. evaluated at `vars`:  -2.68115209265036e-06
+	.. numerical grad:  -2.680966559864828e-06
+
+f: e
+	e-component of gradient: 1
+	.. evaluated at `vars`:  1
+	.. numerical grad:  0.9999999992515995
+
+f: -2
+→ no gradient to compute
+
+f: (0 + a)
+	a-component of gradient: 1
+	.. evaluated at `vars`:  1
+	.. numerical grad:  0.9999999992515995
+
+f: c
+	c-component of gradient: 1
+	.. evaluated at `vars`:  1
+	.. numerical grad:  1.0000000000287557
+
+f: 5
+→ no gradient to compute
+
+f: (ln 7 + exp exp (-8 / ((e + 5) * exp (exp a / (3 * (exp g + -5))))))
+	e-component of gradient: ((((exp (exp a / (3 * (exp g + -5))) * (-1 * (((e + 5) * exp (exp a / (3 * (exp g + -5)))) ^ -2))) * -8) * exp (-8 / ((e + 5) * exp (exp a / (3 * (exp g + -5)))))) * exp exp (-8 / ((e + 5) * exp (exp a / (3 * (exp g + -5))))))
+	.. evaluated at `vars`:  0.030060983766956675
+	.. numerical grad:  0.030060983702284716
+	a-component of gradient: (((((((exp a * ((3 * (exp g + -5)) ^ -1)) * exp (exp a / (3 * (exp g + -5)))) * (e + 5)) * (-1 * (((e + 5) * exp (exp a / (3 * (exp g + -5)))) ^ -2))) * -8) * exp (-8 / ((e + 5) * exp (exp a / (3 * (exp g + -5)))))) * exp exp (-8 / ((e + 5) * exp (exp a / (3 * (exp g + -5))))))
+	.. evaluated at `vars`:  6.704159918964498e-11
+	.. numerical grad:  0.0
+	g-component of gradient: (((((((((exp g * 3) * (-1 * ((3 * (exp g + -5)) ^ -2))) * exp a) * exp (exp a / (3 * (exp g + -5)))) * (e + 5)) * (-1 * (((e + 5) * exp (exp a / (3 * (exp g + -5)))) ^ -2))) * -8) * exp (-8 / ((e + 5) * exp (exp a / (3 * (exp g + -5)))))) * exp exp (-8 / ((e + 5) * exp (exp a / (3 * (exp g + -5))))))
+	.. evaluated at `vars`:  -6.704800092811921e-11
+	.. numerical grad:  0.0
+
+f: ((f ^ -5) / (-2 / -1.0))
+	f-component of gradient: ((-5 * (f ^ -6)) * (2.0 ^ -1))
+	.. evaluated at `vars`:  -0.051414185886323474
+	.. numerical grad:  -0.05141418588268387
+
+f: (a - g)
+	a-component of gradient: 1
+	.. evaluated at `vars`:  1
+	.. numerical grad:  1.000000000139778
+	g-component of gradient: -1
+	.. evaluated at `vars`:  -1
+	.. numerical grad:  -1.000000000139778
+
+f: (((f - exp exp -4) / (4 * ((b / b) ^ (c - -7)))) ^ ln exp d)
+	f-component of gradient: (((4 * ((b / b) ^ (c - -7))) ^ -1) * (ln exp d * (((f - exp exp -4) / (4 * ((b / b) ^ (c - -7)))) ^ (ln exp d - 1))))
+	.. evaluated at `vars`:  (1.3925935816179396e-13+3.5576395994769803e-13j)
+	.. numerical grad:  (1.392593582668536e-13+3.557639602164857e-13j)
+	b-component of gradient: (((((((b ^ -1) + ((-1 * (b ^ -2)) * b)) * ((c - -7) * ((b / b) ^ ((c - -7) - 1)))) * 4) * (-1 * ((4 * ((b / b) ^ (c - -7))) ^ -2))) * (f - exp exp -4)) * (ln exp d * (((f - exp exp -4) / (4 * ((b / b) ^ (c - -7)))) ^ (ln exp d - 1))))
+	.. evaluated at `vars`:  (-0+0j)
+	.. numerical grad:  0j
+	c-component of gradient: (((((((b / b) ^ (c - -7)) * ln (b / b)) * 4) * (-1 * ((4 * ((b / b) ^ (c - -7))) ^ -2))) * (f - exp exp -4)) * (ln exp d * (((f - exp exp -4) / (4 * ((b / b) ^ (c - -7)))) ^ (ln exp d - 1))))
+	.. evaluated at `vars`:  0j
+	.. numerical grad:  0j
+	d-component of gradient: ((exp d * (1 / exp d)) * ((((f - exp exp -4) / (4 * ((b / b) ^ (c - -7)))) ^ ln exp d) * ln ((f - exp exp -4) / (4 * ((b / b) ^ (c - -7))))))
+→ math domain error
+
+f: (1 + (exp (b / g) / -10))
+	b-component of gradient: (((g ^ -1) * exp (b / g)) * -0.1)
+	.. evaluated at `vars`:  -0.20740152519334565
+	.. numerical grad:  -0.2074015249542427
+	g-component of gradient: ((((-1 * (g ^ -2)) * b) * exp (b / g)) * -0.1)
+	.. evaluated at `vars`:  0.4778184878928217
+	.. numerical grad:  0.47781848777628255
+
+f: b
+	b-component of gradient: 1
+	.. evaluated at `vars`:  1
+	.. numerical grad:  0.9999999992515995
+
+f: 2
+→ no gradient to compute
+
+f: -6
+→ no gradient to compute
+
+f: ln exp e
+	e-component of gradient: (exp e * (1 / exp e))
+	.. evaluated at `vars`:  0.9999999999999999
+	.. numerical grad:  0.9999999992515995
+
+f: ((((e / 6) + -5) - 6) * (((-2.06960572136773e-10 + exp -9) ^ exp g) / c))
+	e-component of gradient: (0.16666666666666666 * (((-2.06960572136773e-10 + exp -9) ^ exp g) / c))
+	.. evaluated at `vars`:  8.384841833981016e-240
+	.. numerical grad:  8.38484176691781e-240
+	g-component of gradient: (((exp g * (((-2.06960572136773e-10 + exp -9) ^ exp g) * ln (-2.06960572136773e-10 + exp -9))) * (c ^ -1)) * (((e / 6) + -5) - 6))
+	.. evaluated at `vars`:  3.38292682221576e-235
+	.. numerical grad:  3.382926990001312e-235
+	c-component of gradient: (((-1 * (c ^ -2)) * ((-2.06960572136773e-10 + exp -9) ^ exp g)) * (((e / 6) + -5) - 6))
+	.. evaluated at `vars`:  4.742456085207373e-239
+	.. numerical grad:  4.7424560844665674e-239
+
+f: 9
+→ no gradient to compute
+
+f: e
+	e-component of gradient: 1
+	.. evaluated at `vars`:  1
+	.. numerical grad:  1.000000000139778
+
+f: ln (4 / (-7 + exp -3))
+→ no gradient to compute
+
+f: (8 / exp (b * 9))
+	b-component of gradient: (((9 * exp (b * 9)) * (-1 * (exp (b * 9) ^ -2))) * 8)
+	.. evaluated at `vars`:  -7.394716139181272e-05
+	.. numerical grad:  -7.394716138841429e-05
+
+f: (exp -5 - f)
+	f-component of gradient: -1
+	.. evaluated at `vars`:  -1
+	.. numerical grad:  -0.9999999992515995
+
+f: (d * ln f)
+	d-component of gradient: ln f
+	.. evaluated at `vars`:  1.6827118989595533
+	.. numerical grad:  1.6827118991535883
+	f-component of gradient: ((1 / f) * d)
+	.. evaluated at `vars`:  0.7316175389874793
+	.. numerical grad:  0.7316175389959767
+
+f: ((((a * 10) * b) + ((-2 - g) + (c / (g / c)))) * a)
+	a-component of gradient: (((10 * b) * a) + (((a * 10) * b) + ((-2 - g) + (c / (g / c)))))
+	.. evaluated at `vars`:  -816.184577896033
+	.. numerical grad:  -816.1845780705335
+	b-component of gradient: ((a * 10) * a)
+	.. evaluated at `vars`:  272.15057329315687
+	.. numerical grad:  272.15057343710214
+	g-component of gradient: ((-1 + (((c ^ -1) * (-1 * ((g / c) ^ -2))) * c)) * a)
+	.. evaluated at `vars`:  8.920915814327904
+	.. numerical grad:  8.920915661292383
+	c-component of gradient: ((((g / c) ^ -1) + ((((-1 * (c ^ -2)) * g) * (-1 * ((g / c) ^ -2))) * c)) * a)
+	.. evaluated at `vars`:  -8.79172870218431
+	.. numerical grad:  -8.791728760115802
+
+f: (3 / -8)
+→ no gradient to compute
+
+f: -1
+→ no gradient to compute
+
+f: exp 8
+→ no gradient to compute
+
+f: c
+	c-component of gradient: 1
+	.. evaluated at `vars`:  1
+	.. numerical grad:  1.000000000139778
+
+f: ((0 * ((c ^ b) * -9)) * (((((-10 * e) - b) / ((-3 - (g + -7)) * (6 / (exp 8 ^ (exp 0 / e))))) - ((-2 + (ln 6 / a)) / c)) - g))
+	c-component of gradient: (((0 * (b * (c ^ (b - 1)))) * (((((-10 * e) - b) / ((-3 - (g + -7)) * (6 / (exp 8 ^ (exp 0 / e))))) - ((-2 + (ln 6 / a)) / c)) - g)) + ((((-1 * (c ^ -2)) * (-2 + (ln 6 / a))) * -1) * (0 * (c ^ b))))
+	.. evaluated at `vars`:  (-0+0j)
+	.. numerical grad:  0j
+	b-component of gradient: (((0 * ((c ^ b) * ln c)) * (((((-10 * e) - b) / ((-3 - (g + -7)) * (6 / (exp 8 ^ (exp 0 / e))))) - ((-2 + (ln 6 / a)) / c)) - g)) + ((-1 * (((-3 - (g + -7)) * (6 / (exp 8 ^ (exp 0 / e)))) ^ -1)) * (0 * (c ^ b))))
+→ math domain error
+
+f: (((-1 / a) / (-7 / (g - (-0.6 + (-8 ^ e))))) - ((f + e) / 5))
+	a-component of gradient: ((1 * (a ^ -2)) * ((-7 / (g - (-0.6 + (-8 ^ e)))) ^ -1))
+	.. evaluated at `vars`:  (-0.09094807341188572-0.6605376948831285j)
+	.. numerical grad:  (-0.09094807329468324-0.6605376948742858j)
+	g-component of gradient: (((7 * ((g - (-0.6 + (-8 ^ e))) ^ -2)) * (-1 * ((-7 / (g - (-0.6 + (-8 ^ e)))) ^ -2))) * (-1 / a))
+	.. evaluated at `vars`:  (-0.09488806064748667-9.217854598125945e-18j)
+	.. numerical grad:  (-0.09488806074209322-5.551115123125783e-11j)
+	e-component of gradient: ((((((((-8 ^ e) * ln -8) * -1) * (-1 * ((g - (-0.6 + (-8 ^ e))) ^ -2))) * -7) * (-1 * ((-7 / (g - (-0.6 + (-8 ^ e)))) ^ -2))) * (-1 / a)) + -0.2)
+→ math domain error
+
+f: ln -4
+→ no gradient to compute
+
+f: e
+	e-component of gradient: 1
+	.. evaluated at `vars`:  1
+	.. numerical grad:  1.000000000139778
+
+f: g
+	g-component of gradient: 1
+	.. evaluated at `vars`:  1
+	.. numerical grad:  0.9999999992515995
+
+f: c
+	c-component of gradient: 1
+	.. evaluated at `vars`:  1
+	.. numerical grad:  1.000000000139778
+
+f: ((-7 / 1) - (b - (-3 + g)))
+	b-component of gradient: -1
+	.. evaluated at `vars`:  -1
+	.. numerical grad:  -0.9999999992515995
+	g-component of gradient: 1
+	.. evaluated at `vars`:  1
+	.. numerical grad:  0.9999999992515995
+
+f: 7
+→ no gradient to compute
+
+f: ((((10 - -8) + ((((-2.581174791713197e-09 ^ g) + 1) ^ d) ^ c)) - ln (3 / 6)) / -9)
+	g-component of gradient: (((((-2.581174791713197e-09 ^ g) * ln -2.581174791713197e-09) * (d * (((-2.581174791713197e-09 ^ g) + 1) ^ (d - 1)))) * (c * ((((-2.581174791713197e-09 ^ g) + 1) ^ d) ^ (c - 1)))) * -0.1111111111111111)
+→ math domain error
+
+f: e
+	e-component of gradient: 1
+	.. evaluated at `vars`:  1
+	.. numerical grad:  1.000000000139778
+
+f: (((d - e) + (1.0566416297146188+0.48255206345854096j)) ^ -6)
+	d-component of gradient: (-6 * (((d - e) + (1.0566416297146188+0.48255206345854096j)) ^ -7))
+	.. evaluated at `vars`:  (-1.6637975312822302e-05+1.0347679056704775e-05j)
+	.. numerical grad:  (-1.6637975306028115e-05+1.034767905228436e-05j)
+	e-component of gradient: (6 * (((d - e) + (1.0566416297146188+0.48255206345854096j)) ^ -7))
+	.. evaluated at `vars`:  (1.6637975312822302e-05-1.0347679056704775e-05j)
+	.. numerical grad:  (1.663797531619251e-05-1.0347679058213591e-05j)
+
+f: exp ln exp c
+	c-component of gradient: ((exp c * (1 / exp c)) * exp ln exp c)
+	.. evaluated at `vars`:  1.087545296807749
+	.. numerical grad:  1.0875452968184263
+
+f: (exp 1 + -4)
+→ no gradient to compute
+
+f: (-7 - (-3 + e))
+	e-component of gradient: -1
+	.. evaluated at `vars`:  -1
+	.. numerical grad:  -0.9999999974752427
+
+f: exp (3 + ((exp 7 * b) - -3))
+	b-component of gradient: (exp 7 * exp (3 + ((exp 7 * b) - -3)))
+	.. evaluated at `vars`:  0.0
+	.. numerical grad:  0.0
+
+f: g
+	g-component of gradient: 1
+	.. evaluated at `vars`:  1
+	.. numerical grad:  0.9999999992515995
+
+f: (b + (-6 * (exp 3 / 4)))
+	b-component of gradient: 1
+	.. evaluated at `vars`:  1
+	.. numerical grad:  0.9999999992515995
+
+f: ln (-7 ^ -7)
+→ no gradient to compute
+
+f: 1
+→ no gradient to compute
+
+f: -6
+→ no gradient to compute
+
+f: (f + (d ^ ((a * ln ln c) - 0)))
+	f-component of gradient: 1
+	.. evaluated at `vars`:  1
+	.. numerical grad:  (0.9999999999177334+0j)
+	d-component of gradient: (((a * ln ln c) - 0) * (d ^ (((a * ln ln c) - 0) - 1)))
+	.. evaluated at `vars`:  (4.2377264030679225-2.4146724599189975j)
+	.. numerical grad:  (4.237726403122366-2.414672459982725j)
+	a-component of gradient: (ln ln c * ((d ^ ((a * ln ln c) - 0)) * ln d))
+→ math domain error
+
+f: (b - (f - b))
+	b-component of gradient: (1 + 1)
+	.. evaluated at `vars`:  2
+	.. numerical grad:  2.000000000279556
+	f-component of gradient: -1
+	.. evaluated at `vars`:  -1
+	.. numerical grad:  -1.000000000139778
+
+f: ((f + (-9 + exp (-8 / e))) - -5)
+	f-component of gradient: 1
+	.. evaluated at `vars`:  1
+	.. numerical grad:  0.9999999992515995
+	e-component of gradient: ((8 * (e ^ -2)) * exp (-8 / e))
+	.. evaluated at `vars`:  0.15498546260213217
+	.. numerical grad:  0.15498546224179677
+
+f: (((exp g ^ (2 * d)) / (ln b + exp -6)) * (-2 / ((e ^ a) - ((-18 * (-6 ^ f)) * a))))
+	g-component of gradient: (((exp g * ((2 * d) * (exp g ^ ((2 * d) - 1)))) * ((ln b + exp -6) ^ -1)) * (-2 / ((e ^ a) - ((-18 * (-6 ^ f)) * a))))
+	.. evaluated at `vars`:  (17255869221927.598+19773493057668.83j)
+	.. numerical grad:  (17255869209472.656+19773493043457.03j)
+	[Warning]: abs(val-num_g[v]) == 18897.10919292632 > 1e-2
+	d-component of gradient: (((2 * ((exp g ^ (2 * d)) * ln exp g)) * ((ln b + exp -6) ^ -1)) * (-2 / ((e ^ a) - ((-18 * (-6 ^ f)) * a))))
+	.. evaluated at `vars`:  (98354341464284.58+112704197228400.89j)
+	.. numerical grad:  (98354341489501.95+112704197257324.22j)
+	[Warning]: abs(val-num_g[v]) == 38372.84080853333 > 1e-2
+	b-component of gradient: ((((1 / b) * (-1 * ((ln b + exp -6) ^ -2))) * (exp g ^ (2 * d))) * (-2 / ((e ^ a) - ((-18 * (-6 ^ f)) * a))))
+	.. evaluated at `vars`:  (705802154498.2761+808778382738.5988j)
+	.. numerical grad:  (705802154296.875+808778382568.3594j)
+	[Warning]: abs(val-num_g[v]) == 263.71169641755944 > 1e-2
+	e-component of gradient: ((((a * (e ^ (a - 1))) * (-1 * (((e ^ a) - ((-18 * (-6 ^ f)) * a)) ^ -2))) * -2) * ((exp g ^ (2 * d)) / (ln b + exp -6)))
+	.. evaluated at `vars`:  (1.1220280044986204e-14-8.213284267574155e-14j)
+	.. numerical grad:  0j
+	a-component of gradient: ((((((e ^ a) * ln e) + (18 * (-6 ^ f))) * (-1 * (((e ^ a) - ((-18 * (-6 ^ f)) * a)) ^ -2))) * -2) * ((exp g ^ (2 * d)) / (ln b + exp -6)))
+	.. evaluated at `vars`:  (-339472825474.6526-389001763484.64624j)
+	.. numerical grad:  (-339472825195.3125-389001763427.7344j)
+	[Warning]: abs(val-num_g[v]) == 285.07866477026613 > 1e-2
+	f-component of gradient: ((((((((-6 ^ f) * ln -6) * -18) * a) * -1) * (-1 * (((e ^ a) - ((-18 * (-6 ^ f)) * a)) ^ -2))) * -2) * ((exp g ^ (2 * d)) / (ln b + exp -6)))
+→ math domain error
+
+f: (ln e ^ ((exp -8 * 0) + (c + g)))
+	e-component of gradient: ((1 / e) * (((exp -8 * 0) + (c + g)) * (ln e ^ (((exp -8 * 0) + (c + g)) - 1))))
+	.. evaluated at `vars`:  0.3176960397744999
+	.. numerical grad:  0.31769603969777904
+	c-component of gradient: ((ln e ^ ((exp -8 * 0) + (c + g))) * ln ln e)
+	.. evaluated at `vars`:  1.628789264329288
+	.. numerical grad:  1.6287892645738822
+	g-component of gradient: ((ln e ^ ((exp -8 * 0) + (c + g))) * ln ln e)
+	.. evaluated at `vars`:  1.628789264329288
+	.. numerical grad:  1.6287892645738822
+
+f: (9 - -6)
+→ no gradient to compute
+
+f: d
+	d-component of gradient: 1
+	.. evaluated at `vars`:  1
+	.. numerical grad:  0.9999999992515995
+
+f: (-5 / (((3 / ((-6 ^ (g / g)) * b)) - (ln 8.499859752314087e-06 / (((-10 + d) * b) / 4))) ^ (d * a)))
+	g-component of gradient: (((((((((g ^ -1) + ((-1 * (g ^ -2)) * g)) * ((-6 ^ (g / g)) * ln -6)) * b) * (-1 * (((-6 ^ (g / g)) * b) ^ -2))) * 3) * ((d * a) * (((3 / ((-6 ^ (g / g)) * b)) - (ln 8.499859752314087e-06 / (((-10 + d) * b) / 4))) ^ ((d * a) - 1)))) * (-1 * ((((3 / ((-6 ^ (g / g)) * b)) - (ln 8.499859752314087e-06 / (((-10 + d) * b) / 4))) ^ (d * a)) ^ -2))) * -5)
+→ math domain error
+
+f: f
+	f-component of gradient: 1
+	.. evaluated at `vars`:  1
+	.. numerical grad:  0.9999999992515995
+
+f: -8
+→ no gradient to compute
+
+f: 7
+→ no gradient to compute
+
+f: ln 10
+→ no gradient to compute
+
+f: g
+	g-component of gradient: 1
+	.. evaluated at `vars`:  1
+	.. numerical grad:  0.9999999992515995
+
+f: c
+	c-component of gradient: 1
+	.. evaluated at `vars`:  1
+	.. numerical grad:  0.9999999992515995
+
+f: (5 * ((((exp 2 * (0 ^ (1 / f))) + 3) * 4) * (((exp ln c * ((9 / f) ^ -5)) / (-10 ^ b)) + b)))
+	f-component of gradient: (((((((-1 * (f ^ -2)) * ((0 ^ (1 / f)) * ln 0)) * exp 2) * 4) * (((exp ln c * ((9 / f) ^ -5)) / (-10 ^ b)) + b)) + (((((-9 * (f ^ -2)) * (-5 * ((9 / f) ^ -6))) * exp ln c) * ((-10 ^ b) ^ -1)) * (((exp 2 * (0 ^ (1 / f))) + 3) * 4))) * 5)
+→ math domain error
+
+f: (d / e)
+	d-component of gradient: (e ^ -1)
+	.. evaluated at `vars`:  -0.08930347103804347
+	.. numerical grad:  -0.08930347106250736
+	e-component of gradient: ((-1 * (e ^ -2)) * d)
+	.. evaluated at `vars`:  -0.11693159103120539
+	.. numerical grad:  -0.11693159085446325
+
+f: ((7 / ((b / exp e) ^ 9)) * b)
+	b-component of gradient: ((((((exp e ^ -1) * (9 * ((b / exp e) ^ 8))) * (-1 * (((b / exp e) ^ 9) ^ -2))) * 7) * b) + (7 / ((b / exp e) ^ 9)))
+	.. evaluated at `vars`:  1.2009185945532966e+49
+	.. numerical grad:  1.2009185953209112e+49
+	[Warning]: abs(val-num_g[v]) == 7.67614629134585e+39 > 1e-2
+	e-component of gradient: ((((((exp e * (-1 * (exp e ^ -2))) * b) * (9 * ((b / exp e) ^ 8))) * (-1 * (((b / exp e) ^ 9) ^ -2))) * 7) * b)
+	.. evaluated at `vars`:  8.953881994217241e+49
+	.. numerical grad:  8.953881988221341e+49
+	[Warning]: abs(val-num_g[v]) == 5.995900335655289e+40 > 1e-2
+
+f: (0 * -2)
+→ no gradient to compute
+
+f: (2 ^ (f * (exp g / b)))
+	f-component of gradient: ((exp g / b) * ((2 ^ (f * (exp g / b))) * ln 2))
+	.. evaluated at `vars`:  1.2025048885685003e-05
+	.. numerical grad:  1.2025047624319996e-05
+	g-component of gradient: (((exp g * (b ^ -1)) * f) * ((2 ^ (f * (exp g / b))) * ln 2))
+	.. evaluated at `vars`:  -0.0001195142831455727
+	.. numerical grad:  -0.00011951428735557101
+	b-component of gradient: ((((-1 * (b ^ -2)) * exp g) * f) * ((2 ^ (f * (exp g / b))) * ln 2))
+	.. evaluated at `vars`:  1.0227682618106089e-05
+	.. numerical grad:  1.022770756975433e-05
+
+f: (((ln g / c) + exp 7) - ln ((e * (ln (d - (((e / ((3 ^ g) ^ a)) / (g * exp 6)) ^ exp -30)) + 6)) ^ b))
+	g-component of gradient: (((1 / g) * (c ^ -1)) + ((((((((((((((3 ^ g) * ln 3) * (a * ((3 ^ g) ^ (a - 1)))) * (-1 * (((3 ^ g) ^ a) ^ -2))) * e) * ((g * exp 6) ^ -1)) + ((exp 6 * (-1 * ((g * exp 6) ^ -2))) * (e / ((3 ^ g) ^ a)))) * (exp -30 * (((e / ((3 ^ g) ^ a)) / (g * exp 6)) ^ (exp -30 - 1)))) * -1) * (1 / (d - (((e / ((3 ^ g) ^ a)) / (g * exp 6)) ^ exp -30)))) * e) * (b * ((e * (ln (d - (((e / ((3 ^ g) ^ a)) / (g * exp 6)) ^ exp -30)) + 6)) ^ (b - 1)))) * (1 / ((e * (ln (d - (((e / ((3 ^ g) ^ a)) / (g * exp 6)) ^ exp -30)) + 6)) ^ b))) * -1))
+	.. evaluated at `vars`:  3.6591800022312855
+	.. numerical grad:  3.659179924397904
+	c-component of gradient: ((-1 * (c ^ -2)) * ln g)
+	.. evaluated at `vars`:  -36.34010833352303
+	.. numerical grad:  -36.340108408694505
+	e-component of gradient: (((((ln (d - (((e / ((3 ^ g) ^ a)) / (g * exp 6)) ^ exp -30)) + 6) + ((((((((3 ^ g) ^ a) ^ -1) * ((g * exp 6) ^ -1)) * (exp -30 * (((e / ((3 ^ g) ^ a)) / (g * exp 6)) ^ (exp -30 - 1)))) * -1) * (1 / (d - (((e / ((3 ^ g) ^ a)) / (g * exp 6)) ^ exp -30)))) * e)) * (b * ((e * (ln (d - (((e / ((3 ^ g) ^ a)) / (g * exp 6)) ^ exp -30)) + 6)) ^ (b - 1)))) * (1 / ((e * (ln (d - (((e / ((3 ^ g) ^ a)) / (g * exp 6)) ^ exp -30)) + 6)) ^ b))) * -1)
+	.. evaluated at `vars`:  0.4377769858073414
+	.. numerical grad:  0.43777708924608305
+	d-component of gradient: (((((1 / (d - (((e / ((3 ^ g) ^ a)) / (g * exp 6)) ^ exp -30))) * e) * (b * ((e * (ln (d - (((e / ((3 ^ g) ^ a)) / (g * exp 6)) ^ exp -30)) + 6)) ^ (b - 1)))) * (1 / ((e * (ln (d - (((e / ((3 ^ g) ^ a)) / (g * exp 6)) ^ exp -30)) + 6)) ^ b))) * -1)
+	.. evaluated at `vars`:  0.38440371978839083
+	.. numerical grad:  0.3844037337330519
+	a-component of gradient: (((((((((((((3 ^ g) ^ a) * ln (3 ^ g)) * (-1 * (((3 ^ g) ^ a) ^ -2))) * e) * ((g * exp 6) ^ -1)) * (exp -30 * (((e / ((3 ^ g) ^ a)) / (g * exp 6)) ^ (exp -30 - 1)))) * -1) * (1 / (d - (((e / ((3 ^ g) ^ a)) / (g * exp 6)) ^ exp -30)))) * e) * (b * ((e * (ln (d - (((e / ((3 ^ g) ^ a)) / (g * exp 6)) ^ exp -30)) + 6)) ^ (b - 1)))) * (1 / ((e * (ln (d - (((e / ((3 ^ g) ^ a)) / (g * exp 6)) ^ exp -30)) + 6)) ^ b))) * -1)
+	.. evaluated at `vars`:  7.854904400008743e-14
+	.. numerical grad:  0.0
+	b-component of gradient: (((((e * (ln (d - (((e / ((3 ^ g) ^ a)) / (g * exp 6)) ^ exp -30)) + 6)) ^ b) * ln (e * (ln (d - (((e / ((3 ^ g) ^ a)) / (g * exp 6)) ^ exp -30)) + 6))) * (1 / ((e * (ln (d - (((e / ((3 ^ g) ^ a)) / (g * exp 6)) ^ exp -30)) + 6)) ^ b))) * -1)
+	.. evaluated at `vars`:  -3.4803585815852665
+	.. numerical grad:  -3.48035860042728
+
+f: f
+	f-component of gradient: 1
+	.. evaluated at `vars`:  1
+	.. numerical grad:  0.9999999992515995
+
+f: g
+	g-component of gradient: 1
+	.. evaluated at `vars`:  1
+	.. numerical grad:  1.000000000139778
+
+f: e
+	e-component of gradient: 1
+	.. evaluated at `vars`:  1
+	.. numerical grad:  0.9999999999177334
+
+f: 6
+→ no gradient to compute
+
+f: f
+	f-component of gradient: 1
+	.. evaluated at `vars`:  1
+	.. numerical grad:  0.9999999992515995
+
+f: (exp b + e)
+	b-component of gradient: exp b
+	.. evaluated at `vars`:  7.10547589404603e-07
+	.. numerical grad:  7.105427357601002e-07
+	e-component of gradient: 1
+	.. evaluated at `vars`:  1
+	.. numerical grad:  1.000000000139778
+
+f: -9
+→ no gradient to compute
+
+f: ((6 - -2) / exp exp (1 * ((e + d) - (e * (e / (d - 4))))))
+	e-component of gradient: ((((((1 + (((e / (d - 4)) + (((d - 4) ^ -1) * e)) * -1)) * 1) * exp (1 * ((e + d) - (e * (e / (d - 4)))))) * exp exp (1 * ((e + d) - (e * (e / (d - 4)))))) * (-1 * (exp exp (1 * ((e + d) - (e * (e / (d - 4))))) ^ -2))) * 8)
+	.. evaluated at `vars`:  -5.754876923972177e-07
+	.. numerical grad:  -5.755396159656812e-07
+	d-component of gradient: ((((((1 + ((((-1 * ((d - 4) ^ -2)) * e) * e) * -1)) * 1) * exp (1 * ((e + d) - (e * (e / (d - 4)))))) * exp exp (1 * ((e + d) - (e * (e / (d - 4)))))) * (-1 * (exp exp (1 * ((e + d) - (e * (e / (d - 4))))) ^ -2))) * 8)
+	.. evaluated at `vars`:  -7.318274989541374e-07
+	.. numerical grad:  -7.318590178329032e-07
+
+f: 0
+→ no gradient to compute
+
+f: c
+	c-component of gradient: 1
+	.. evaluated at `vars`:  1
+	.. numerical grad:  0.9999999992515995
+
+f: (9 ^ (c + -7.999228395061729))
+	c-component of gradient: ((9 ^ (c + -7.999228395061729)) * ln 9)
+	.. evaluated at `vars`:  14.01705160987315
+	.. numerical grad:  14.017051599424235
+
+f: ln -7
+→ no gradient to compute
+
+f: c
+	c-component of gradient: 1
+	.. evaluated at `vars`:  1
+	.. numerical grad:  0.9999999992515995
+
+f: (a * (10 / ((((10 - g) ^ g) / exp 1) - -9)))
+	a-component of gradient: (10 / ((((10 - g) ^ g) / exp 1) - -9))
+	.. evaluated at `vars`:  1.1111111052768239
+	.. numerical grad:  1.1111111053452305
+	g-component of gradient: ((((((-1 * (g * ((10 - g) ^ (g - 1)))) + (((10 - g) ^ g) * ln (10 - g))) * (exp 1 ^ -1)) * (-1 * (((((10 - g) ^ g) / exp 1) - -9) ^ -2))) * 10) * a)
+	.. evaluated at `vars`:  1.3214664636545666e-07
+	.. numerical grad:  1.3233858453531866e-07
+
+f: ((exp ((d + d) - (c / exp 8)) - (0.5714285714285714 / e)) * f)
+	d-component of gradient: ((2 * exp ((d + d) - (c / exp 8))) * f)
+	.. evaluated at `vars`:  -6587196343803.762
+	.. numerical grad:  -6587196338867.1875
+	[Warning]: abs(val-num_g[v]) == 4936.57421875 > 1e-2
+	c-component of gradient: ((((exp 8 ^ -1) * -1) * exp ((d + d) - (c / exp 8))) * f)
+	.. evaluated at `vars`:  1104879098.001114
+	.. numerical grad:  1104875244.140625
+	[Warning]: abs(val-num_g[v]) == 3853.8604888916016 > 1e-2
+	e-component of gradient: ((0.5714285714285714 * (e ^ -2)) * f)
+	.. evaluated at `vars`:  -0.06998068535981519
+	.. numerical grad:  0.0
+	[Warning]: abs(val-num_g[v]) == 0.06998068535981519 > 1e-2
+	f-component of gradient: (exp ((d + d) - (c / exp 8)) - (0.5714285714285714 / e))
+	.. evaluated at `vars`:  454895090762.1609
+	.. numerical grad:  454895090820.3125
+	[Warning]: abs(val-num_g[v]) == 58.151611328125 > 1e-2
+
+f: ((3 * ln ln 4) / (exp d ^ exp (exp a / b)))
+	d-component of gradient: (((exp d * (exp (exp a / b) * (exp d ^ (exp (exp a / b) - 1)))) * (-1 * ((exp d ^ exp (exp a / b)) ^ -2))) * (3 * ln ln 4))
+	.. evaluated at `vars`:  -0.003349010476406297
+	.. numerical grad:  -0.0033490104769245965
+	a-component of gradient: (((((exp a * (b ^ -1)) * exp (exp a / b)) * ((exp d ^ exp (exp a / b)) * ln exp d)) * (-1 * ((exp d ^ exp (exp a / b)) ^ -2))) * (3 * ln ln 4))
+	.. evaluated at `vars`:  -0.0032065014338809447
+	.. numerical grad:  -0.003206501434380518
+	b-component of gradient: ((((((-1 * (b ^ -2)) * exp a) * exp (exp a / b)) * ((exp d ^ exp (exp a / b)) * ln exp d)) * (-1 * ((exp d ^ exp (exp a / b)) ^ -2))) * (3 * ln ln 4))
+	.. evaluated at `vars`:  0.0005293510715051842
+	.. numerical grad:  0.0005293510712232885
+
+f: exp ln -6
+→ no gradient to compute
+
+f: (((exp (((c + 4) + (g ^ (e / c))) * b) * e) + -8) ^ ln ((13 + d) - a))
+	c-component of gradient: (((((1 + (((-1 * (c ^ -2)) * e) * ((g ^ (e / c)) * ln g))) * b) * exp (((c + 4) + (g ^ (e / c))) * b)) * e) * (ln ((13 + d) - a) * (((exp (((c + 4) + (g ^ (e / c))) * b) * e) + -8) ^ (ln ((13 + d) - a) - 1))))
+	.. evaluated at `vars`:  6.598389653226966e+19
+	.. numerical grad:  6.598389654912e+19
+	[Warning]: abs(val-num_g[v]) == 16850337792.0 > 1e-2
+	g-component of gradient: ((((((e / c) * (g ^ ((e / c) - 1))) * b) * exp (((c + 4) + (g ^ (e / c))) * b)) * e) * (ln ((13 + d) - a) * (((exp (((c + 4) + (g ^ (e / c))) * b) * e) + -8) ^ (ln ((13 + d) - a) - 1))))
+	.. evaluated at `vars`:  -3974613813570482.0
+	.. numerical grad:  -3974621440000000.0
+	[Warning]: abs(val-num_g[v]) == 7626429518.0 > 1e-2
+	e-component of gradient: (((((((c ^ -1) * ((g ^ (e / c)) * ln g)) * b) * exp (((c + 4) + (g ^ (e / c))) * b)) * e) + exp (((c + 4) + (g ^ (e / c))) * b)) * (ln ((13 + d) - a) * (((exp (((c + 4) + (g ^ (e / c))) * b) * e) + -8) ^ (ln ((13 + d) - a) - 1))))
+	.. evaluated at `vars`:  7.57843420597027e+17
+	.. numerical grad:  7.57843418368e+17
+	[Warning]: abs(val-num_g[v]) == 2229026944.0 > 1e-2
+	b-component of gradient: (((((c + 4) + (g ^ (e / c))) * exp (((c + 4) + (g ^ (e / c))) * b)) * e) * (ln ((13 + d) - a) * (((exp (((c + 4) + (g ^ (e / c))) * b) * e) + -8) ^ (ln ((13 + d) - a) - 1))))
+	.. evaluated at `vars`:  9.200110770231516e+18
+	.. numerical grad:  9.200110759168e+18
+	[Warning]: abs(val-num_g[v]) == 11063516160.0 > 1e-2
+	d-component of gradient: ((1 / ((13 + d) - a)) * ((((exp (((c + 4) + (g ^ (e / c))) * b) * e) + -8) ^ ln ((13 + d) - a)) * ln ((exp (((c + 4) + (g ^ (e / c))) * b) * e) + -8)))
+	.. evaluated at `vars`:  3.3153100094939976e+18
+	.. numerical grad:  3.315310010112e+18
+	[Warning]: abs(val-num_g[v]) == 618002432.0 > 1e-2
+	a-component of gradient: ((-1 * (1 / ((13 + d) - a))) * ((((exp (((c + 4) + (g ^ (e / c))) * b) * e) + -8) ^ ln ((13 + d) - a)) * ln ((exp (((c + 4) + (g ^ (e / c))) * b) * e) + -8)))
+	.. evaluated at `vars`:  -3.3153100094939976e+18
+	.. numerical grad:  -3.315310010112e+18
+	[Warning]: abs(val-num_g[v]) == 618002432.0 > 1e-2
+
+f: -9
+→ no gradient to compute
+
+f: (6 * exp (-9 ^ -10))
+→ no gradient to compute
+
+f: ((((a / (((c + a) * 5) * d)) - b) * 6) - ln (-8 / a))
+	a-component of gradient: (((((((c + a) * 5) * d) ^ -1) + (((5 * d) * (-1 * ((((c + a) * 5) * d) ^ -2))) * a)) * 6) + (((8 * (a ^ -2)) * (1 / (-8 / a))) * -1))
+	.. evaluated at `vars`:  -0.10564484519112076
+	.. numerical grad:  -0.10564484398400964
+	c-component of gradient: ((((5 * d) * (-1 * ((((c + a) * 5) * d) ^ -2))) * a) * 6)
+	.. evaluated at `vars`:  0.002269804296499936
+	.. numerical grad:  0.0022698003476762096
+	d-component of gradient: (((((c + a) * 5) * (-1 * ((((c + a) * 5) * d) ^ -2))) * a) * 6)
+	.. evaluated at `vars`:  -0.004343891321355964
+	.. numerical grad:  -0.004343888804214657
+	b-component of gradient: -6
+	.. evaluated at `vars`:  -6
+	.. numerical grad:  -5.999999999062311
+
+f: b
+	b-component of gradient: 1
+	.. evaluated at `vars`:  1
+	.. numerical grad:  0.9999999992515995
+
+f: ((exp -8 - -1) + -10)
+→ no gradient to compute
+
+f: b
+	b-component of gradient: 1
+	.. evaluated at `vars`:  1
+	.. numerical grad:  1.000000000139778
+
+f: g
+	g-component of gradient: 1
+	.. evaluated at `vars`:  1
+	.. numerical grad:  1.000000000139778
+
+f: (g / ((2 - exp exp ln ln a) + (((9 ^ c) * exp 9) + c)))
+	g-component of gradient: (((2 - exp exp ln ln a) + (((9 ^ c) * exp 9) + c)) ^ -1)
+	.. evaluated at `vars`:  1.7816183990856627e-15
+	.. numerical grad:  1.7816183983136854e-15
+	a-component of gradient: (((((((1 / a) * (1 / ln a)) * exp ln ln a) * exp exp ln ln a) * -1) * (-1 * (((2 - exp exp ln ln a) + (((9 ^ c) * exp 9) + c)) ^ -2))) * g)
+	.. evaluated at `vars`:  -4.046315308438054e-29
+	.. numerical grad:  0.0
+	c-component of gradient: ((((((9 ^ c) * ln 9) * exp 9) + 1) * (-1 * (((2 - exp exp ln ln a) + (((9 ^ c) * exp 9) + c)) ^ -2))) * g)
+	.. evaluated at `vars`:  4.990217572918234e-14
+	.. numerical grad:  4.9902175689902925e-14
+
+f: exp a
+	a-component of gradient: exp a
+	.. evaluated at `vars`:  27162.79533977964
+	.. numerical grad:  27162.795318872668
+
+f: ln 10
+→ no gradient to compute
+
+f: ((2 ^ -8) ^ 4)
+→ no gradient to compute
+
+f: ln (exp (-3 * (ln (8 * (8 ^ exp d)) - e)) ^ f)
+	d-component of gradient: (((((((exp d * ((8 ^ exp d) * ln 8)) * 8) * (1 / (8 * (8 ^ exp d)))) * -3) * exp (-3 * (ln (8 * (8 ^ exp d)) - e))) * (f * (exp (-3 * (ln (8 * (8 ^ exp d)) - e)) ^ (f - 1)))) * (1 / (exp (-3 * (ln (8 * (8 ^ exp d)) - e)) ^ f)))
+	.. evaluated at `vars`:  5.270789644705078
+	.. numerical grad:  5.2707896456283265
+	e-component of gradient: (((3 * exp (-3 * (ln (8 * (8 ^ exp d)) - e))) * (f * (exp (-3 * (ln (8 * (8 ^ exp d)) - e)) ^ (f - 1)))) * (1 / (exp (-3 * (ln (8 * (8 ^ exp d)) - e)) ^ f)))
+	.. evaluated at `vars`:  -0.03120852697995668
+	.. numerical grad:  -0.031208526873882647
+	f-component of gradient: (((exp (-3 * (ln (8 * (8 ^ exp d)) - e)) ^ f) * ln exp (-3 * (ln (8 * (8 ^ exp d)) - e))) * (1 / (exp (-3 * (ln (8 * (8 ^ exp d)) - e)) ^ f)))
+	.. evaluated at `vars`:  -529.9232515305854
+	.. numerical grad:  -529.9232515301178
+
+f: (ln g ^ c)
+	g-component of gradient: ((1 / g) * (c * (ln g ^ (c - 1))))
+	.. evaluated at `vars`:  2105.9699916706363
+	.. numerical grad:  2105.9699856778025
+	c-component of gradient: ((ln g ^ c) * ln ln g)
+	.. evaluated at `vars`:  5259.270431068801
+	.. numerical grad:  5259.270427359297
+
+f: -2
+→ no gradient to compute
+
+f: -6
+→ no gradient to compute
+
+f: (((a + 5) + (-7 * (7 / (-9 ^ 0)))) - exp (c * (b * b)))
+	a-component of gradient: 1
+	.. evaluated at `vars`:  1
+	.. numerical grad:  0.9999999974752427
+	c-component of gradient: (((b * b) * exp (c * (b * b))) * -1)
+	.. evaluated at `vars`:  -0.0
+	.. numerical grad:  0.0
+	b-component of gradient: ((((b + b) * c) * exp (c * (b * b))) * -1)
+	.. evaluated at `vars`:  0.0
+	.. numerical grad:  0.0
+
+f: exp b
+	b-component of gradient: exp b
+	.. evaluated at `vars`:  0.012937225393858056
+	.. numerical grad:  0.012937225395137641
+
+f: e
+	e-component of gradient: 1
+	.. evaluated at `vars`:  1
+	.. numerical grad:  0.9999999992515995
+
+f: (0 * ((9 - exp (-4 - (g * exp -9))) * 1))
+	g-component of gradient: (0 * ((exp -9 * -1) * exp (-4 - (g * exp -9))))
+	.. evaluated at `vars`:  -0.0
+	.. numerical grad:  0.0
+
+f: ln ln 4
+→ no gradient to compute
+
+f: ((9 * ((-1 ^ 8) ^ -9)) + -4)
+→ no gradient to compute
+
+f: (exp (-7 - a) / ((10 / (((g / ((-2 - f) / 5)) + 4) + f)) * (exp 5 + b)))
+	a-component of gradient: ((-1 * exp (-7 - a)) * (((10 / (((g / ((-2 - f) / 5)) + 4) + f)) * (exp 5 + b)) ^ -1))
+	.. evaluated at `vars`:  -2.00676834186045e-11
+	.. numerical grad:  -2.0067683439935235e-11
+	g-component of gradient: ((((((((-2 - f) / 5) ^ -1) * (-1 * ((((g / ((-2 - f) / 5)) + 4) + f) ^ -2))) * 10) * (exp 5 + b)) * (-1 * (((10 / (((g / ((-2 - f) / 5)) + 4) + f)) * (exp 5 + b)) ^ -2))) * exp (-7 - a))
+	.. evaluated at `vars`:  -5.227009326892468e-13
+	.. numerical grad:  -5.227009333776234e-13
+	f-component of gradient: ((((((((0.2 * (((-2 - f) / 5) ^ -2)) * g) + 1) * (-1 * ((((g / ((-2 - f) / 5)) + 4) + f) ^ -2))) * 10) * (exp 5 + b)) * (-1 * (((10 / (((g / ((-2 - f) / 5)) + 4) + f)) * (exp 5 + b)) ^ -2))) * exp (-7 - a))
+	.. evaluated at `vars`:  1.6540145027047412e-12
+	.. numerical grad:  1.6540145007200764e-12
+	b-component of gradient: (((10 / (((g / ((-2 - f) / 5)) + 4) + f)) * (-1 * (((10 / (((g / ((-2 - f) / 5)) + 4) + f)) * (exp 5 + b)) ^ -2))) * exp (-7 - a))
+	.. evaluated at `vars`:  -1.3862060002568416e-13
+	.. numerical grad:  -1.3862059918431996e-13
+
+f: exp (g / 9)
+	g-component of gradient: (0.1111111111111111 * exp (g / 9))
+	.. evaluated at `vars`:  0.11533977818480956
+	.. numerical grad:  0.11533977817279606
+
+f: ((10 + exp -2) - ln 10)
+→ no gradient to compute
+
+f: (2 / ((-5 * ((a * -9) * c)) - ((6 + (ln b - g)) + ((exp (ln 0.0001 / -10) ^ exp 4) ^ f))))
+	a-component of gradient: (((45 * c) * (-1 * (((-5 * ((a * -9) * c)) - ((6 + (ln b - g)) + ((exp (ln 0.0001 / -10) ^ exp 4) ^ f))) ^ -2))) * 2)
+	.. evaluated at `vars`:  0.00019446602293581193
+	.. numerical grad:  0.0001944660230372361
+	c-component of gradient: (((45 * a) * (-1 * (((-5 * ((a * -9) * c)) - ((6 + (ln b - g)) + ((exp (ln 0.0001 / -10) ^ exp 4) ^ f))) ^ -2))) * 2)
+	.. evaluated at `vars`:  -0.00043530576899179167
+	.. numerical grad:  -0.0004353057690784784
+	b-component of gradient: ((((1 / b) * -1) * (-1 * (((-5 * ((a * -9) * c)) - ((6 + (ln b - g)) + ((exp (ln 0.0001 / -10) ^ exp 4) ^ f))) ^ -2))) * 2)
+	.. evaluated at `vars`:  1.0306181575656851e-07
+	.. numerical grad:  1.0306176485147533e-07
+	g-component of gradient: (-2 * (((-5 * ((a * -9) * c)) - ((6 + (ln b - g)) + ((exp (ln 0.0001 / -10) ^ exp 4) ^ f))) ^ -2))
+	.. evaluated at `vars`:  -1.2141582759859554e-06
+	.. numerical grad:  -1.2141583311670034e-06
+	f-component of gradient: ((((((exp (ln 0.0001 / -10) ^ exp 4) ^ f) * ln (exp (ln 0.0001 / -10) ^ exp 4)) * -1) * (-1 * (((-5 * ((a * -9) * c)) - ((6 + (ln b - g)) + ((exp (ln 0.0001 / -10) ^ exp 4) ^ f))) ^ -2))) * 2)
+	.. evaluated at `vars`:  2.1562522069379403e-281
+	.. numerical grad:  0.0
+
+f: 1
+→ no gradient to compute
+
+f: ((2 * b) ^ exp -5)
+	b-component of gradient: (2 * (exp -5 * ((2 * b) ^ (exp -5 - 1))))
+	.. evaluated at `vars`:  0.002249263948039038
+	.. numerical grad:  0.0022492638862559033
+
+f: ln 6
+→ no gradient to compute
+
+f: exp (g ^ (b ^ (3 / ((a * c) - ln 1))))
+	g-component of gradient: (((b ^ (3 / ((a * c) - ln 1))) * (g ^ ((b ^ (3 / ((a * c) - ln 1))) - 1))) * exp (g ^ (b ^ (3 / ((a * c) - ln 1)))))
+	.. evaluated at `vars`:  1.4501356625448178
+	.. numerical grad:  1.4501356625507
+	b-component of gradient: ((((3 / ((a * c) - ln 1)) * (b ^ ((3 / ((a * c) - ln 1)) - 1))) * ((g ^ (b ^ (3 / ((a * c) - ln 1)))) * ln g)) * exp (g ^ (b ^ (3 / ((a * c) - ln 1)))))
+	.. evaluated at `vars`:  -0.01428428539179244
+	.. numerical grad:  -0.014284285310139921
+	a-component of gradient: (((((c * (-1 * (((a * c) - ln 1) ^ -2))) * 3) * ((b ^ (3 / ((a * c) - ln 1))) * ln b)) * ((g ^ (b ^ (3 / ((a * c) - ln 1)))) * ln g)) * exp (g ^ (b ^ (3 / ((a * c) - ln 1)))))
+	.. evaluated at `vars`:  0.002441512023550762
+	.. numerical grad:  0.0024415119925791373
+	c-component of gradient: (((((a * (-1 * (((a * c) - ln 1) ^ -2))) * 3) * ((b ^ (3 / ((a * c) - ln 1))) * ln b)) * ((g ^ (b ^ (3 / ((a * c) - ln 1)))) * ln g)) * exp (g ^ (b ^ (3 / ((a * c) - ln 1)))))
+	.. evaluated at `vars`:  0.0014987084123280691
+	.. numerical grad:  0.0014987083796214051
+
+f: ((e ^ (b - d)) / exp ((c - ((-4 / exp 7) / 1)) * exp ((-5 / (6 + f)) - (-10 - (-7 - (4 / d))))))
+	e-component of gradient: (((b - d) * (e ^ ((b - d) - 1))) * (exp ((c - ((-4 / exp 7) / 1)) * exp ((-5 / (6 + f)) - (-10 - (-7 - (4 / d))))) ^ -1))
+	.. evaluated at `vars`:  -5.328586476908297e-148
+	.. numerical grad:  -5.3285864727119355e-148
+	b-component of gradient: (((e ^ (b - d)) * ln e) * (exp ((c - ((-4 / exp 7) / 1)) * exp ((-5 / (6 + f)) - (-10 - (-7 - (4 / d))))) ^ -1))
+	.. evaluated at `vars`:  4.21658903439436e-147
+	.. numerical grad:  4.216589031142161e-147
+	d-component of gradient: (((-1 * ((e ^ (b - d)) * ln e)) * (exp ((c - ((-4 / exp 7) / 1)) * exp ((-5 / (6 + f)) - (-10 - (-7 - (4 / d))))) ^ -1)) + ((((((4 * (d ^ -2)) * exp ((-5 / (6 + f)) - (-10 - (-7 - (4 / d))))) * (c - ((-4 / exp 7) / 1))) * exp ((c - ((-4 / exp 7) / 1)) * exp ((-5 / (6 + f)) - (-10 - (-7 - (4 / d)))))) * (-1 * (exp ((c - ((-4 / exp 7) / 1)) * exp ((-5 / (6 + f)) - (-10 - (-7 - (4 / d))))) ^ -2))) * (e ^ (b - d))))
+	.. evaluated at `vars`:  -8.009865686023577e-146
+	.. numerical grad:  -8.009865684625534e-146
+	c-component of gradient: (((exp ((-5 / (6 + f)) - (-10 - (-7 - (4 / d)))) * exp ((c - ((-4 / exp 7) / 1)) * exp ((-5 / (6 + f)) - (-10 - (-7 - (4 / d)))))) * (-1 * (exp ((c - ((-4 / exp 7) / 1)) * exp ((-5 / (6 + f)) - (-10 - (-7 - (4 / d))))) ^ -2))) * (e ^ (b - d)))
+	.. evaluated at `vars`:  -6.116096974462006e-146
+	.. numerical grad:  -6.11609697125656e-146
+	f-component of gradient: ((((((5 * ((6 + f) ^ -2)) * exp ((-5 / (6 + f)) - (-10 - (-7 - (4 / d))))) * (c - ((-4 / exp 7) / 1))) * exp ((c - ((-4 / exp 7) / 1)) * exp ((-5 / (6 + f)) - (-10 - (-7 - (4 / d)))))) * (-1 * (exp ((c - ((-4 / exp 7) / 1)) * exp ((-5 / (6 + f)) - (-10 - (-7 - (4 / d))))) ^ -2))) * (e ^ (b - d)))
+	.. evaluated at `vars`:  -7.5528043652935e-147
+	.. numerical grad:  -7.552804437198635e-147
+
+f: 6
+→ no gradient to compute
+
+f: (-6 / exp ln exp f)
+	f-component of gradient: ((((exp f * (1 / exp f)) * exp ln exp f) * (-1 * (exp ln exp f ^ -2))) * -6)
+	.. evaluated at `vars`:  0.7159515386030172
+	.. numerical grad:  0.7159515387211712
+
+f: 3
+→ no gradient to compute
+
+median deviation exact vs. numerical gradient = nan
+
+Process finished with exit code 0
