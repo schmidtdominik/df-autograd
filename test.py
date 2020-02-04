@@ -20,12 +20,12 @@ for i in range(1000):
             print('\t.. evaluated at `vars`: ', val)
             print('\t.. numerical grad: ', num_g[v])
             deviation.append(abs(val-num_g[v]))
-            if abs(val-num_g[v]) > 1e-2:
-                print(f'\t[Warning]: abs(val-num_g[v]) == {abs(val-num_g[v])} > 1e-2')
+            if (not (0.99 < val/num_g[v] < 1.01)):
+                print(f'\t[Warning]: val/num_g[v] == {val/num_g[v]}')
     except (ValueError, OverflowError, TypeError, ZeroDivisionError) as e:
         # we don't care about math exceptions for div by zero, complex exponentiation, casting complex to float, overflows,..
         if printed:
-            print('→', e)
+            print('error →', e)
     if printed:
         print()
 

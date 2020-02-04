@@ -34,4 +34,4 @@ in_point = {x: 6, y: 3, z: 5}
 for v, k in f2.gradient().items():
     print(f'\tf2 {v}-component of gradient: {k}')
     print('\tevaluated at in_point: ', k.forward(in_point))
-print('numerical gradient:', f2.numerical_diff_grad(in_point, h=0.0001))
+print('numerical gradient:', f2.numerical_diff_grad(in_point))
